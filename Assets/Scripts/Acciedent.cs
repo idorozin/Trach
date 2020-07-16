@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Acciedent : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
-        if (other.tag == "Player")
+        if (other.collider.gameObject.CompareTag("Player"))
         {
-            Time.timeScale = 0;
+           // Debug.Log(other.gameObject.transform.parent.gameObject.GetComponent<Rigidbody>().velocity);
+           Time.timeScale = 0;
             //Destroy(other.gameObject.transform.parent.gameObject);
             //Destroy(this.gameObject.transform.parent.gameObject);
         }//a

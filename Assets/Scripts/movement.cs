@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Transactions;
 using UnityEngine;
 
-public class movement : MonoBehaviour
+public class Movement : MonoBehaviour
 {
 
     [SerializeField]
@@ -15,16 +15,21 @@ public class movement : MonoBehaviour
     [SerializeField] private float wallDistance = 5f;
     [SerializeField] private float maxCameraDistance = 7f;
     private Vector2 lastMousePos;
-    
-    
+
+    [SerializeField]
+    private bool a = true;
     void Start()
     {
 
     }
 
+    private Vector3 force;
+    [SerializeField]
+    private ForceMode forcemode;
+
     void Update()
     {
-        rb.velocity = new Vector3(rb.velocity.x,rb.velocity.y,forwardSpeed);
+
         Vector2 deltapos = Vector2.zero;
 
         if (Input.GetMouseButton(0))
@@ -36,33 +41,43 @@ public class movement : MonoBehaviour
             deltapos = currentMousePos - lastMousePos;
             lastMousePos = currentMousePos;
             
-            Vector3 force = new Vector3(deltapos.x , 0f , 0f) * thrust;
-            rb.AddForce(force);      
+            force = new Vector3(deltapos.x , 0f , 0f) * thrust;
+
         }
         else
         {
             lastMousePos = Vector2.zero;
         }
+
+
     }
 
-    private void LateUpdate()
-    {
-        Vector3 pos = transform.position;
-        if (transform.position.x > wallDistance)
+
+    private void FixedUpdate()
+    {        
+
+/*        if (transform.position.x > wallDistance)
         {
-            pos.x = wallDistance;
+            force = Vector3.zero;
         }
 
         if (transform.position.x < -wallDistance)
         {
-            pos.x = -wallDistance;
-        }
+            force = Vector3.zero;
+        }*/
 
-        if (transform.position.z < Camera.main.transform.position.z + maxCameraDistance)
+        /*if (transform.position.z < Camera.main.transform.position.z + maxCameraDistance)
         {
             pos.z = Camera.main.transform.position.z + maxCameraDistance;
-        }
+        }*/
 
-        transform.position = pos;
+        rb.AddForce(force ,forcemode);
+        rb.velocity = Vector3.forward * forwardSpeed;
+        force = Vector3.zero;
+    }
+
+    private void LateUpdate()
+    {
+
     }
 }
