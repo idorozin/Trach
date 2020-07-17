@@ -8,6 +8,7 @@ using UnityEngine.PlayerLoop;
 
 public class Spawner : MonoBehaviour
 {
+    [SerializeField] private Grid grid;
     [SerializeField] private Transform player;
     [SerializeField] private float distance;
     [SerializeField] private float spacing;
@@ -21,50 +22,120 @@ public class Spawner : MonoBehaviour
     private int obsticalesOnFront;
     private int obsticalesOnBack;
 
-    [SerializeField]
-    private GameObject obstaclePrefab;
-
     [SerializeField] private List<GameObject> prefabs;
     private List<GameObject> obstacles = new List<GameObject>();
     [SerializeField]
     private float radius = 10;
 
+    [SerializeField]
+    private int UPPER;
+
+    [SerializeField]
+    private float Xsize = 1.5f;
+    [SerializeField]
+    private float Ysize = 1f;
+    [SerializeField]
+    private float Zsize = 4f;
+
+    [SerializeField]
+    private Car[] cars;
+
+    private float playerStartZ;
+    
     void Start()
     {
-        
+        grid = new Grid(startPos,spacingX,spacingZ,rows,cols);
+        playerStartZ = player.transform.position.z;
+        SpawnObstacles(wantedNumber);
     }
 
     void Update()
     {
-        obsticalesOnBack = 0;
+        delta = player.transform.position.z - playerStartZ;
+        if(ShouldSpawn())
+            SpawnObstacles(wantedNumber);
+        /*obsticalesOnBack = 0;
         obsticalesOnFront = 0;
         CountObstaclesInRange();
-        SpawnObstacles(wantedNumber-(obsticalesOnFront));
+        SpawnObstacles(wantedNumber-(obsticalesOnFront));*/
+    }
+
+    private bool ShouldSpawn()
+    {
+        bool spawn = true;
+        foreach (GameObject obstacle in obstacles)     
+        {
+            if (obstacle == null)
+            {
+                continue;
+            }
+
+            if (obstacle.transform.position.z + spacingZ > startPos.z + delta )
+            {
+                spawn = false;
+                break;
+            }
+        }
+
+        return spawn;
     }
 
     private void SpawnObstacles(int number)
     {
-        if (number > 0)
+
+        List<Vector3> spawnPoses = new List<Vector3>();
+
+
+        foreach (var node in grid.grid)
         {
-            SpawnObstacle();
+            spawnPoses.Add(node.position);
         }
-        /*int j = 0;
+        
+        
         for (var i = 0; i < number; i++)
         {
-            j++;
-            SpawnObstacle();
+            SpawnObstacle(spawnPoses);
         }
-        Debug.Log("spawned: " + j);*/
 
     }
 
-    private void SpawnObstacle()
+    [SerializeField]
+     Transform spawn;
+
+    [ContextMenu("spawn obstacle")]
+    private void spawnobstacle()
+    {
+        SpawnObstacles(wantedNumber);
+    }
+
+    private void SpawnObstacle(List<Vector3> spawnPositions)
     {
 
+        Vector3 randomPoint = GetRandomPoint(spawnPositions);
+        if (randomPoint == null)
+        {
+            return;
+        }
+        
+        GameObject randomPrefab = GetRandomPrefab();
+
+        GameObject go = Instantiate(randomPrefab);
+        go.transform.position = new Vector3(randomPoint.x,0.5f,randomPoint.z);   
+        obstacles.Add(go);
+    }
+
+    private Vector3 GetRandomPoint(List<Vector3> spawnPositions)
+    {
+        Vector3 randomPos = spawnPositions[Random.Range(0, spawnPositions.Count)];
+        spawnPositions.Remove(randomPos);
+        randomPos.z = randomPos.z + delta;
+        return randomPos;
+
+        /*Physics.SyncTransforms();
         List<Vector3> avilablePoints = new List<Vector3>();
         foreach (Transform child in spawnPositions)
         {
-            Collider[] hitColliders = Physics.OverlapBox(child.position + new Vector3(0f,0.5f,0f),new Vector3(1.5f,1f,4f));
+            Collider[] hitColliders = Physics.OverlapBox(child.position + new Vector3(0f,0.5f,0f),new Vector3(Xsize,Ysize,Zsize));
             bool found = false;
             foreach (var collider in hitColliders)
             {
@@ -80,17 +151,22 @@ public class Spawner : MonoBehaviour
                 avilablePoints.Add(child.position);
             }
         }
-        if(!avilablePoints.Any())
-            return;
-        var randomPoint = avilablePoints[Random.Range(0, avilablePoints.Count - 1)];
-        var randomPrefab = prefabs[Random.Range(0, prefabs.Count - 1)];
+        return avilablePoints[Random.Range(0, avilablePoints.Count - 1)];*/
+    }
 
-        GameObject go = Instantiate(randomPrefab);
+    private GameObject GetRandomPrefab()
+    {
+        int randNum = Random.Range(0, 100);
+        foreach (var car in cars)
+        {
+            if (car.prob.MatchesNum(randNum))
+            {
+                return car.prefab;
+            }
 
-        go.transform.position = new Vector3(randomPoint.x,2f,randomPoint.z);
-        
-        Physics.SyncTransforms();
-        obstacles.Add(go);
+        }
+
+        return null;
     }
 
 
@@ -114,52 +190,52 @@ public class Spawner : MonoBehaviour
             }
         }
     }
+    
+    public float spacingX;
+    public float spacingY = 0f;
+    public float spacingZ;
+    public Vector3 startPos;
+    public int rows;
+    public int cols;
+    private float delta;
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
-        foreach (Transform child in spawnPositions)
+        /*foreach (Transform child in spawnPositions)
         {
-            Gizmos.DrawCube(child.transform.position+new Vector3(0f,0.5f,0f),new Vector3(1.5f,1f,4f));
-        }
-    }
-    
-    
-    
-    
-    public static void DrawWireCapsule(Vector3 _pos, Vector3 _pos2, float _radius, float _height, Color _color = default)
-    {
-        if (_color != default) Handles.color = _color;
- 
-        var forward = _pos2 - _pos;
-        var _rot = Quaternion.LookRotation(forward);
-        var pointOffset = _radius/2f;
-        var length = forward.magnitude;
-        var center2 = new Vector3(0f,0,length);
-       
-        Matrix4x4 angleMatrix = Matrix4x4.TRS(_pos, _rot, Handles.matrix.lossyScale);
-       
-        using (new Handles.DrawingScope(angleMatrix))
-        {
-            Handles.DrawWireDisc(Vector3.zero, Vector3.forward, _radius);
-            Handles.DrawWireArc(Vector3.zero, Vector3.up, Vector3.left * pointOffset, -180f, _radius);
-            Handles.DrawWireArc(Vector3.zero, Vector3.left, Vector3.down * pointOffset, -180f, _radius);
-            Handles.DrawWireDisc(center2, Vector3.forward, _radius);
-            Handles.DrawWireArc(center2, Vector3.up, Vector3.right * pointOffset, -180f, _radius);
-            Handles.DrawWireArc(center2, Vector3.left, Vector3.up * pointOffset, -180f, _radius);
-           
-            DrawLine(_radius,0f,length);
-            DrawLine(-_radius,0f,length);
-            DrawLine(0f,_radius,length);
-            DrawLine(0f,-_radius,length);
-        }
-    }
- 
-    private static void DrawLine(float arg1,float arg2,float forward)
-    {
-        Handles.DrawLine(new Vector3(arg1, arg2, 0f), new Vector3(arg1, arg2, forward));
-    }
+            Collider[] hitColliders = Physics.OverlapBox(child.position + new Vector3(0f,0.5f,0f),new Vector3(Xsize,Ysize,Zsize));
+            bool found = false;
+            foreach (var collider in hitColliders)
+            {
+                if (collider.gameObject.CompareTag("Obstacle"))
+                {
+                    Gizmos.color = Color.red;
 
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found)
+            {
+                Gizmos.color = Color.green;
+
+            }
+            Gizmos.DrawCube(child.transform.position+new Vector3(0f,0.5f,0f),new Vector3(Xsize,Ysize,Zsize));
+
+        }*/
+
+        grid = new Grid(startPos,spacingX,spacingZ,rows,cols);
+
+        Gizmos.color = Color.blue;
+        foreach (Node node in grid.grid)
+        {
+            Gizmos.DrawCube(node.position+new Vector3(0f,0.5f,0f+delta),new Vector3(Xsize,Ysize,Zsize));
+        }
+    }
+    
+    
+    
 }
 
 
