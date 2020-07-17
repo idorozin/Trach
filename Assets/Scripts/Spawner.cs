@@ -64,7 +64,7 @@ public class Spawner : MonoBehaviour
         List<Vector3> avilablePoints = new List<Vector3>();
         foreach (Transform child in spawnPositions)
         {
-            Collider[] hitColliders = Physics.OverlapBox(child.position + new Vector3(0f,0.5f,0f),new Vector3(1.5f,4f,20f));
+            Collider[] hitColliders = Physics.OverlapBox(child.position + new Vector3(0f,0.5f,0f),new Vector3(1.5f,1f,4f));
             bool found = false;
             foreach (var collider in hitColliders)
             {

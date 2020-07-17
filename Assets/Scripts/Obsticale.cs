@@ -9,7 +9,7 @@ public class Obsticale : MonoBehaviour
 
     [SerializeField]
     private Rigidbody rb;
-    void Update()
+    void FixedUpdate()
     {        
         rb.velocity = new Vector3(rb.velocity.x,rb.velocity.y,forwardSpeed);
        

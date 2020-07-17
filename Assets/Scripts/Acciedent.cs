@@ -6,6 +6,7 @@ public class Acciedent : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other)
     {
+        Debug.Log(other.gameObject.tag);
         if (other.collider.gameObject.CompareTag("Player"))
         {
            // Debug.Log(other.gameObject.transform.parent.gameObject.GetComponent<Rigidbody>().velocity);
