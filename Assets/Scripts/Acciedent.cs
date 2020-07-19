@@ -6,12 +6,12 @@ public class Acciedent : MonoBehaviour
 {
     private void OnCollisionEnter(Collision other)
     {
-        /*if (other.collider.gameObject.CompareTag("Player"))
+        if (other.collider.gameObject.CompareTag("Player"))
         {
            // Debug.Log(other.gameObject.transform.parent.gameObject.GetComponent<Rigidbody>().velocity);
-           Time.timeScale = 0;
+          // Time.timeScale = 0;
             //Destroy(other.gameObject.transform.parent.gameObject);
             //Destroy(this.gameObject.transform.parent.gameObject);
-        }//a*/
+        }
     }
 }
