@@ -42,11 +42,23 @@ public class Spawner : MonoBehaviour
 
     private float playerStartZ;
     
+    
     void Start()
     {
         grid = new Grid(startPos,spacingX,spacingZ,rows,cols);
         playerStartZ = player.transform.position.z;
         SpawnObstacles(wantedNumber);
+        StartCoroutine(up());
+    }
+
+
+    IEnumerator up()
+    {
+        while (wantedNumber < 35)
+        {
+            yield return new WaitForSeconds(10f);
+            wantedNumber++;
+        }
     }
 
     void Update()
@@ -120,7 +132,7 @@ public class Spawner : MonoBehaviour
         GameObject randomPrefab = GetRandomPrefab();
 
         GameObject go = Instantiate(randomPrefab);
-        go.transform.position = new Vector3(randomPoint.x,0.5f,randomPoint.z);   
+        go.transform.position = new Vector3(randomPoint.x,1f,randomPoint.z);   
         obstacles.Add(go);
     }
 

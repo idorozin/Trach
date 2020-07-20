@@ -16,7 +16,7 @@ public class TileManger : MonoBehaviour
     [SerializeField]
     private Vector3 startPos;
 
-    private float tileLength = 10;
+    private float tileLength = 10.1f;
 
     private List<GameObject> tiles = new List<GameObject>();
 
@@ -46,7 +46,7 @@ public class TileManger : MonoBehaviour
         foreach (var tile in tiles)
         {
 
-            if (tile.transform.position.z + tileLength/2f+0.1f < player.position.z)
+            if (tile.transform.position.z + tileLength/2f+2f < player.position.z)
             {
                 PlaceInFront(tile);
             }
