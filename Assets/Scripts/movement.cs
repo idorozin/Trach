@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Transactions;
 using UnityEngine;
@@ -23,10 +24,19 @@ public class Movement : MonoBehaviour
 
     }
 
+    [SerializeField] private Transform pivot;
+
     private Vector3 force;
     [SerializeField]
     private ForceMode forcemode;
 
+    private bool left;
+    private bool right;
+    private bool middle;
+    [SerializeField]
+    private float multiplier;
+    [SerializeField]
+    private float rotateSpeed;
     void Update()
     {
 
@@ -42,10 +52,38 @@ public class Movement : MonoBehaviour
             lastMousePos = currentMousePos;
             
             force = new Vector3(deltapos.x , 0f , 0f) * thrust;
+            transform.Rotate(0,deltapos.x*multiplier,0 ,Space.World);
+            if (deltapos.x == 0)
+            {
+                if (transform.eulerAngles.y > 0.5f && transform.eulerAngles.y < 200)
+                {
+                    Debug.Log("***");
+                    transform.Rotate(0, -rotateSpeed, 0, Space.World);
+                }
 
+
+                if (transform.eulerAngles.y < 359.5f && transform.eulerAngles.y > 200)
+                {
+                    transform.Rotate(0, rotateSpeed, 0, Space.World);
+                }
+            }
         }
         else
         {
+     
+     
+            if (transform.eulerAngles.y > 0.5f && transform.eulerAngles.y < 200)
+            {
+                Debug.Log("***");
+                transform.Rotate(0, -rotateSpeed, 0, Space.World);
+            }
+
+
+            if (transform.eulerAngles.y < 359.5f && transform.eulerAngles.y > 200)
+            {
+                transform.Rotate(0, rotateSpeed, 0, Space.World);
+            }
+
             lastMousePos = Vector2.zero;
         }
 
