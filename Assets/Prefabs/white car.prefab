@@ -289,6 +289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardSpeed: 2
   rb: {fileID: 7513896748375773149}
+  contact: 0
 --- !u!54 &7513896748375773149
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -317,6 +318,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c91e0dd85bb20b459b5416ad97a63bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 0}
+  restart: {fileID: 0}
+  obs: {fileID: -1471532307465037228}
 --- !u!1 &731536091098748411
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,12 +408,12 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731536091098748411}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c123a95387047f649a34ead881146000, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.021471849, y: 0.020474238, z: 0.055895463}
-  m_Center: {x: 0, y: -0.0001508747, z: 0.01712148}
+  m_Size: {x: 0.021471849, y: 0.020474238, z: 0.06349989}
+  m_Center: {x: 0, y: -9.278124e-18, z: 0.013286008}
 --- !u!1 &7198354484088751198
 GameObject:
   m_ObjectHideFlags: 0

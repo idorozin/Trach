@@ -54,7 +54,7 @@ public class Spawner : MonoBehaviour
 
     IEnumerator up()
     {
-        while (wantedNumber < 35)
+        while (wantedNumber < 100)
         {
             yield return new WaitForSeconds(10f);
             wantedNumber++;
@@ -132,7 +132,7 @@ public class Spawner : MonoBehaviour
         GameObject randomPrefab = GetRandomPrefab();
 
         GameObject go = Instantiate(randomPrefab);
-        go.transform.position = new Vector3(randomPoint.x,1f,randomPoint.z);   
+        go.transform.position = new Vector3(randomPoint.x,5f,randomPoint.z);   
         obstacles.Add(go);
     }
 
