@@ -13,8 +13,6 @@ public class Movement : MonoBehaviour
     [SerializeField] private float thrust;
 
     [SerializeField] private float forwardSpeed = 0.02f;
-    [SerializeField] private float wallDistance = 5f;
-    [SerializeField] private float maxCameraDistance = 7f;
     private Vector2 lastMousePos;
 
     [SerializeField]
@@ -58,13 +56,13 @@ public class Movement : MonoBehaviour
             deltapos = currentMousePos - lastMousePos;
             lastMousePos = currentMousePos;
             var forceX = deltapos.x*thrust;
-            //
-            /*if (forceX > maxVelocity)
+            
+            if (forceX > maxVelocity)
             {
                 forceX = forceX > 0 ? maxVelocity : -maxVelocity;
                 
                 
-            }*/
+            }
             force = new Vector3(forceX, 0f , 0f) ;
             //transform.Rotate(0,deltapos.x*multiplier,0 ,Space.World);
             /*if (deltapos.x == 0)
@@ -101,10 +99,6 @@ public class Movement : MonoBehaviour
             lastMousePos = Vector2.zero;
         }
 
-        if (rb.velocity.x > 0.1f )
-        {
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(new Vector3(0,rb.velocity.x,0)), Time.deltaTime * RotateSpeed);
-        }
 
     }
 
@@ -135,10 +129,7 @@ public class Movement : MonoBehaviour
         force = Vector3.zero;
     }
 
-    private void LateUpdate()
-    {
 
-    }
     IEnumerator up()
     {
         while (forwardSpeed < 100)

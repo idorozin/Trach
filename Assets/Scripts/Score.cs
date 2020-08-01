@@ -27,7 +27,6 @@ public class Score : MonoBehaviour
     public void OnCarDestroyed()
     {
         bonus += 50;
-        GameObject go = Instantiate(bonusVisual);
-        go.transform.parent = canvas;
+        GameObject go = Instantiate(bonusVisual,canvas);
     }
 }

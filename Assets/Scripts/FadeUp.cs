@@ -19,7 +19,7 @@ public class FadeUp : MonoBehaviour
 
     void Start()
     {
-        GetComponent<RectTransform>().anchoredPosition = new Vector3(181.3f, 213.4f, 0);
+        GetComponent<RectTransform>().anchoredPosition = new Vector3(19f, -244f, 0);
         transform.DOMoveY(transform.position.y + movement, time);
         text.DOFade(fadeValue, time);
     }
