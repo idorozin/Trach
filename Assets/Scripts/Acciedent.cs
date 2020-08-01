@@ -19,7 +19,7 @@ public class Acciedent : MonoBehaviour
     {
         if (other.collider.gameObject.CompareTag("Player"))
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }    
         
         else if (other.collider.gameObject.CompareTag("Border"))
