@@ -57,7 +57,7 @@ public class Movement : MonoBehaviour
             lastMousePos = currentMousePos;
             var forceX = deltapos.x*thrust;
             
-            if (forceX > maxVelocity)
+            if (Math.Abs(forceX) > maxVelocity)
             {
                 forceX = forceX > 0 ? maxVelocity : -maxVelocity;
                 
