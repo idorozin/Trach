@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424c075b924e3f947829fbcc4cec1377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 2
+  forwardSpeed: 5
   rb: {fileID: 7513896748375773149}
   contact: 0
 --- !u!54 &7513896748375773149
@@ -321,6 +321,8 @@ MonoBehaviour:
   score: {fileID: 0}
   restart: {fileID: 0}
   obs: {fileID: -1471532307465037228}
+  explotsion: {fileID: 3207248911433716039, guid: 7346626e4d25e774eb346e1ed64c795a,
+    type: 3}
 --- !u!1 &731536091098748411
 GameObject:
   m_ObjectHideFlags: 0

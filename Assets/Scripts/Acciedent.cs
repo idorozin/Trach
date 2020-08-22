@@ -8,6 +8,7 @@ public class Acciedent : MonoBehaviour
     [SerializeField] private Score score;
     [SerializeField] private GameObject restart;
     [SerializeField] private Obsticale obs;
+    [SerializeField] private GameObject explotsion;
     private bool destroyed;
 
     
@@ -27,6 +28,7 @@ public class Acciedent : MonoBehaviour
             destroyed = true;
             score.OnCarDestroyed();
             gameObject.SetActive(false);
+            Instantiate(explotsion , transform.position , Quaternion.identity);
 
             // Debug.Log(other.gameObject.transform.parent.gameObject.GetComponent<Rigidbody>().velocity);
             //Destroy(other.gameObject.transform.parent.gameObject);
