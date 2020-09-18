@@ -66,10 +66,7 @@ public class Spawner : MonoBehaviour
         delta = player.transform.position.z - playerStartZ;
         if(ShouldSpawn())
             SpawnObstacles(wantedNumber);
-        /*obsticalesOnBack = 0;
-        obsticalesOnFront = 0;
-        CountObstaclesInRange();
-        SpawnObstacles(wantedNumber-(obsticalesOnFront));*/
+
     }
 
     private bool ShouldSpawn()
@@ -132,7 +129,7 @@ public class Spawner : MonoBehaviour
         GameObject randomPrefab = GetRandomPrefab();
 
         GameObject go = Instantiate(randomPrefab);
-        go.transform.position = new Vector3(randomPoint.x,5f,randomPoint.z);   
+        go.transform.position = new Vector3(randomPoint.x,1f,randomPoint.z);   
         obstacles.Add(go);
     }
 
@@ -143,27 +140,6 @@ public class Spawner : MonoBehaviour
         randomPos.z = randomPos.z + delta;
         return randomPos;
 
-        /*Physics.SyncTransforms();
-        List<Vector3> avilablePoints = new List<Vector3>();
-        foreach (Transform child in spawnPositions)
-        {
-            Collider[] hitColliders = Physics.OverlapBox(child.position + new Vector3(0f,0.5f,0f),new Vector3(Xsize,Ysize,Zsize));
-            bool found = false;
-            foreach (var collider in hitColliders)
-            {
-                if (collider.gameObject.CompareTag("Obstacle"))
-                {
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found)
-            {
-                avilablePoints.Add(child.position);
-            }
-        }
-        return avilablePoints[Random.Range(0, avilablePoints.Count - 1)];*/
     }
 
     private GameObject GetRandomPrefab()
@@ -213,29 +189,6 @@ public class Spawner : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        /*foreach (Transform child in spawnPositions)
-        {
-            Collider[] hitColliders = Physics.OverlapBox(child.position + new Vector3(0f,0.5f,0f),new Vector3(Xsize,Ysize,Zsize));
-            bool found = false;
-            foreach (var collider in hitColliders)
-            {
-                if (collider.gameObject.CompareTag("Obstacle"))
-                {
-                    Gizmos.color = Color.red;
-
-                    found = true;
-                    break;
-                }
-            }
-
-            if (!found)
-            {
-                Gizmos.color = Color.green;
-
-            }
-            Gizmos.DrawCube(child.transform.position+new Vector3(0f,0.5f,0f),new Vector3(Xsize,Ysize,Zsize));
-
-        }*/
 
         grid = new Grid(startPos,spacingX,spacingZ,rows,cols);
 

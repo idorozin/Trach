@@ -42,6 +42,9 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float maxVelocity;
 
+    [SerializeField]
+    private float amount;
+
     void Update()
     {
 
@@ -120,7 +123,17 @@ public class Movement : MonoBehaviour
         {
             pos.z = Camera.main.transform.position.z + maxCameraDistance;
         }*/
-
+        /*rb.AddTorque(transform.TransformDirection(Vector3.up)*force.x*amount);
+        Debug.Log(transform.rotation.y);
+        if (transform.rotation.y > 0.01 && force.x == 0)
+            rb.AddTorque(transform.TransformDirection(Vector3.up)*-3000*amount);   
+        if (transform.rotation.y < -0.01 && force.x == 0)
+            rb.AddTorque(transform.TransformDirection(Vector3.up)*3000*amount);
+        if (force.x == 0 && transform.rotation.y < 0.01 && transform.rotation.y > -0.01)
+        {
+            rb.angularVelocity = Vector3.zero;
+        }
+        */
         rb.AddForce(force ,forcemode);
 
         

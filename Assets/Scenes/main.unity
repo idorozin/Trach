@@ -433,7 +433,7 @@ Transform:
   m_GameObject: {fileID: 241172174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.79, y: 0.37, z: 0}
-  m_LocalScale: {x: 1.61, y: 2.38, z: 3000}
+  m_LocalScale: {x: 1.61, y: 2.38, z: 9000}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -497,7 +497,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647586850}
-  m_LocalRotation: {x: -0.000000007450581, y: 0.0000000026383962, z: -5.3220284e-10,
+  m_LocalRotation: {x: 0.000000007450581, y: 0.0000000055499676, z: -0.0000000011195094,
     w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -779,6 +779,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 875983943}
+  - component: {fileID: 875983944}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -800,6 +801,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &875983944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875983942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 296b8a3a8199b6f4e9f1ed3e255287a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +890,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.09935763, y: -0.000000016735047, z: 0.0000000016710232, w: 0.9950518}
+  m_LocalRotation: {x: 0.099357635, y: 0.000000022754973, z: -0.0000000022721232,
+    w: 0.9950518}
   m_LocalPosition: {x: 0.016, y: 4.82, z: -39.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1292,7 +1306,7 @@ Transform:
   m_GameObject: {fileID: 1500969408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.79, y: 0.37, z: 0}
-  m_LocalScale: {x: 1.61, y: 2.38, z: 3000}
+  m_LocalScale: {x: 1.61, y: 2.38, z: 9000}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1725,6 +1739,7 @@ MonoBehaviour:
   rotateSpeed: 0.1
   RotateSpeed: 0
   maxVelocity: 2000
+  amount: 0
 --- !u!4 &1964458248
 Transform:
   m_ObjectHideFlags: 0
