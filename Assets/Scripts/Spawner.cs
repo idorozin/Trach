@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
@@ -41,6 +42,8 @@ public class Spawner : MonoBehaviour
     private Car[] cars;
 
     private float playerStartZ;
+
+    private float zGridStartPos;
     
     
     void Start()
@@ -64,6 +67,7 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         delta = player.transform.position.z - playerStartZ;
+        zGridStartPos = obstacles.Any() ? obstacles.Max(x => x.transform.position.z) + Zsize : Zsize;
         if(ShouldSpawn())
             SpawnObstacles(wantedNumber);
 
@@ -79,7 +83,7 @@ public class Spawner : MonoBehaviour
                 continue;
             }
 
-            if (obstacle.transform.position.z + spacingZ > startPos.z + delta )
+            if (obstacle.transform.position.z + spacingZ - 300f > startPos.z + delta  )
             {
                 spawn = false;
                 break;
@@ -91,7 +95,7 @@ public class Spawner : MonoBehaviour
 
     private void SpawnObstacles(int number)
     {
-
+        zGridStartPos = obstacles.Any() ? obstacles.Max(x => x.transform.position.z) + Zsize : Zsize;
         List<Vector3> spawnPoses = new List<Vector3>();
 
 
@@ -137,7 +141,7 @@ public class Spawner : MonoBehaviour
     {
         Vector3 randomPos = spawnPositions[Random.Range(0, spawnPositions.Count)];
         spawnPositions.Remove(randomPos);
-        randomPos.z = randomPos.z + delta;
+        randomPos.z = randomPos.z + zGridStartPos +spacingZ+startPos.z*-1;
         return randomPos;
 
     }
@@ -195,7 +199,7 @@ public class Spawner : MonoBehaviour
         Gizmos.color = Color.blue;
         foreach (Node node in grid.grid)
         {
-            Gizmos.DrawCube(node.position+new Vector3(0f,0.5f,0f+delta),new Vector3(Xsize,Ysize,Zsize));
+            Gizmos.DrawCube(node.position+new Vector3(0f,0.5f,zGridStartPos+spacingZ+startPos.z*-1),new Vector3(Xsize,Ysize,Zsize));
         }
     }
     
