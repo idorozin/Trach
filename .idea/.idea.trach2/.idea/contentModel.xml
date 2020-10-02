@@ -30,7 +30,11 @@
             <e p="helper.cs" t="Include" />
           </e>
           <e p="FadeUp.cs" t="Include" />
+          <e p="FastCar.cs" t="Include" />
+          <e p="FastCarSpawner.cs" t="Include" />
           <e p="Grid.cs" t="Include" />
+          <e p="Missile.cs" t="Include" />
+          <e p="MissileSpawner.cs" t="Include" />
           <e p="Movement.cs" t="Include" />
           <e p="New Text Document (4).txt" t="Include" />
           <e p="Node.cs" t="Include" />

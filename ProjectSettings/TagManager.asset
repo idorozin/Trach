@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - TrackSides
   - Floor
+  - PlayerBack
   layers:
   - Default
   - TransparentFX

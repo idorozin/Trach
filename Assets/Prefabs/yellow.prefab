@@ -460,7 +460,7 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &3741441233216899418
@@ -478,6 +478,7 @@ MonoBehaviour:
   forwardSpeed: 5
   rb: {fileID: -6991129339932520939}
   contact: 0
+  ground: 0
 --- !u!114 &1584045510995539257
 MonoBehaviour:
   m_ObjectHideFlags: 0

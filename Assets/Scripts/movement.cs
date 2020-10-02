@@ -6,48 +6,22 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-
-    [SerializeField]
-    private Rigidbody rb;
+    [SerializeField] private Rigidbody rb;
 
     [SerializeField] private float thrust;
 
-    [SerializeField] private float forwardSpeed = 0.02f;
+    [SerializeField] public float forwardSpeed = 0.02f;
     private Vector2 lastMousePos;
 
-    [SerializeField]
-    private bool a = true;
-    void Start()
-    {
-        StartCoroutine(up());
-    }
-
-    [SerializeField] private Transform pivot;
-
     private Vector3 force;
-    [SerializeField]
-    private ForceMode forcemode;
+    [SerializeField] private ForceMode forcemode;
 
-    private bool left;
-    private bool right;
-    private bool middle;
-    [SerializeField]
-    private float multiplier;
-    [SerializeField]
-    private float rotateSpeed;
+    [SerializeField] private float maxVelocity;
 
-    [SerializeField]
-    private float RotateSpeed;
 
-    [SerializeField]
-    private float maxVelocity;
-
-    [SerializeField]
-    private float amount;
-
+    [SerializeField] private float forceMultiplier;
     void Update()
     {
-
         Vector2 deltapos = Vector2.zero;
 
         if (Input.GetMouseButton(0))
@@ -58,90 +32,42 @@ public class Movement : MonoBehaviour
 
             deltapos = currentMousePos - lastMousePos;
             lastMousePos = currentMousePos;
-            var forceX = deltapos.x*thrust;
-            
+            var forceX = deltapos.x * thrust;
             if (Math.Abs(forceX) > maxVelocity)
             {
                 forceX = forceX > 0 ? maxVelocity : -maxVelocity;
-                
-                
             }
-            force = new Vector3(forceX, 0f , 0f) ;
-            //transform.Rotate(0,deltapos.x*multiplier,0 ,Space.World);
-            /*if (deltapos.x == 0)
-            {
-                if (transform.eulerAngles.y > 0.5f && transform.eulerAngles.y < 200)
-                {
-                    Debug.Log("***");
-                    transform.Rotate(0, -rotateSpeed, 0, Space.World);
-                }
+
+            forceX_ = forceX;
 
 
-                if (transform.eulerAngles.y < 359.5f && transform.eulerAngles.y > 200)
-                {
-                    transform.Rotate(0, rotateSpeed, 0, Space.World);
-                }
-            }*/
+            force = new Vector3(forceX, 0f, 0f);
         }
         else
         {
-     
-     
-            /*if (transform.eulerAngles.y > 0.5f && transform.eulerAngles.y < 200)
-            {
-                Debug.Log("***");
-                transform.Rotate(0, -rotateSpeed, 0, Space.World);
-            }
-
-
-            if (transform.eulerAngles.y < 359.5f && transform.eulerAngles.y > 200)
-            {
-                transform.Rotate(0, rotateSpeed, 0, Space.World);
-            }*/
-
             lastMousePos = Vector2.zero;
         }
-
-
     }
 
 
     private void FixedUpdate()
-    {        
-
-/*        if (transform.position.x > wallDistance)
-        {
-            force = Vector3.zero;
-        }
-
-        if (transform.position.x < -wallDistance)
-        {
-            force = Vector3.zero;
-        }*/
-
-        /*if (transform.position.z < Camera.main.transform.position.z + maxCameraDistance)
-        {
-            pos.z = Camera.main.transform.position.z + maxCameraDistance;
-        }*/
-        /*rb.AddTorque(transform.TransformDirection(Vector3.up)*force.x*amount);
-        Debug.Log(transform.rotation.y);
-        if (transform.rotation.y > 0.01 && force.x == 0)
-            rb.AddTorque(transform.TransformDirection(Vector3.up)*-3000*amount);   
-        if (transform.rotation.y < -0.01 && force.x == 0)
-            rb.AddTorque(transform.TransformDirection(Vector3.up)*3000*amount);
-        if (force.x == 0 && transform.rotation.y < 0.01 && transform.rotation.y > -0.01)
-        {
-            rb.angularVelocity = Vector3.zero;
-        }
-        */
-        rb.AddForce(force ,forcemode);
-
-        
-        // if (rb.velocity.x0
+    {
+        rb.AddForce(force*forceMultiplier, forcemode);
         rb.velocity = Vector3.forward * forwardSpeed;
         force = Vector3.zero;
     }
 
+
+    [SerializeField] private float amount;
+    [SerializeField] private float rotateSpeed;
+
+    [SerializeField] private float multiplier;
+
+    private float forceX_;
+    void Start()
+    {
+        StartCoroutine(up());
+    }
 
     IEnumerator up()
     {

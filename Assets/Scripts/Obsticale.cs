@@ -13,7 +13,6 @@ public class Obsticale : MonoBehaviour
     public bool contact = false ;
 
 
-
     void FixedUpdate()
     {
         if (contact)
@@ -21,6 +20,8 @@ public class Obsticale : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x,rb.velocity.y,forwardSpeed);       
         }
         else
-            rb.velocity = new Vector3(0,rb.velocity.y,forwardSpeed);       
+        {
+            rb.velocity = new Vector3(0, rb.velocity.y, forwardSpeed);
+        }
     }
 }

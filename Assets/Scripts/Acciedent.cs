@@ -25,10 +25,7 @@ public class Acciedent : MonoBehaviour
         
         else if (other.collider.gameObject.CompareTag("Border"))
         {
-            destroyed = true;
-            score.OnCarDestroyed();
-            gameObject.SetActive(false);
-            Instantiate(explotsion , transform.position , Quaternion.identity);
+            Destroy();
 
             // Debug.Log(other.gameObject.transform.parent.gameObject.GetComponent<Rigidbody>().velocity);
             //Destroy(other.gameObject.transform.parent.gameObject);
@@ -41,7 +38,16 @@ public class Acciedent : MonoBehaviour
         }
 
     }
-    
+
+    public void Destroy()
+    {
+        destroyed = true;
+        score.OnCarDestroyed();
+        gameObject.SetActive(false);
+        Instantiate(explotsion, transform.position, Quaternion.identity);
+    }
+
+
     private void OnDrawGizmos()
     {
         if (!destroyed)
