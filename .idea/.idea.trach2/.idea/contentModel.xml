@@ -16,22 +16,28 @@
           </e>
           <e p="Obstacles" t="Include">
             <e p="Acciedent.cs" t="Include" />
-            <e p="Car.cs" t="Include" />
             <e p="FastCar.cs" t="Include" />
             <e p="FastCarSpawner.cs" t="Include" />
             <e p="Grid.cs" t="Include" />
             <e p="Node.cs" t="Include" />
             <e p="Obsticale.cs" t="Include" />
+            <e p="PObject.cs" t="Include" />
             <e p="Probability.cs" t="Include" />
             <e p="Spawner.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="CameraFollow.cs" t="Include" />
+            <e p="CollectCoin.cs" t="Include" />
             <e p="Missile.cs" t="Include" />
             <e p="MissileSpawner.cs" t="Include" />
             <e p="Movement.cs" t="Include" />
           </e>
+          <e p="PowerUpSpawner" t="Include">
+            <e p="PowerUpSpawner.cs" t="Include" />
+          </e>
+          <e p="Rotate.cs" t="Include" />
           <e p="Terrain" t="Include">
+            <e p="RandomObject.cs" t="Include" />
             <e p="TileManger.cs" t="Include" />
           </e>
           <e p="test" t="Include">

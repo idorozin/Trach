@@ -6,15 +6,22 @@ public class MissileSpawner : MonoBehaviour
 {
     [SerializeField] private Transform spawnPos;
     [SerializeField] private GameObject prefab;
-    
- 
+    public int misiiles;
+
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("izik");
-            SpawnMissile();
-        }
+   
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (misiiles > 0)
+                {
+                    Debug.Log("izik");
+                    SpawnMissile();
+                    misiiles--;
+                }
+            }
+
     }
 
     void SpawnMissile()

@@ -39,7 +39,7 @@ public class Spawner : MonoBehaviour
     private float Zsize = 4f;
 
     [SerializeField]
-    private Car[] cars;
+    private PObject[] cars;
 
     private float playerStartZ;
 
