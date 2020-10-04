@@ -158,6 +158,17 @@ public class Spawner : MonoBehaviour
 
         }
 
+        randNum = 10;
+        foreach (var car in cars)
+        {
+            if (car.prob.MatchesNum(randNum))
+            {
+                return car.prefab;
+            }
+
+        }
+
+
         return null;
     }
 
