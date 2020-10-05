@@ -38,12 +38,14 @@ public class Spawner : MonoBehaviour
     [SerializeField]
     private float Zsize = 4f;
 
-    [SerializeField]
-    private PObject[] cars;
+
 
     private float playerStartZ;
 
     private float zGridStartPos;
+
+    [SerializeField]
+    private ProbabilityItemPool randomObject;
     
     
     void Start()
@@ -148,28 +150,7 @@ public class Spawner : MonoBehaviour
 
     private GameObject GetRandomPrefab()
     {
-        int randNum = Random.Range(0, 100);
-        foreach (var car in cars)
-        {
-            if (car.prob.MatchesNum(randNum))
-            {
-                return car.prefab;
-            }
-
-        }
-
-        randNum = 10;
-        foreach (var car in cars)
-        {
-            if (car.prob.MatchesNum(randNum))
-            {
-                return car.prefab;
-            }
-
-        }
-
-
-        return null;
+        return randomObject.GetRandomItem();
     }
 
 

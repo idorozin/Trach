@@ -1,9 +1,29 @@
 fileFormatVersion: 2
 guid: ff14eb92f0a45ca46a060e1de49fe7a7
 ModelImporter:
-  serializedVersion: 19301
+  serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.056
+    second: {fileID: 2100000, guid: 18c03cceff97c65488367fa32e4846d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.159
+    second: {fileID: 2100000, guid: 2f2978c59dc0c1f44b2ca901be4ad080, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.161
+    second: {fileID: 2100000, guid: 35f792dd461637d4c87084588a7d5521, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.195
+    second: {fileID: 2100000, guid: 53bed3ac945fb784e8fc07a618ce299d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -43,7 +63,6 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
-    fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1

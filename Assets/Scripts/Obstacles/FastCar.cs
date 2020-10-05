@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FastCar : MonoBehaviour
 {
-    private int lives = 2;
+    private int lives = 3;
 
     [SerializeField]
     private Acciedent acciedent;

@@ -548,7 +548,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647586850}
-  m_LocalRotation: {x: -0, y: -1.7266188e-11, z: 3.4829917e-12, w: 1}
+  m_LocalRotation: {x: -0, y: -5.2847504e-10, z: 1.06601505e-10, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -751,6 +751,7 @@ GameObject:
   - component: {fileID: 716019091}
   - component: {fileID: 716019090}
   - component: {fileID: 716019092}
+  - component: {fileID: 716019093}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -785,41 +786,7 @@ MonoBehaviour:
   Xsize: 1.21
   Ysize: 1
   Zsize: 2.71
-  cars:
-  - prob:
-      minRange: 0
-      maxRange: 20
-    prefab: {fileID: 8848065222689028533, guid: 85bfb25fbb63eae4db2135da9e176c2a,
-      type: 3}
-  - prob:
-      minRange: 20
-      maxRange: 40
-    prefab: {fileID: 7353412670246536639, guid: 2dd90adc42a7f02419688eab2d33b8d8,
-      type: 3}
-  - prob:
-      minRange: 40
-      maxRange: 60
-    prefab: {fileID: 5866444560604436703, guid: 407d6561f4a31944baa05b13b9b40e31,
-      type: 3}
-  - prob:
-      minRange: 60
-      maxRange: 70
-    prefab: {fileID: 1946608319724221853, guid: 0957a331374636443944ac1a15e39543,
-      type: 3}
-  - prob:
-      minRange: 70
-      maxRange: 80
-    prefab: {fileID: 559078853437015907, guid: 2d6761ad59065de41a17e3a105534c46, type: 3}
-  - prob:
-      minRange: 80
-      maxRange: 90
-    prefab: {fileID: 4472755364520423030, guid: 0ba0b3fbc8f88cd4e8384d87a1b0ca01,
-      type: 3}
-  - prob:
-      minRange: 90
-      maxRange: 95
-    prefab: {fileID: 5832356833045738042, guid: 80ea4e36648479049b9523658a2e0236,
-      type: 3}
+  randomObject: {fileID: 716019093}
   spawn: {fileID: 0}
   spacingX: 2.4
   spacingY: 0
@@ -866,6 +833,46 @@ MonoBehaviour:
   prefab: {fileID: 6803007851906673853, guid: 23fcfed31ee84f2479ad867e60216b46, type: 3}
   maxDist: 40
   minDist: 20
+--- !u!114 &716019093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716019089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 833d1b37edd2a2e45a71a1c7d05ef4c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outOf: 100
+  items:
+  - item: {fileID: 8848065222689028533, guid: 85bfb25fbb63eae4db2135da9e176c2a, type: 3}
+    probability: 0
+    minRange: 0
+    maxRange: 25
+  - item: {fileID: 7353412670246536639, guid: 2dd90adc42a7f02419688eab2d33b8d8, type: 3}
+    probability: 0
+    minRange: 25
+    maxRange: 45
+  - item: {fileID: 5866444560604436703, guid: 407d6561f4a31944baa05b13b9b40e31, type: 3}
+    probability: 0
+    minRange: 45
+    maxRange: 65
+  - item: {fileID: 4472755364520423030, guid: 0ba0b3fbc8f88cd4e8384d87a1b0ca01, type: 3}
+    probability: 0
+    minRange: 65
+    maxRange: 75
+  - item: {fileID: 1946608319724221853, guid: 0957a331374636443944ac1a15e39543, type: 3}
+    probability: 0
+    minRange: 75
+    maxRange: 85
+  - item: {fileID: 559078853437015907, guid: 2d6761ad59065de41a17e3a105534c46, type: 3}
+    probability: 0
+    minRange: 85
+    maxRange: 95
+  defaultOption: {fileID: 8848065222689028533, guid: 85bfb25fbb63eae4db2135da9e176c2a,
+    type: 3}
 --- !u!1 &840066663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,7 +1029,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.09935763, y: 0.000000017115754, z: -0.0000000017090372, w: 0.9950518}
+  m_LocalRotation: {x: 0.099357605, y: 0.000000016397674, z: -0.0000000016373353,
+    w: 0.9950518}
   m_LocalPosition: {x: 0.016, y: 4.82, z: -39.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

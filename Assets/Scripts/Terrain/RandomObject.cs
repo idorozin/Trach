@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class RandomObject : MonoBehaviour
 {
-    [SerializeField] private List<PObject> prefabs;
-    
-    
+   //[SerializeField] private List<PObject<GameObject>> prefabs;
+
+    private ProbabilityItemPool itemPool;
     void Start()
     {
         GameObject prefab = GetRandomPrefab();
@@ -18,17 +18,7 @@ public class RandomObject : MonoBehaviour
     
     private GameObject GetRandomPrefab()
     {
-        int randNum = Random.Range(0, 100);
-        foreach (var prefab in prefabs)
-        {
-            if (prefab.prob.MatchesNum(randNum))
-            {
-                return prefab.prefab;
-            }
-
-        }
-
-        return null;
+        return itemPool.GetRandomItem();
     }
 
 }

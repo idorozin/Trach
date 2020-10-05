@@ -21,8 +21,6 @@
             <e p="Grid.cs" t="Include" />
             <e p="Node.cs" t="Include" />
             <e p="Obsticale.cs" t="Include" />
-            <e p="PObject.cs" t="Include" />
-            <e p="Probability.cs" t="Include" />
             <e p="Spawner.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
@@ -46,6 +44,16 @@
           <e p="UI" t="Include">
             <e p="FadeUp.cs" t="Include" />
             <e p="Score.cs" t="Include" />
+          </e>
+          <e p="Utilities" t="Include">
+            <e p="Editor" t="Include">
+              <e p="CustomProbabilityGameTagPoolInspectorgo.cs" t="Include" />
+              <e p="CustomProbabilityItemPoolInspector.cs" t="Include" />
+              <e p="ez.cs" t="Include" />
+            </e>
+            <e p="PObject.cs" t="Include" />
+            <e p="Probability.cs" t="Include" />
+            <e p="ProbabilityItemPool.cs" t="Include" />
           </e>
         </e>
         <e p="Utilities" t="Include">

@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424c075b924e3f947829fbcc4cec1377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 20
+  forwardSpeed: 25
   rb: {fileID: 7216508615986162599}
   contact: 0
 --- !u!114 &-5337285241891212135
