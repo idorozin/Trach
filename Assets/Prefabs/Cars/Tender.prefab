@@ -125,11 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c91e0dd85bb20b459b5416ad97a63bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  restart: {fileID: 0}
   obs: {fileID: 2587004015292804908}
-  explotsion: {fileID: 3207248911433716039, guid: 7346626e4d25e774eb346e1ed64c795a,
-    type: 3}
 --- !u!114 &2587004015292804908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +141,8 @@ MonoBehaviour:
   forwardSpeed: 5
   rb: {fileID: 3521943218792302829}
   contact: 0
+  explotsion: {fileID: 3207248911433716039, guid: 7346626e4d25e774eb346e1ed64c795a,
+    type: 3}
 --- !u!54 &3521943218792302829
 Rigidbody:
   m_ObjectHideFlags: 0

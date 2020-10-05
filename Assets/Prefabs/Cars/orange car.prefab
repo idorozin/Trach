@@ -478,6 +478,8 @@ MonoBehaviour:
   forwardSpeed: 5
   rb: {fileID: 6369741894531609920}
   contact: 0
+  explotsion: {fileID: 3207248911433716039, guid: 7346626e4d25e774eb346e1ed64c795a,
+    type: 3}
 --- !u!114 &3424800845562708495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,8 +492,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c91e0dd85bb20b459b5416ad97a63bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
-  restart: {fileID: 0}
   obs: {fileID: 5705951572092243416}
-  explotsion: {fileID: 3207248911433716039, guid: 7346626e4d25e774eb346e1ed64c795a,
-    type: 3}

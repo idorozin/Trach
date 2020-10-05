@@ -14,16 +14,16 @@ public class ProbabilityItemPool : MonoBehaviour
     public PObject[] items;
 
     [SerializeField]
-    private GameObject defaultOption = null;
+    private string defaultOption = null;
 
-    public GameObject GetRandomItem()
+    public string GetRandomItem()
     {            
         int randNum = UnityEngine.Random.Range(0,outOf);
         foreach (var item in items)
         {
             if (item.MatchesNum(randNum))
             {
-                return item.item;
+                return item.name;
             }
         }
         

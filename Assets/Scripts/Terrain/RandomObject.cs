@@ -9,14 +9,14 @@ public class RandomObject : MonoBehaviour
     private ProbabilityItemPool itemPool;
     void Start()
     {
-        GameObject prefab = GetRandomPrefab();
+        string prefab = GetRandomPrefab();
         if (prefab == null)
             return;
-        Instantiate(prefab, transform.position, Quaternion.identity);
+        //Instantiate(prefab, transform.position, Quaternion.identity);
 
     }
     
-    private GameObject GetRandomPrefab()
+    private string GetRandomPrefab()
     {
         return itemPool.GetRandomItem();
     }

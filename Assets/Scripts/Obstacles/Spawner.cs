@@ -5,6 +5,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using Object = System.Object;
 using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
@@ -46,10 +47,12 @@ public class Spawner : MonoBehaviour
 
     [SerializeField]
     private ProbabilityItemPool randomObject;
-    
+
+    private ObjectPool pool;
     
     void Start()
     {
+        pool = ObjectPool.Instance;
         grid = new Grid(startPos,spacingX,spacingZ,rows,cols);
         playerStartZ = player.transform.position.z;
         SpawnObstacles(wantedNumber);
@@ -132,9 +135,9 @@ public class Spawner : MonoBehaviour
             return;
         }
         
-        GameObject randomPrefab = GetRandomPrefab();
+        string randomPrefab = GetRandomTag();
 
-        GameObject go = Instantiate(randomPrefab);
+        GameObject go = ObjectPool.Instance.GetObject(randomPrefab);
         go.transform.position = new Vector3(randomPoint.x,1f,randomPoint.z);   
         obstacles.Add(go);
     }
@@ -148,7 +151,7 @@ public class Spawner : MonoBehaviour
 
     }
 
-    private GameObject GetRandomPrefab()
+    private string GetRandomTag()
     {
         return randomObject.GetRandomItem();
     }

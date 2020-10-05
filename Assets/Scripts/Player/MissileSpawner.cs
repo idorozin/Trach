@@ -16,7 +16,6 @@ public class MissileSpawner : MonoBehaviour
             {
                 if (misiiles > 0)
                 {
-                    Debug.Log("izik");
                     SpawnMissile();
                     misiiles--;
                 }

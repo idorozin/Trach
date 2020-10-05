@@ -10,6 +10,7 @@ public class PObject
     public int probability;
     public int minRange;
     public int maxRange;
+    public string name;
 
     public bool MatchesNum(int num)
     {

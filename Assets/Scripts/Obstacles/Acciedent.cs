@@ -5,17 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Acciedent : MonoBehaviour
 {
-    [SerializeField] private Score score;
-    [SerializeField] private GameObject restart;
-    [SerializeField] private Obsticale obs;
-    [SerializeField] private GameObject explotsion;
-    private bool destroyed;
-
-    
-    void Start()
-    {
-       score =  GameObject.Find("Score").GetComponent<Score>();
-    }
+    [SerializeField] private Obstacle obs;
+ 
     private void OnCollisionEnter(Collision other)
     {
         if (other.collider.gameObject.CompareTag("Player"))
@@ -25,33 +16,13 @@ public class Acciedent : MonoBehaviour
         
         else if (other.collider.gameObject.CompareTag("Border"))
         {
-            Destroy();
-
-            // Debug.Log(other.gameObject.transform.parent.gameObject.GetComponent<Rigidbody>().velocity);
-            //Destroy(other.gameObject.transform.parent.gameObject);
-            //Destroy(this.gameObject.transform.parent.gameObject);
+            obs.Destroy();
         }
 
         if (!other.collider.gameObject.CompareTag("Floor"))
         {
             obs.contact = true;
         }
-
     }
 
-    public void Destroy()
-    {
-        destroyed = true;
-        score.OnCarDestroyed();
-        gameObject.SetActive(false);
-        Instantiate(explotsion, transform.position, Quaternion.identity);
-    }
-
-
-    private void OnDrawGizmos()
-    {
-        if (!destroyed)
-            return;
-        Gizmos.DrawWireSphere(new Vector3(transform.position.x,transform.position.y,transform.position.z),3 );
-    }
 }

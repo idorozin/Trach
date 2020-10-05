@@ -14,13 +14,14 @@
             <e p="ccc.cs" t="Include" />
             <e p="helper.cs" t="Include" />
           </e>
+          <e p="Explosion.cs" t="Include" />
           <e p="Obstacles" t="Include">
             <e p="Acciedent.cs" t="Include" />
             <e p="FastCar.cs" t="Include" />
             <e p="FastCarSpawner.cs" t="Include" />
             <e p="Grid.cs" t="Include" />
             <e p="Node.cs" t="Include" />
-            <e p="Obsticale.cs" t="Include" />
+            <e p="Obstacle.cs" t="Include" />
             <e p="Spawner.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
@@ -51,7 +52,9 @@
               <e p="CustomProbabilityItemPoolInspector.cs" t="Include" />
               <e p="ez.cs" t="Include" />
             </e>
+            <e p="ObjectPool.cs" t="Include" />
             <e p="PObject.cs" t="Include" />
+            <e p="PooledObject.cs" t="Include" />
             <e p="Probability.cs" t="Include" />
             <e p="ProbabilityItemPool.cs" t="Include" />
           </e>

@@ -8,7 +8,7 @@ public class FastCar : MonoBehaviour
     private int lives = 3;
 
     [SerializeField]
-    private Acciedent acciedent;
+    private Obstacle obs;
     
     private void OnCollisionEnter(Collision other)
     {
@@ -19,9 +19,9 @@ public class FastCar : MonoBehaviour
         else if (other.collider.gameObject.CompareTag("Obstacle"))
         {
             lives--;
-            other.gameObject.GetComponent<Acciedent>().Destroy();
+            other.gameObject.GetComponent<Obstacle>().Destroy();
             if (lives == 0)
-                acciedent.Destroy();
+                obs.Destroy();
         }
     }
 }

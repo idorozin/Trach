@@ -21,7 +21,7 @@ public class Missile : MonoBehaviour
     {
         if (other.collider.gameObject.CompareTag("Obstacle"))
         {
-            other.gameObject.GetComponent<Acciedent>().Destroy();
+            other.gameObject.GetComponent<Obstacle>().Destroy();
             Destroy(this.gameObject);
         }
     }

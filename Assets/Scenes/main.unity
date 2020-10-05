@@ -548,7 +548,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647586850}
-  m_LocalRotation: {x: -0, y: -5.2847504e-10, z: 1.06601505e-10, w: 1}
+  m_LocalRotation: {x: 0.000000029802322, y: 0.00000003504431, z: -0.000000007068947,
+    w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -851,28 +852,33 @@ MonoBehaviour:
     probability: 0
     minRange: 0
     maxRange: 25
+    name: yellow
   - item: {fileID: 7353412670246536639, guid: 2dd90adc42a7f02419688eab2d33b8d8, type: 3}
     probability: 0
     minRange: 25
     maxRange: 45
+    name: orange
   - item: {fileID: 5866444560604436703, guid: 407d6561f4a31944baa05b13b9b40e31, type: 3}
     probability: 0
     minRange: 45
     maxRange: 65
+    name: green
   - item: {fileID: 4472755364520423030, guid: 0ba0b3fbc8f88cd4e8384d87a1b0ca01, type: 3}
     probability: 0
     minRange: 65
     maxRange: 75
+    name: police
   - item: {fileID: 1946608319724221853, guid: 0957a331374636443944ac1a15e39543, type: 3}
     probability: 0
     minRange: 75
     maxRange: 85
+    name: black
   - item: {fileID: 559078853437015907, guid: 2d6761ad59065de41a17e3a105534c46, type: 3}
     probability: 0
     minRange: 85
     maxRange: 95
-  defaultOption: {fileID: 8848065222689028533, guid: 85bfb25fbb63eae4db2135da9e176c2a,
-    type: 3}
+    name: white
+  defaultOption: yellow
 --- !u!1 &840066663
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,8 +1035,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.099357605, y: 0.000000016397674, z: -0.0000000016373353,
-    w: 0.9950518}
+  m_LocalRotation: {x: 0.09935763, y: 0.000000017029, z: -0.0000000017003746, w: 0.9950518}
   m_LocalPosition: {x: 0.016, y: 4.82, z: -39.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1494,6 +1499,73 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.12, y: 0.02, z: 0.27}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1769783317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1769783319}
+  - component: {fileID: 1769783318}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1769783318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769783317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b097981b372103141bbb293b26c6ec61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsInPool:
+  - prefab: {fileID: 8848065222689028533, guid: 85bfb25fbb63eae4db2135da9e176c2a,
+      type: 3}
+    tag: yellow
+    startSize: 0
+  - prefab: {fileID: 5866444560604436703, guid: 407d6561f4a31944baa05b13b9b40e31,
+      type: 3}
+    tag: green
+    startSize: 0
+  - prefab: {fileID: 559078853437015907, guid: 2d6761ad59065de41a17e3a105534c46, type: 3}
+    tag: white
+    startSize: 0
+  - prefab: {fileID: 7353412670246536639, guid: 2dd90adc42a7f02419688eab2d33b8d8,
+      type: 3}
+    tag: orange
+    startSize: 0
+  - prefab: {fileID: 4472755364520423030, guid: 0ba0b3fbc8f88cd4e8384d87a1b0ca01,
+      type: 3}
+    tag: police
+    startSize: 0
+  - prefab: {fileID: 1946608319724221853, guid: 0957a331374636443944ac1a15e39543,
+      type: 3}
+    tag: black
+    startSize: 0
+--- !u!4 &1769783319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769783317}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.491556, y: -6.2705193, z: 50.664894}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1833622996
 GameObject:
   m_ObjectHideFlags: 0

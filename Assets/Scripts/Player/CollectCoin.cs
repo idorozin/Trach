@@ -11,7 +11,6 @@ public class CollectCoin : MonoBehaviour
     {
         if (other.gameObject.CompareTag("TrackSides"))
         {
-            Debug.Log("aa");
             GameObject.Find("Player").GetComponent<MissileSpawner>().misiiles += 3;
             Destroy(this.gameObject);
         }
