@@ -46,7 +46,9 @@ public class ObjectPool : MonoBehaviour
         {
             GameObject go = Instantiate(prefabs[s]);
             go.SetActive(false);
-            go.GetComponent<IPooledObject>().Tag = s;
+            var component = go.GetComponent<IPooledObject>();
+            if (component != null)
+                component.Tag = s;
             pools[s].Enqueue(go);
             go.transform.parent = parent;
         }

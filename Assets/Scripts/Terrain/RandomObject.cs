@@ -1,19 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class RandomObject : MonoBehaviour
 {
-   //[SerializeField] private List<PObject<GameObject>> prefabs;
 
+    [SerializeField]
     private ProbabilityItemPool itemPool;
+
+    [SerializeField] private Transform parent;
     void Start()
     {
         string prefab = GetRandomPrefab();
         if (prefab == null)
             return;
-        //Instantiate(prefab, transform.position, Quaternion.identity);
-
+        GameObject go = ObjectPool.Instance.GetObject(prefab);
+        go.transform.parent = parent;
+        go.transform.position = transform.position;
+        
     }
     
     private string GetRandomPrefab()

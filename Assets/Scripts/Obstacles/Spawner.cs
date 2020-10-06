@@ -72,7 +72,6 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         delta = player.transform.position.z - playerStartZ;
-        zGridStartPos = obstacles.Any() ? obstacles.Max(x => x.transform.position.z) + Zsize : Zsize;
         if(ShouldSpawn())
             SpawnObstacles(wantedNumber);
 
@@ -101,8 +100,9 @@ public class Spawner : MonoBehaviour
     private void SpawnObstacles(int number)
     {
         zGridStartPos = obstacles.Any() ? obstacles.Max(x => x.transform.position.z) + Zsize : Zsize;
+        obstacles.Clear();
         List<Vector3> spawnPoses = new List<Vector3>();
-
+        
 
         foreach (var node in grid.grid)
         {

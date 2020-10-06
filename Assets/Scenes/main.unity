@@ -548,8 +548,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647586850}
-  m_LocalRotation: {x: 0.000000029802322, y: 0.00000003504431, z: -0.000000007068947,
-    w: 1}
+  m_LocalRotation: {x: -0, y: 0.0000000034988332, z: -7.0576567e-10, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1035,7 +1034,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.09935763, y: 0.000000017029, z: -0.0000000017003746, w: 0.9950518}
+  m_LocalRotation: {x: 0.099357635, y: -0.00000001917433, z: 0.0000000019145898, w: 0.9950518}
   m_LocalPosition: {x: 0.016, y: 4.82, z: -39.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1552,6 +1551,12 @@ MonoBehaviour:
       type: 3}
     tag: black
     startSize: 0
+  - prefab: {fileID: 3207248911433716039, guid: 7346626e4d25e774eb346e1ed64c795a,
+      type: 3}
+    tag: explosion
+    startSize: 0
+  playerpos: {fileID: 1964458248}
+  parent: {fileID: 1769783319}
 --- !u!4 &1769783319
 Transform:
   m_ObjectHideFlags: 0
