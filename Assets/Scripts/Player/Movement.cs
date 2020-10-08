@@ -17,9 +17,10 @@ public class Movement : MonoBehaviour
     [SerializeField] private ForceMode forcemode;
 
     [SerializeField] private float maxVelocity;
-
-
     [SerializeField] private float forceMultiplier;
+
+    private bool lastPoszero = true;
+    
     void Update()
     {
         Vector2 deltapos = Vector2.zero;
@@ -27,8 +28,11 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector2 currentMousePos = Input.mousePosition;
-            if (lastMousePos == Vector2.zero)
+            if (lastPoszero)
+            {
+                lastPoszero = false;
                 lastMousePos = currentMousePos;
+            }
 
             deltapos = currentMousePos - lastMousePos;
             lastMousePos = currentMousePos;
@@ -45,6 +49,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
+            lastPoszero = true;
             lastMousePos = Vector2.zero;
         }
     }

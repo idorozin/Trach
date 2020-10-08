@@ -17,10 +17,10 @@ public class FadeUp : MonoBehaviour
 
     [SerializeField] private float fadeValue;
 
-    void Start()
+    private void OnEnable()
     {
         GetComponent<RectTransform>().anchoredPosition = new Vector3(19f, -244f, 0);
         transform.DOMoveY(transform.position.y + movement, time);
-        text.DOFade(fadeValue, time);
+        text.DOFade(fadeValue, time).OnComplete(()=>ObjectPool.Instance.ReturnObject("bonus",gameObject));
     }
 }

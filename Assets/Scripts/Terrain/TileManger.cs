@@ -30,6 +30,17 @@ public class TileManger : MonoBehaviour
     {
         SpawnTile(false);
         SpawnTile(false);
+        SpawnTile(false);
+        SpawnTile(false);
+        SpawnTile(false);
+        SpawnTile(false);
+        SpawnTile(false);
+        SpawnTile(false);
+        SpawnTile(false);
+        SpawnTile(false);
+        SpawnTile(false);
+        SpawnTile(false);
+        SpawnTile(false);
 
     }
 

@@ -548,7 +548,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647586850}
-  m_LocalRotation: {x: -0, y: 0.0000000034988332, z: -7.0576567e-10, w: 1}
+  m_LocalRotation: {x: -0.000000007450581, y: -0.0000000025109212, z: 5.064893e-10,
+    w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1034,7 +1035,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.099357635, y: -0.00000001917433, z: 0.0000000019145898, w: 0.9950518}
+  m_LocalRotation: {x: 0.09935763, y: 0.000000016720417, z: -0.0000000016695623, w: 0.9950518}
   m_LocalPosition: {x: 0.016, y: 4.82, z: -39.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1341,9 +1342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 8983993723797776073, guid: d4bd4fc2a38ecb144983499dc27e5591, type: 3}
-  startPos: {x: 0.11, y: -0.54, z: -30}
-  tileLength: 1000
+  - {fileID: 4483672117497937114, guid: 6c28252f7c0a98e41a3c8b588df1670a, type: 3}
+  startPos: {x: 5.060577, y: 1, z: -1.86504}
+  tileLength: 63
   player: {fileID: 226172710}
   borderLeft: {fileID: 1500969412}
   borderRight: {fileID: 241172178}
@@ -1531,30 +1532,30 @@ MonoBehaviour:
   - prefab: {fileID: 8848065222689028533, guid: 85bfb25fbb63eae4db2135da9e176c2a,
       type: 3}
     tag: yellow
-    startSize: 0
+    startSize: 20
   - prefab: {fileID: 5866444560604436703, guid: 407d6561f4a31944baa05b13b9b40e31,
       type: 3}
     tag: green
-    startSize: 0
+    startSize: 20
   - prefab: {fileID: 559078853437015907, guid: 2d6761ad59065de41a17e3a105534c46, type: 3}
     tag: white
-    startSize: 0
+    startSize: 20
   - prefab: {fileID: 7353412670246536639, guid: 2dd90adc42a7f02419688eab2d33b8d8,
       type: 3}
     tag: orange
-    startSize: 0
+    startSize: 20
   - prefab: {fileID: 4472755364520423030, guid: 0ba0b3fbc8f88cd4e8384d87a1b0ca01,
       type: 3}
     tag: police
-    startSize: 0
+    startSize: 20
   - prefab: {fileID: 1946608319724221853, guid: 0957a331374636443944ac1a15e39543,
       type: 3}
     tag: black
-    startSize: 0
+    startSize: 20
   - prefab: {fileID: 3207248911433716039, guid: 7346626e4d25e774eb346e1ed64c795a,
       type: 3}
     tag: explosion
-    startSize: 0
+    startSize: 5
   playerpos: {fileID: 1964458248}
   parent: {fileID: 1769783319}
 --- !u!4 &1769783319

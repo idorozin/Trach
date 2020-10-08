@@ -99,6 +99,7 @@ public class Spawner : MonoBehaviour
 
     private void SpawnObstacles(int number)
     {
+        Debug.Log("nopw");
         zGridStartPos = obstacles.Any() ? obstacles.Max(x => x.transform.position.z) + Zsize : Zsize;
         obstacles.Clear();
         List<Vector3> spawnPoses = new List<Vector3>();

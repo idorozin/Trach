@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
@@ -22,9 +21,11 @@ public class ObjectPool : MonoBehaviour
 
     private void Awake()
     {
-        Instance = this;
-        Init();
-
+        if (Instance == null)
+        {
+            Instance = this;
+            Init();
+        }
     }
 
    
@@ -35,6 +36,7 @@ public class ObjectPool : MonoBehaviour
         {
             pools.Add(poolObject.tag , new Queue<GameObject>());
             prefabs.Add(poolObject.tag , poolObject.prefab);
+            AddObject(poolObject.tag , poolObject.startSize);   
         }
     }
 

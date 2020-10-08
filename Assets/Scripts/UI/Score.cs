@@ -27,6 +27,6 @@ public class Score : MonoBehaviour
     public void OnCarDestroyed()
     {
         bonus += 50;
-        GameObject go = Instantiate(bonusVisual,canvas);
+        GameObject go = ObjectPool.Instance.GetObject("bonus");
     }
 }
