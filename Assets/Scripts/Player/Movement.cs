@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             Vector2 currentMousePos = Input.mousePosition;
-            if (lastPoszero)
+            if (lastMousePos == Vector2.zero)
             {
                 lastPoszero = false;
                 lastMousePos = currentMousePos;

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8912031121544396749}
   - component: {fileID: 8912031121544396750}
   - component: {fileID: 8912031121544396751}
+  - component: {fileID: -7755277059132453231}
   m_Layer: 5
   m_Name: BonusText
   m_TagString: Untagged
@@ -172,3 +173,15 @@ MonoBehaviour:
   text: {fileID: 8912031121544396750}
   time: 1
   fadeValue: 0
+--- !u!114 &-7755277059132453231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8912031121544396745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6e0565e0f7e4f4d98b06dcc5cdea07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

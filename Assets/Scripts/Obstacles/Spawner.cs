@@ -50,11 +50,18 @@ public class Spawner : MonoBehaviour
 
     private ObjectPool pool;
     
+    List<Vector3> spawnPoses = new List<Vector3>(360);
+
+
     void Start()
     {
         pool = ObjectPool.Instance;
         grid = new Grid(startPos,spacingX,spacingZ,rows,cols);
         playerStartZ = player.transform.position.z;
+        for (int i = 0; i < 360; i++)
+        {
+            spawnPoses.Add(new Vector3(0,0,0));
+        }
         SpawnObstacles(wantedNumber);
         StartCoroutine(up());
     }
@@ -79,35 +86,23 @@ public class Spawner : MonoBehaviour
 
     private bool ShouldSpawn()
     {
-        bool spawn = true;
-        foreach (GameObject obstacle in obstacles)     
-        {
-            if (obstacle == null)
-            {
-                continue;
-            }
-
-            if (obstacle.transform.position.z + spacingZ - 300f > startPos.z + delta  )
-            {
-                spawn = false;
-                break;
-            }
-        }
+        bool spawn = !(maxCar.position.z + spacingZ - 300f > startPos.z + delta);
 
         return spawn;
     }
+    
 
     private void SpawnObstacles(int number)
     {
-        Debug.Log("nopw");
-        zGridStartPos = obstacles.Any() ? obstacles.Max(x => x.transform.position.z) + Zsize : Zsize;
-        obstacles.Clear();
-        List<Vector3> spawnPoses = new List<Vector3>();
-        
-
+        maxCar = maxCar == null ? transform : maxCar;
+        zGridStartPos = maxCar.transform.position.z;
+        int j = 0;
         foreach (var node in grid.grid)
         {
-            spawnPoses.Add(node.position);
+            if(j >= spawnPoses.Count)
+                spawnPoses.Add(new Vector3(0,0,0));
+            spawnPoses[j] = node.position;
+            j++;
         }
         
         
@@ -140,13 +135,15 @@ public class Spawner : MonoBehaviour
 
         GameObject go = ObjectPool.Instance.GetObject(randomPrefab);
         go.transform.position = new Vector3(randomPoint.x,1f,randomPoint.z);   
-        obstacles.Add(go);
+        if (go.transform.position.z > maxCar.position.z)
+            maxCar = go.transform;
     }
 
     private Vector3 GetRandomPoint(List<Vector3> spawnPositions)
     {
-        Vector3 randomPos = spawnPositions[Random.Range(0, spawnPositions.Count)];
-        spawnPositions.Remove(randomPos);
+        int random_pos = Random.Range(0, spawnPositions.Count);
+        Vector3 randomPos = spawnPositions[random_pos];
+        spawnPositions.RemoveAt(random_pos);
         randomPos.z = randomPos.z + zGridStartPos +spacingZ+startPos.z*-1;
         return randomPos;
 
@@ -157,27 +154,6 @@ public class Spawner : MonoBehaviour
         return randomObject.GetRandomItem();
     }
 
-
-    private void CountObstaclesInRange()
-    {
-        foreach (var obstacle in obstacles)
-        {
-
-            var obstaclePos = obstacle.transform.position;
-            var playerPos = player.transform.position;
-            if (Vector3.Distance(obstacle.transform.position, player.position) +1f < distance)
-            {
-                if (obstaclePos.z > playerPos.z)
-                {
-                    obsticalesOnFront++;
-                }
-                else
-                {
-                    obsticalesOnBack++;
-                }
-            }
-        }
-    }
     
     public float spacingX;
     public float spacingY = 0f;
@@ -186,6 +162,8 @@ public class Spawner : MonoBehaviour
     public int rows;
     public int cols;
     private float delta;
+    private float maxCarZ;
+    private Transform maxCar;
 
     private void OnDrawGizmos()
     {

@@ -41,7 +41,7 @@ public class PowerUpSpawner : MonoBehaviour
 
     private void SpawnPowerUpCoin()
     {
-        GameObject go = Instantiate(prefab);
+        GameObject go = ObjectPool.Instance.GetObject("missileCoin" , resetRotation:false);
         go.transform.position =
             new Vector3(Random.Range(minX, maxX), height, player.transform.position.z + distance);
     }

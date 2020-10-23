@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
+
 public class Score : MonoBehaviour
 {
     [SerializeField] private Transform player;
@@ -27,6 +29,12 @@ public class Score : MonoBehaviour
     public void OnCarDestroyed()
     {
         bonus += 50;
+        return;
         GameObject go = ObjectPool.Instance.GetObject("bonus");
+        if (go == null)
+            return;
+        go.transform.SetParent(canvas,false);
+        go.transform.parent = canvas.transform;
+        go.GetComponent<FadeUp>().DoFadeUp();
     }
 }

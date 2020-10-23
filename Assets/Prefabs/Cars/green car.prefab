@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 6504901009713068336}
   - component: {fileID: 3475891953198661081}
   - component: {fileID: 1879531916084956563}
+  - component: {fileID: -6569252785435967187}
   m_Layer: 0
   m_Name: green car
   m_TagString: Obstacle
@@ -236,8 +237,18 @@ MonoBehaviour:
   forwardSpeed: 5
   rb: {fileID: 6504901009713068336}
   contact: 0
-  explotsion: {fileID: 3207248911433716039, guid: 7346626e4d25e774eb346e1ed64c795a,
-    type: 3}
+--- !u!114 &-6569252785435967187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5866444560604436703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6e0565e0f7e4f4d98b06dcc5cdea07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6243666484463730886
 GameObject:
   m_ObjectHideFlags: 0

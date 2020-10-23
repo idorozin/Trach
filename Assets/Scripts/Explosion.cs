@@ -20,7 +20,7 @@ public class Explosion : MonoBehaviour,IPooledObject
             ReturnToPool();
     }
 
-    private void ReturnToPool()
+    public void ReturnToPool()
     {
         gameObject.SetActive(false);
         ps.Stop(true);

@@ -425,6 +425,7 @@ GameObject:
   - component: {fileID: 6369741894531609920}
   - component: {fileID: 5705951572092243416}
   - component: {fileID: 3424800845562708495}
+  - component: {fileID: 5929429132379228030}
   m_Layer: 0
   m_Name: orange car
   m_TagString: Obstacle
@@ -478,8 +479,6 @@ MonoBehaviour:
   forwardSpeed: 5
   rb: {fileID: 6369741894531609920}
   contact: 0
-  explotsion: {fileID: 3207248911433716039, guid: 7346626e4d25e774eb346e1ed64c795a,
-    type: 3}
 --- !u!114 &3424800845562708495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,3 +492,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obs: {fileID: 5705951572092243416}
+--- !u!114 &5929429132379228030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353412670246536639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6e0565e0f7e4f4d98b06dcc5cdea07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

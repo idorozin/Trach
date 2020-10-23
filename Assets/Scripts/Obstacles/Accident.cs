@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Acciedent : MonoBehaviour
+public class Accident : MonoBehaviour
 {
     [SerializeField] private Obstacle obs;
  
@@ -11,6 +11,7 @@ public class Acciedent : MonoBehaviour
     {
         if (other.collider.gameObject.CompareTag("Player"))
         {
+            ObjectPool.Instance.Return.Invoke();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }    
         

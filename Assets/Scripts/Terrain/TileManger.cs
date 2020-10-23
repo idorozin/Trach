@@ -1,7 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Runtime;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
+using Random = UnityEngine.Random;
 
 public class TileManger : MonoBehaviour
 {
@@ -19,7 +22,7 @@ public class TileManger : MonoBehaviour
 	[SerializeField]
     private float tileLength = 10.1f;
 
-    private List<GameObject> tiles = new List<GameObject>();
+    private List<Tuple<GameObject,Transform>> tiles = new List<Tuple<GameObject, Transform>>();
 
     [SerializeField]
     private Transform player;
@@ -49,9 +52,9 @@ public class TileManger : MonoBehaviour
         foreach (var tile in tiles)
         {
 
-            if (tile.transform.position.z + tileLength/2f+40f < player.position.z)
+            if (tile.Item2.position.z + tileLength/2f+40f < player.position.z)
             {
-                PlaceInFront(tile);
+                PlaceInFront(tile.Item1);
             }
         }
 
@@ -60,7 +63,7 @@ public class TileManger : MonoBehaviour
     void SpawnTile(bool moveBorder = true)
     {
         GameObject go = Instantiate(prefabs[Random.Range(0, prefabs.Length)]);
-        tiles.Add(go);
+        tiles.Add(Tuple.Create(go,go.transform));
         PlaceInFront(go , moveBorder);
     }
 

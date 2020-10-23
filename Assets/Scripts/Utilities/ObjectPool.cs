@@ -1,28 +1,31 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using TMPro;
+using System.Resources;
 using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    private Dictionary<string,Queue<GameObject>> pools = new Dictionary<string, Queue<GameObject>>();
 
-    private Dictionary<string, GameObject> prefabs = new Dictionary<string, GameObject>();
-    
     [SerializeField] private List<PoolObject> objectsInPool;
 
     public static ObjectPool Instance;
    
-    public Transform playerpos;
     [SerializeField]
-    private Transform parent;
+     private Transform parent;   
+
+
+
+    private Dictionary<string,Queue<GameObject>> pools = new Dictionary<string, Queue<GameObject>>();
+    private Dictionary<string, GameObject> prefabs = new Dictionary<string, GameObject>();
+    private GameObject go;
+    public Action Return;
 
     private void Awake()
     {
         if (Instance == null)
         {
+            DontDestroyOnLoad(gameObject);
             Instance = this;
             Init();
         }
@@ -40,10 +43,25 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
+
+    void Start()
+    {
+        //TODO call after call on persist
+        Return += () =>
+        {
+            foreach (var key in pools.Keys)
+            {
+                foreach (GameObject go in pools[key])
+                {
+                    go.transform.parent = gameObject.transform;
+                }
+            }
+        };
+    }
+
     private void AddObject(string s, int i)
     {
         Errorr(s);
-
         for (int j = 0; j < i; j++)
         {
             GameObject go = Instantiate(prefabs[s]);
@@ -56,24 +74,35 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    public GameObject GetObject(string tag)
+    public GameObject GetObject(string tag, bool setActive = true , bool resetRotation = true)
     {
         Errorr(tag);
-
-        if (!pools[tag].Any())
+        if (pools[tag].Count == 0)
         {
             AddObject(tag, 1);
         }
 
-        GameObject go = pools[tag].Dequeue();
-        go.transform.rotation = Quaternion.identity;
-        go.SetActive(true);
+        go = pools[tag].Dequeue();
+        if (go == null)
+            return null;
+        if (resetRotation)
+        {
+            go.transform.rotation = Quaternion.identity;
+        }
+        if (setActive)
+        {
+            go.SetActive(true);
+        }
         return go;
     }
 
-    public void ReturnObject(string tag , GameObject go)
+    public void ReturnObject(string tag , GameObject go , bool setParent = true)
     {
         Errorr(tag);
+        if(setParent)
+        go.transform.parent = this.gameObject.transform;
+        if(!go.activeSelf)
+            return;
         go.SetActive(false);
         pools[tag].Enqueue(go);
     }

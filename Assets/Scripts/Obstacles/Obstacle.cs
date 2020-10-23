@@ -15,12 +15,14 @@ public class Obstacle : MonoBehaviour,IPooledObject
 
     public bool contact = false ;
     private Score score;
+    private Transform _transform;
+
 
 
 
     void Update()
     {
-        if(ObjectPool.Instance.playerpos.position.z -50 > transform.position.z)
+        if(GameManager.Instance.playerpos.position.z -50 > _transform.position.z)
             ReturnToPool();
     }
 
@@ -38,7 +40,8 @@ public class Obstacle : MonoBehaviour,IPooledObject
     
     void Start()
     {
-        score =  GameObject.Find("Score").GetComponent<Score>();
+        score = GameManager.Instance.score;
+        _transform = gameObject.transform;
     }
     
     public void Destroy()
@@ -49,7 +52,7 @@ public class Obstacle : MonoBehaviour,IPooledObject
         explosion.transform.position = transform.position;
     }
 
-    void ReturnToPool()
+    public void ReturnToPool()
     {
         contact = false;
         gameObject.SetActive(false);
