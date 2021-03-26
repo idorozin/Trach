@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using UnityEditor;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
-using Object = System.Object;
 using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
     [SerializeField] private Grid grid;
     [SerializeField] private Transform player;
-    [SerializeField] private float distance;
-    [SerializeField] private float spacing;
-    [SerializeField] private float minmaxX;
 
 
     [SerializeField] private Transform spawnPositions;
@@ -25,12 +17,6 @@ public class Spawner : MonoBehaviour
     private int obsticalesOnBack;
 
     [SerializeField] private List<GameObject> prefabs;
-    private List<GameObject> obstacles = new List<GameObject>();
-    [SerializeField]
-    private float radius = 10;
-
-    [SerializeField]
-    private int UPPER;
 
     [SerializeField]
     private float Xsize = 1.5f;
@@ -51,6 +37,18 @@ public class Spawner : MonoBehaviour
     private ObjectPool pool;
     
     List<Vector3> spawnPoses = new List<Vector3>(360);
+    
+    public float spacingX;
+    public float spacingY = 0f;
+    public float spacingZ;
+    public Vector3 startPos;
+    public int rows;
+    public int cols;
+    private float delta;
+    private float maxCarZ;
+    private Transform maxCar;
+    private int max_cars_on_grid;
+    private int maxCarsONGrid;
 
 
     void Start()
@@ -69,7 +67,8 @@ public class Spawner : MonoBehaviour
 
     IEnumerator up()
     {
-        while (wantedNumber < 100)
+        maxCarsONGrid = 100;
+        while (wantedNumber < maxCarsONGrid)
         {
             yield return new WaitForSeconds(10f);
             wantedNumber++;
@@ -155,15 +154,12 @@ public class Spawner : MonoBehaviour
     }
 
     
-    public float spacingX;
-    public float spacingY = 0f;
-    public float spacingZ;
-    public Vector3 startPos;
-    public int rows;
-    public int cols;
-    private float delta;
-    private float maxCarZ;
-    private Transform maxCar;
+
+
+    public Spawner()
+    {
+        maxCarsONGrid = max_cars_on_grid;
+    }
 
     private void OnDrawGizmos()
     {

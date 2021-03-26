@@ -100,7 +100,7 @@ public class ObjectPool : MonoBehaviour
     {
         Errorr(tag);
         if(setParent)
-        go.transform.parent = this.gameObject.transform;
+            go.transform.parent = this.gameObject.transform;
         if(!go.activeSelf)
             return;
         go.SetActive(false);

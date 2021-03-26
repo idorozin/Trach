@@ -13,6 +13,9 @@ public class Obstacle : MonoBehaviour,IPooledObject
     [SerializeField]
     private Rigidbody rb;
 
+    [SerializeField]
+    private bool autoDestroy = true;
+
     public bool contact = false ;
     private Score score;
     private Transform _transform;
@@ -22,7 +25,7 @@ public class Obstacle : MonoBehaviour,IPooledObject
 
     void Update()
     {
-        if(GameManager.Instance.playerpos.position.z -50 > _transform.position.z)
+        if(autoDestroy && GameManager.Instance.playerpos.position.z -20 > _transform.position.z)
             ReturnToPool();
     }
 

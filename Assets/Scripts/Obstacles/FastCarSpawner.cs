@@ -12,14 +12,10 @@ public class FastCarSpawner : MonoBehaviour
     [SerializeField] private int minTime;
     [SerializeField] private int maxTime;
     [SerializeField] private float spawnTime;
-    [SerializeField] private GameObject prefab;
+    [SerializeField] private string fastCarTag;
     [SerializeField] private float maxDist;
     [SerializeField] private float minDist;
 
-    void Start()
-    {
-        spawnTime = 30f;
-    }
 
     void Update()
     {
@@ -28,6 +24,7 @@ public class FastCarSpawner : MonoBehaviour
             SpawnCar();
             spawnTime = GetSpawnTime();
         }
+
     }
 
     private float GetSpawnTime()
@@ -37,9 +34,10 @@ public class FastCarSpawner : MonoBehaviour
 
     private void SpawnCar()
     {
-        GameObject go = Instantiate(prefab);
-        go.transform.position = player.transform.position - new Vector3(0f, 0f, Random.Range(minDist, maxDist));
-        go.transform.position = new Vector3(roadX[Random.Range(0,roadX.Length)] , go.transform.position.y,go.transform.position.z);
-        
+        GameObject go = ObjectPool.Instance.GetObject(fastCarTag);
+        var distanceFromPlayer = Random.Range(minDist, maxDist);
+        var zPos = player.transform.position.z - distanceFromPlayer;
+        var xPos = roadX[Random.Range(0,roadX.Length)];
+        go.transform.position = new Vector3(xPos, 0f, zPos);
     }
 }

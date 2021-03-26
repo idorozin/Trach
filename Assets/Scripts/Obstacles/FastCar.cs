@@ -9,7 +9,21 @@ public class FastCar : MonoBehaviour
 
     [SerializeField]
     private Obstacle obs;
-    
+    [SerializeField]
+    private float viewDistance;
+    private Rigidbody rb;
+
+    void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody>();
+    } 
+
+    void Update(){
+
+
+        if(transform.position.z > GameManager.Instance.playerpos.position.z)
+            rb.constraints = RigidbodyConstraints.None;
+    }
     private void OnCollisionEnter(Collision other)
     {
         if (other.collider.gameObject.CompareTag("PlayerBack"))
