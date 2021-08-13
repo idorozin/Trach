@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.Resources;
@@ -6,17 +5,14 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-
     [SerializeField] private List<PoolObject> objectsInPool;
 
     public static ObjectPool Instance;
-   
-    [SerializeField]
-     private Transform parent;   
+
+    [SerializeField] private Transform parent;
 
 
-
-    private Dictionary<string,Queue<GameObject>> pools = new Dictionary<string, Queue<GameObject>>();
+    private Dictionary<string, Queue<GameObject>> pools = new Dictionary<string, Queue<GameObject>>();
     private Dictionary<string, GameObject> prefabs = new Dictionary<string, GameObject>();
     private GameObject go;
     public Action Return;
@@ -31,15 +27,14 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-   
-    
+
     private void Init()
     {
         foreach (var poolObject in objectsInPool)
         {
-            pools.Add(poolObject.tag , new Queue<GameObject>());
-            prefabs.Add(poolObject.tag , poolObject.prefab);
-            AddObject(poolObject.tag , poolObject.startSize);   
+            pools.Add(poolObject.tag, new Queue<GameObject>());
+            prefabs.Add(poolObject.tag, poolObject.prefab);
+            AddObject(poolObject.tag, poolObject.startSize);
         }
     }
 
@@ -61,7 +56,6 @@ public class ObjectPool : MonoBehaviour
 
     private void AddObject(string s, int i)
     {
-        Errorr(s);
         for (int j = 0; j < i; j++)
         {
             GameObject go = Instantiate(prefabs[s]);
@@ -74,9 +68,8 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    public GameObject GetObject(string tag, bool setActive = true , bool resetRotation = true)
+    public GameObject GetObject(string tag, bool setActive = true, bool resetRotation = true)
     {
-        Errorr(tag);
         if (pools[tag].Count == 0)
         {
             AddObject(tag, 1);
@@ -89,32 +82,26 @@ public class ObjectPool : MonoBehaviour
         {
             go.transform.rotation = Quaternion.identity;
         }
+
         if (setActive)
         {
             go.SetActive(true);
         }
+
         return go;
     }
 
-    public void ReturnObject(string tag , GameObject go , bool setParent = true)
+    public void ReturnObject(string tag, GameObject go, bool setParent = true)
     {
-        Errorr(tag);
-        if(setParent)
+        if (setParent)
             go.transform.parent = this.gameObject.transform;
-        if(!go.activeSelf)
+        if (!go.activeSelf)
             return;
         go.SetActive(false);
         pools[tag].Enqueue(go);
     }
-
-    void Errorr (string tag){
-        if (!pools.ContainsKey(tag) || !prefabs.ContainsKey(tag))
-        {
-            Debug.LogError(tag);
-        }
-    }
-
 }
+
 [Serializable]
 internal class PoolObject
 {

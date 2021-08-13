@@ -45,20 +45,20 @@ public class Obstacle : MonoBehaviour,IPooledObject
     {
         score = GameManager.Instance.score;
         _transform = gameObject.transform;
+        ObjectPool.Instance.Return += ReturnToPool;
     }
     
     public void Destroy()
     {
         ReturnToPool();
         score.OnCarDestroyed();
-        GameObject explosion = ObjectPool.Instance.GetObject("explosion");
-        explosion.transform.position = transform.position;
+        //GameObject explosion = ObjectPool.Instance.GetObject("explosion");
+        //explosion.transform.position = transform.position;
     }
 
     public void ReturnToPool()
     {
         contact = false;
-        gameObject.SetActive(false);
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
         ObjectPool.Instance.ReturnObject(Tag,gameObject);

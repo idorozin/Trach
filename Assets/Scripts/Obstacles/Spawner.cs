@@ -56,7 +56,7 @@ public class Spawner : MonoBehaviour
         pool = ObjectPool.Instance;
         grid = new Grid(startPos,spacingX,spacingZ,rows,cols);
         playerStartZ = player.transform.position.z;
-        for (int i = 0; i < 360; i++)
+        for (int i = 0; i < rows*cols; i++)
         {
             spawnPoses.Add(new Vector3(0,0,0));
         }
@@ -78,8 +78,10 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         delta = player.transform.position.z - playerStartZ;
-        if(ShouldSpawn())
+        if (ShouldSpawn())
+        {
             SpawnObstacles(wantedNumber);
+        }
 
     }
 
@@ -118,12 +120,12 @@ public class Spawner : MonoBehaviour
     [ContextMenu("spawn obstacle")]
     private void spawnobstacle()
     {
+
         SpawnObstacles(wantedNumber);
     }
 
     private void SpawnObstacle(List<Vector3> spawnPositions)
     {
-
         Vector3 randomPoint = GetRandomPoint(spawnPositions);
         if (randomPoint == null)
         {

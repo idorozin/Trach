@@ -28,6 +28,7 @@ public class FastCar : MonoBehaviour
     {
         if (other.collider.gameObject.CompareTag("PlayerBack"))
         {
+            ObjectPool.Instance.Return.Invoke();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         else if (other.collider.gameObject.CompareTag("Obstacle"))
