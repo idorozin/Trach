@@ -52,8 +52,8 @@ public class Obstacle : MonoBehaviour,IPooledObject
     {
         ReturnToPool();
         score.OnCarDestroyed();
-        //GameObject explosion = ObjectPool.Instance.GetObject("explosion");
-        //explosion.transform.position = transform.position;
+        GameObject explosion = ObjectPool.Instance.GetObject("explosion");
+        explosion.transform.position = transform.position;
     }
 
     public void ReturnToPool()

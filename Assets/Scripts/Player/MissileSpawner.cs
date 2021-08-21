@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,21 +7,24 @@ public class MissileSpawner : MonoBehaviour
 {
     [SerializeField] private Transform spawnPos;
     [SerializeField] private GameObject prefab;
+    [SerializeField] private SwipeDetector swipeDetector;
     public int misiiles;
 
-
-    void Update()
+    private void Start()
     {
-   
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                if (misiiles > 0)
-                {
-                    SpawnMissile();
-                    misiiles--;
-                }
-            }
+        swipeDetector.SwipeDetected += Fire;
+    }
 
+    void Fire(string swipeDirection)
+    {
+        if (swipeDirection != "Down")
+            return;
+        
+        if (misiiles > 0)
+        {
+            SpawnMissile();
+            misiiles--;
+        }
     }
 
     void SpawnMissile()

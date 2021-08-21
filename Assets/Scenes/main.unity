@@ -548,8 +548,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647586850}
-  m_LocalRotation: {x: 0.000000007450581, y: 0.0000000018849988, z: -3.8023185e-10,
-    w: 1}
+  m_LocalRotation: {x: -0, y: -4.872547e-12, z: 9.832135e-13, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1030,7 +1029,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.09935761, y: -0.000000015858376, z: 0.0000000015834857, w: 0.9950518}
+  m_LocalRotation: {x: 0.099357605, y: -0.000000017121968, z: 0.0000000017096575,
+    w: 0.9950518}
   m_LocalPosition: {x: 0.016, y: 4.82, z: -39.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1317,6 +1317,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1235865879}
   - component: {fileID: 1235865878}
+  - component: {fileID: 1235865880}
+  - component: {fileID: 1235865881}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1352,6 +1354,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1235865880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235865877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b429c927a526f94ab4e9d7acd0cdf19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1235865881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235865877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b429c927a526f94ab4e9d7acd0cdf19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1458690448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,13 +1988,13 @@ MonoBehaviour:
   m_margin: {x: -442.4551, y: 0, z: -440.51535, w: -184.69586}
   m_textInfo:
     textComponent: {fileID: 1958743529}
-    characterCount: 5
+    characterCount: 0
     spriteCount: 0
     spaceCount: 0
-    wordCount: 1
+    wordCount: 0
     linkCount: 0
-    lineCount: 1
-    pageCount: 1
+    lineCount: 0
+    pageCount: 0
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -2058,11 +2084,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1964458244}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d2fde4eecbe30d4cac303725cc7efda, type: 3}
+  m_Script: {fileID: 11500000, guid: 11307b6a39ce5df4b8b41ac7da14c6b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 840066664}
   prefab: {fileID: 3810745356809986686, guid: 32f5b3d59c5da904993d1a2817ce4cff, type: 3}
+  swipeDetector: {fileID: 1235865880}
   misiiles: 0
 --- !u!4 &1964458248
 Transform:
