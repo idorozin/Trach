@@ -44,6 +44,7 @@
           <e p="UI" t="Include">
             <e p="FadeUp.cs" t="Include" />
             <e p="Score.cs" t="Include" />
+            <e p="TargetIndicator.cs" t="Include" />
           </e>
           <e p="Utilities" t="Include">
             <e p="Editor" t="Include">
@@ -57,6 +58,7 @@
             <e p="PooledObject.cs" t="Include" />
             <e p="Probability.cs" t="Include" />
             <e p="ProbabilityItemPool.cs" t="Include" />
+            <e p="SwipeDetector.cs" t="Include" />
           </e>
         </e>
         <e p="textins.cs" t="Include" />

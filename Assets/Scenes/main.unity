@@ -615,7 +615,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647586850}
-  m_LocalRotation: {x: -0.000000007450581, y: -0.0000000054330602, z: 0.0000000010959272,
+  m_LocalRotation: {x: -0.000000007450581, y: -0.000000005750321, z: 0.000000001159924,
     w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1101,7 +1101,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.0993576, y: -0.000000022736453, z: 0.0000000022702733, w: 0.9950518}
+  m_LocalRotation: {x: 0.0993576, y: -0.000000022862297, z: 0.0000000022828388, w: 0.9950518}
   m_LocalPosition: {x: 0.016, y: 4.82, z: -39.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1413,6 +1413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerpos: {fileID: 1964458248}
   score: {fileID: 1958743528}
+  canvas: {fileID: 2027858168}
+  camera: {fileID: 963194227}
 --- !u!4 &1235865879
 Transform:
   m_ObjectHideFlags: 0

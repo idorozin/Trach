@@ -15,10 +15,7 @@ public class FastCar : MonoBehaviour
     private float viewDistance;
     private Rigidbody rb;
     [SerializeField] private GameObject exclamationMark;
-
-    private GameObject canvas_;
-    private GameObject mark = null;
-    public Canvas canvas;
+    
     private bool done;
 
     private TargetIndicator targetIndicator;
@@ -26,12 +23,7 @@ public class FastCar : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("fast car start");
-        canvas_ = GameObject.Find("ScoreCanvas");
-        canvas = canvas_.GetComponent<Canvas>();
         rb = gameObject.GetComponent<Rigidbody>();
-        targetIndicator = Instantiate(exclamationMark, canvas.transform).GetComponent<TargetIndicator>();
-        targetIndicator.InitialiseTargetIndicator(gameObject, Camera.main, canvas);
     } 
 
     void Update(){
@@ -58,19 +50,6 @@ public class FastCar : MonoBehaviour
 
     void NotifyPlayer()
     {
-        
-        if (done)
-            return;
-        
-        /*
-        if (GameManager.Instance.playerpos.position.z - transform.position.z < 0.1f)
-        {
-            done = true;
-            targetIndicator.DisableIndicator()
-        }
-        */
-
-
         if (GameManager.Instance.playerpos.position.z - transform.position.z < 100)
         {
             targetIndicator.UpdateTargetIndicator();
@@ -83,5 +62,12 @@ public class FastCar : MonoBehaviour
         if (targetIndicator == null)
             return;
         targetIndicator.gameObject.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        targetIndicator = Instantiate(exclamationMark, GameManager.Instance.canvas.transform).GetComponent<TargetIndicator>();
+        targetIndicator.InitialiseTargetIndicator(gameObject, GameManager.Instance.camera, GameManager.Instance.canvas);
+        targetIndicator.InitialiseTargetIndicator(gameObject,GameManager.Instance.camera,GameManager.Instance.canvas);
     }
 }

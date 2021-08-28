@@ -12,9 +12,11 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/TargetIndicator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -77,6 +79,7 @@
       <workItem from="1612022232571" duration="2000" />
       <workItem from="1616790293217" duration="550000" />
       <workItem from="1628859171118" duration="6087000" />
+      <workItem from="1630149248057" duration="1302000" />
     </task>
     <servers />
   </component>
