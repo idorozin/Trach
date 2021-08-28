@@ -615,8 +615,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647586850}
-  m_LocalRotation: {x: -0.000000007450581, y: -0.000000005750321, z: 0.000000001159924,
-    w: 1}
+  m_LocalRotation: {x: -0.000000007450581, y: -4.0355275e-10, z: 8.140277e-11, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1101,7 +1100,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.0993576, y: -0.000000022862297, z: 0.0000000022828388, w: 0.9950518}
+  m_LocalRotation: {x: 0.09935762, y: 0.000000016325252, z: -0.0000000016301044, w: 0.9950518}
   m_LocalPosition: {x: 0.016, y: 4.82, z: -39.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1484,6 +1483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 4483672117497937114, guid: 6c28252f7c0a98e41a3c8b588df1670a, type: 3}
+  - {fileID: 4483672117497937114, guid: f4e38ae49711532438afb24a81500268, type: 3}
+  - {fileID: 4483672117497937114, guid: 52fc76cb0969c724c9eb8dbdbf8b4302, type: 3}
   startPos: {x: 5.060577, y: 1, z: -1.86504}
   tileLength: 63
   player: {fileID: 226172710}
