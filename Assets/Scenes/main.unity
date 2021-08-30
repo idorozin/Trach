@@ -615,7 +615,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 647586850}
-  m_LocalRotation: {x: -0.000000007450581, y: -4.0355275e-10, z: 8.140277e-11, w: 1}
+  m_LocalRotation: {x: -0.000000029802322, y: -0.000000035902247, z: 0.000000007242006,
+    w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -892,7 +893,7 @@ MonoBehaviour:
   player: {fileID: 1964458248}
   movement: {fileID: 0}
   minTime: 5
-  maxTime: 30
+  maxTime: 10
   spawnTime: 0
   fastCarTag: fastCar
   maxDist: 40
@@ -1100,7 +1101,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.09935762, y: 0.000000016325252, z: -0.0000000016301044, w: 0.9950518}
+  m_LocalRotation: {x: 0.099357605, y: -0.000000017171766, z: 0.0000000017146298,
+    w: 0.9950518}
   m_LocalPosition: {x: 0.016, y: 4.82, z: -39.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

@@ -150,7 +150,6 @@ public class TargetIndicator : MonoBehaviour
 
     private Vector3 rotationOutOfSightTargetindicator(Vector3 indicatorPosition)
     {
-        return new Vector3(0,0,0);
         //Calculate the canvasCenter
         Vector3 canvasCenter = new Vector3(canvasRect.rect.width / 2f, canvasRect.rect.height / 2f, 0f) * canvasRect.localScale.x;
 

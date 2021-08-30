@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.79, y: 227.578}
-  m_SizeDelta: {x: 178.419, y: 592.076}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8311755248488357727
 CanvasRenderer:
@@ -60,14 +60,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: be62932fc85112e4da2bd0d970aaaf50, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -103,6 +103,32 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: exclamationMark
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923012335519230149, guid: 4ca99ac291368564f999016d4dcc8793,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: be62932fc85112e4da2bd0d970aaaf50,
+        type: 3}
+    - target: {fileID: 7923012335519230149, guid: 4ca99ac291368564f999016d4dcc8793,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923012335519230149, guid: 4ca99ac291368564f999016d4dcc8793,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923012335519230149, guid: 4ca99ac291368564f999016d4dcc8793,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923012335519230149, guid: 4ca99ac291368564f999016d4dcc8793,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}
@@ -142,12 +168,12 @@ PrefabInstance:
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 92
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 457
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}
@@ -167,32 +193,32 @@ PrefabInstance:
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9950518
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.09935763
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017121247
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000001709586
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 10.789996
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -227.57802
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8152597089711205875, guid: 4ca99ac291368564f999016d4dcc8793,
         type: 3}

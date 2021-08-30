@@ -424,9 +424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obs: {fileID: 4917291069427890244}
   viewDistance: 0
-  exclamationMark: {fileID: 1529377878026080095, guid: 16d5ebc35892669479ccf92b912d498c,
+  exclamationMark: {fileID: 8057716851948084983, guid: 2cd0a9a94bd21fe4b82fde2ac8f16dc8,
     type: 3}
-  canvas: {fileID: 0}
 --- !u!114 &2126792428925476187
 MonoBehaviour:
   m_ObjectHideFlags: 0
