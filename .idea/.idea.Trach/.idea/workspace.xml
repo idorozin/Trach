@@ -26,11 +26,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TargetIndicator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollectCoin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MissileSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/MissileUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />

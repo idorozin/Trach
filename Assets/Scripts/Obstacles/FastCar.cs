@@ -28,8 +28,8 @@ public class FastCar : MonoBehaviour
     void Update(){
         
         NotifyPlayer();
-        if(transform.position.z > GameManager.Instance.playerpos.position.z)
-            rb.constraints = RigidbodyConstraints.None;
+        /*if(transform.position.z > GameManager.Instance.playerpos.position.z)
+            rb.constraints = RigidbodyConstraints.None;*/
     }
     private void OnCollisionEnter(Collision other)
     {
@@ -41,6 +41,7 @@ public class FastCar : MonoBehaviour
         else if (other.collider.gameObject.CompareTag("Obstacle"))
         {
             lives--;
+            Debug.Log(lives);
             other.gameObject.GetComponent<Obstacle>().Destroy();
             if (lives == 0)
                 obs.Destroy();
@@ -65,6 +66,7 @@ public class FastCar : MonoBehaviour
 
     private void OnEnable()
     {
+        lives = 0;
         targetIndicator = Instantiate(exclamationMark, GameManager.Instance.canvas.transform).GetComponent<TargetIndicator>();
         targetIndicator.InitialiseTargetIndicator(gameObject, GameManager.Instance.camera, GameManager.Instance.canvas);
         targetIndicator.InitialiseTargetIndicator(gameObject,GameManager.Instance.camera,GameManager.Instance.canvas);
