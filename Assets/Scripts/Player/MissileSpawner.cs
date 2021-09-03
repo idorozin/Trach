@@ -8,11 +8,18 @@ public class MissileSpawner : MonoBehaviour
     [SerializeField] private Transform spawnPos;
     [SerializeField] private GameObject prefab;
     [SerializeField] private SwipeDetector swipeDetector;
-    public int misiiles;
+    public int missiles;
 
     private void Start()
     {
         swipeDetector.SwipeDetected += Fire;
+        CollectCoin.missilesCollected += OnMissilesCollected;
+    }
+
+    private void OnMissilesCollected(int amount)
+    {
+        missiles += amount;
+        missilesChange(missiles);
     }
 
     void Fire(string swipeDirection)
@@ -20,11 +27,21 @@ public class MissileSpawner : MonoBehaviour
         if (swipeDirection != "Down")
             return;
         
-        if (misiiles > 0)
+        if (missiles > 0)
         {
             SpawnMissile();
-            misiiles--;
+            missiles--;
+            missilesChange(missiles);
         }
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Fire("Down");
+        }
+
     }
 
     void SpawnMissile()
@@ -32,4 +49,6 @@ public class MissileSpawner : MonoBehaviour
         GameObject go = Instantiate(prefab);
         go.transform.position = spawnPos.position;
     }
+
+    public static event Action<int> missilesChange;
 }
