@@ -66,7 +66,7 @@ public class FastCar : MonoBehaviour
 
     private void OnEnable()
     {
-        lives = 0;
+        lives = 3;
         targetIndicator = Instantiate(exclamationMark, GameManager.Instance.canvas.transform).GetComponent<TargetIndicator>();
         targetIndicator.InitialiseTargetIndicator(gameObject, GameManager.Instance.camera, GameManager.Instance.canvas);
         targetIndicator.InitialiseTargetIndicator(gameObject,GameManager.Instance.camera,GameManager.Instance.canvas);
