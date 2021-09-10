@@ -20,6 +20,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/MissileUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CoinSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CoinBehaveiour.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -31,6 +33,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MissileSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/MissileUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
+      <option value="$PROJECT_DIR$/Assets/CoinSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/CoinBehaveiour.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -96,6 +100,7 @@
       <workItem from="1630149248057" duration="2983000" />
       <workItem from="1630174873245" duration="1261000" />
       <workItem from="1630678867185" duration="3047000" />
+      <workItem from="1631267493163" duration="1945000" />
     </task>
     <servers />
   </component>
@@ -108,23 +113,6 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Obstacles/Spawner.cs</url>
-          <line>95</line>
-          <properties documentPath="C:\Users\IDO\Documents\GitHub\Trach\Assets\Scripts\Obstacles\Spawner.cs" initialLine="95" containingFunctionPresentation="method 'SpawnObstacles'">
-            <startOffsets>
-              <option value="2107" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2152" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
         <watch expression="this.gameObject" />
