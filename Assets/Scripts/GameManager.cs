@@ -13,4 +13,15 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
     }
+
+    public FlyPowerUp flyPowerUp;
+    public void ActivatePowerUp(string powerUpName)
+    {
+        switch (powerUpName)
+        {
+            case "fly":
+                flyPowerUp.PowerUp();
+                break;
+        }
+    }
 }

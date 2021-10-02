@@ -27,7 +27,6 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TargetIndicator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollectCoin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MissileSpawner.cs" />
@@ -35,6 +34,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
       <option value="$PROJECT_DIR$/Assets/CoinSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/CoinBehaveiour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerupActivator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpActivator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUP.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUpActivator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUp.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUp.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -101,6 +107,7 @@
       <workItem from="1630174873245" duration="1261000" />
       <workItem from="1630678867185" duration="3047000" />
       <workItem from="1631267493163" duration="1945000" />
+      <workItem from="1633167199615" duration="4413000" />
     </task>
     <servers />
   </component>
