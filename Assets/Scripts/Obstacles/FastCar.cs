@@ -41,7 +41,6 @@ public class FastCar : MonoBehaviour
         else if (other.collider.gameObject.CompareTag("Obstacle"))
         {
             lives--;
-            Debug.Log(lives);
             other.gameObject.GetComponent<Obstacle>().Destroy();
             if (lives == 0)
                 obs.Destroy();

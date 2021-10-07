@@ -1,6 +1,7 @@
 
+using System;
 using UnityEngine;
-
+[Serializable]
 public class Grid
 {
 
@@ -27,7 +28,7 @@ public class Grid
 
 
 
-    private void SetUpGrid()
+    public void SetUpGrid()
     {
         grid = new Node[rows, cols];
         grid[0, 0] = new Node(startPos);

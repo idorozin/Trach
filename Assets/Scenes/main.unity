@@ -1125,7 +1125,6 @@ GameObject:
   - component: {fileID: 716019090}
   - component: {fileID: 716019092}
   - component: {fileID: 716019093}
-  - component: {fileID: 716019094}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -1145,6 +1144,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922a54940854f4149ae81d9118896db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grid:
+    startPos: {x: -3.63, y: 0, z: -8.1}
+    spacingX: 2.4
+    spacingY: 0
+    spacingZ: 3.5
+    rows: 90
+    cols: 4
   player: {fileID: 226172710}
   spawnPositions: {fileID: 0}
   wantedNumber: 36
@@ -1247,27 +1253,6 @@ MonoBehaviour:
     maxRange: 95
     name: white
   defaultOption: yellow
---- !u!114 &716019094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716019089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4a7cdcb62c61964fb692bffbea59a21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rows: 4
-  cols: 1
-  spacingX: 2
-  spacingZ: 2
-  minTime: 5
-  maxTime: 15
-  coin: {fileID: 5809442300647170817, guid: f9e1c2980c6fd594cb0a1c54a61f73a9, type: 3}
-  distanceFromPlayer: 50
-  CoinTag: coin
 --- !u!1001 &719027734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1522,6 +1507,59 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1739560530}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &957074216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 957074218}
+  - component: {fileID: 957074217}
+  m_Layer: 0
+  m_Name: CoinSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &957074217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957074216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4a7cdcb62c61964fb692bffbea59a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grid:
+    startPos: {x: -3.6, y: 0, z: 0}
+    spacingX: 2
+    spacingY: 0
+    spacingZ: 2
+    rows: 12
+    cols: 1
+  minTime: 3
+  maxTime: 6
+  CoinTag: coin
+--- !u!4 &957074218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957074216}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1956353, y: 3.2159965, z: 434.70416}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &963194227 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 1640498711387205428, guid: 8c45e42b18012ab40abbacbe7c6d256c,
@@ -2564,6 +2602,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUpDuration: 5
   player: {fileID: 1964458248}
+  coinSpawner: {fileID: 957074217}
+  grid:
+    startPos: {x: -3.6, y: 0, z: 0}
+    spacingX: 2
+    spacingY: 0
+    spacingZ: 2
+    rows: 12
+    cols: 1
 --- !u!4 &1864403314
 Transform:
   m_ObjectHideFlags: 0
@@ -3469,12 +3515,12 @@ PrefabInstance:
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000008322736
+      value: 0.000000008307116
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000022197841
+      value: -0.0000000022156188
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
@@ -3524,12 +3570,12 @@ PrefabInstance:
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000001492645
+      value: -3.8093972e-12
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00000000857194
+      value: 2.1866953e-12
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831588, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}

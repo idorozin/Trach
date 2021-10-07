@@ -7,10 +7,12 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="CoinBehaveiour.cs" t="Include" />
-        <e p="CoinSpawner.cs" t="Include" />
         <e p="MissileUI.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="Coins" t="Include">
+            <e p="CoinBehaveiour.cs" t="Include" />
+            <e p="CoinSpawner.cs" t="Include" />
+          </e>
           <e p="Editor" t="Include">
             <e p="ccc.cs" t="Include" />
             <e p="helper.cs" t="Include" />
