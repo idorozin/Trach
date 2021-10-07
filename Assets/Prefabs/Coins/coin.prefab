@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 28310937521472609}
   - component: {fileID: 1596047490988418581}
   - component: {fileID: 4588528745934973071}
+  - component: {fileID: 7543587898783160491}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -98,7 +99,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7991367843666317392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0.93}
   m_LocalScale: {x: 100, y: 100, z: 10.000002}
   m_Children: []
   m_Father: {fileID: 6617081233614813627}
@@ -131,7 +132,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c9aed31c4841952428d2c7eacdf57c70, type: 2}
+  - {fileID: 2100000, guid: bbd314d210cbc8143a9cc77ac86cf63e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -153,3 +154,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!122 &7543587898783160491
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7991367843666317392}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4287625215
+  m_Size: 0.7
