@@ -23,10 +23,8 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TargetIndicator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollectCoin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MissileSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/MissileUI.cs" />
       <option value="$PROJECT_DIR$/Assets/CoinSpawner.cs" />
@@ -38,11 +36,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinBehaveiour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Node.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Grid.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Node.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollectCoin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinBehaveiour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -110,7 +110,8 @@
       <workItem from="1630678867185" duration="3047000" />
       <workItem from="1631267493163" duration="1945000" />
       <workItem from="1633167199615" duration="4413000" />
-      <workItem from="1633632919198" duration="5532000" />
+      <workItem from="1633632919198" duration="7373000" />
+      <workItem from="1633640575608" duration="680000" />
     </task>
     <servers />
   </component>
