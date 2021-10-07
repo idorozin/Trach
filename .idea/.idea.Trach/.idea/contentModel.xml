@@ -33,6 +33,12 @@
             <e p="MissileSpawner.cs" t="Include" />
             <e p="Movement.cs" t="Include" />
           </e>
+          <e p="PowerUps" t="Include">
+            <e p="FlyPowerUp.cs" t="Include" />
+            <e p="FlyPowerUpActivator.cs" t="Include" />
+            <e p="PowerUP.cs" t="Include" />
+            <e p="PowerupActivator.cs" t="Include" />
+          </e>
           <e p="PowerUpSpawner" t="Include">
             <e p="PowerUpSpawner.cs" t="Include" />
           </e>
