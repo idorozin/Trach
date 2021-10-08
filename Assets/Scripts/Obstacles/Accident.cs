@@ -15,7 +15,7 @@ public class Accident : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }    
         
-        else if (other.collider.gameObject.CompareTag("Border"))
+        else if (other.collider.gameObject.CompareTag("Border") || other.collider.gameObject.CompareTag("Bulldozer"))
         {
             obs.Destroy();
         }
@@ -24,6 +24,7 @@ public class Accident : MonoBehaviour
         {
             obs.contact = true;
         }
+        
     }
 
 }

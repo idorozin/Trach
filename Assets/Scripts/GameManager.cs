@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     }
 
     public FlyPowerUp flyPowerUp;
+    public BulldozerPowerUp bulldozerPowerUp;
     public void ActivatePowerUp(string powerUpName)
     {
         switch (powerUpName)
@@ -22,6 +23,10 @@ public class GameManager : MonoBehaviour
             case "fly":
                 flyPowerUp.PowerUp();
                 break;
+            case "bulldozer":
+                bulldozerPowerUp.PowerUp();
+                break;
+                
         }
     }
 }
