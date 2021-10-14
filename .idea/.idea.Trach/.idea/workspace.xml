@@ -20,8 +20,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUpActivator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MissileUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/BulldozerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUp.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -50,6 +48,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/BulldozerBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Accident.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUpSpawner/PowerUpSpawner.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -119,6 +118,7 @@
       <workItem from="1633167199615" duration="4413000" />
       <workItem from="1633632919198" duration="7373000" />
       <workItem from="1633640575608" duration="680000" />
+      <workItem from="1634227555966" duration="2499000" />
     </task>
     <servers />
   </component>
