@@ -9,6 +9,7 @@ TagManager:
   - TrackSides
   - Floor
   - PlayerBack
+  - Bulldozer
   layers:
   - Default
   - TransparentFX

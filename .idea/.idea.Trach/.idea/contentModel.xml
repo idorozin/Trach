@@ -7,7 +7,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="MissileUI.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Coins" t="Include">
             <e p="CoinBehaveiour.cs" t="Include" />
@@ -17,10 +16,10 @@
             <e p="ccc.cs" t="Include" />
             <e p="helper.cs" t="Include" />
           </e>
-          <e p="Explosion.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Obstacles" t="Include">
             <e p="Accident.cs" t="Include" />
+            <e p="Explosion.cs" t="Include" />
             <e p="FastCar.cs" t="Include" />
             <e p="FastCarSpawner.cs" t="Include" />
             <e p="Grid.cs" t="Include" />
@@ -46,7 +45,6 @@
           <e p="PowerUpSpawner" t="Include">
             <e p="PowerUpSpawner.cs" t="Include" />
           </e>
-          <e p="Rotate.cs" t="Include" />
           <e p="Terrain" t="Include">
             <e p="RandomObject.cs" t="Include" />
             <e p="TileManger.cs" t="Include" />
@@ -56,6 +54,8 @@
           </e>
           <e p="UI" t="Include">
             <e p="FadeUp.cs" t="Include" />
+            <e p="MissileUI.cs" t="Include" />
+            <e p="Rotate.cs" t="Include" />
             <e p="Score.cs" t="Include" />
             <e p="TargetIndicator.cs" t="Include" />
           </e>
@@ -74,7 +74,9 @@
             <e p="SwipeDetector.cs" t="Include" />
           </e>
         </e>
-        <e p="textins.cs" t="Include" />
+        <e p="Temp" t="Include">
+          <e p="textins.cs" t="Include" />
+        </e>
         <e p="Utilities" t="Include">
           <e p="DOTween" t="Include">
             <e p="Modules" t="Include">
