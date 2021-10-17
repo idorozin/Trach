@@ -76,10 +76,14 @@ public class Movement : MonoBehaviour
 
     IEnumerator up()
     {
+        GameManager.Instance.playerSpeed = forwardSpeed;
+
         while (forwardSpeed < 100)
         {
             yield return new WaitForSeconds(15f);
             forwardSpeed++;
+            GameManager.Instance.playerSpeed = forwardSpeed;
+
         }
     }
 }

@@ -38,17 +38,24 @@ public class TargetIndicator : MonoBehaviour
         //Do stuff if picked as main target
     }
 
+    public bool isInSIght()
+    {
+        Vector3 indicatorPosition = mainCamera.WorldToScreenPoint(target.transform.position);
+
+        return indicatorPosition.z >= 0f & indicatorPosition.x <= canvasRect.rect.width * canvasRect.localScale.x
+                                         & indicatorPosition.y <= canvasRect.rect.height * canvasRect.localScale.x &
+                                         indicatorPosition.x >= 0f & indicatorPosition.y >= 0f;
+    }
 
     protected void SetIndicatorPosition()
     {
+        Vector3 indicatorPosition = mainCamera.WorldToScreenPoint(target.transform.position);
 
         //Get the position of the target in relation to the screenSpace 
-        Vector3 indicatorPosition = mainCamera.WorldToScreenPoint(target.transform.position);
         //Debug.Log("GO: "+ gameObject.name + "; slPos: " + indicatorPosition + "; cvWidt: " + canvasRect.rect.width + "; cvHeight: " + canvasRect.rect.height);
 
         //In case the target is both in front of the camera and within the bounds of its frustrum
-        if (indicatorPosition.z >= 0f & indicatorPosition.x <= canvasRect.rect.width * canvasRect.localScale.x
-         & indicatorPosition.y <= canvasRect.rect.height * canvasRect.localScale.x & indicatorPosition.x >= 0f & indicatorPosition.y >= 0f)
+        if (isInSIght())
         {
 
             //Set z to zero since it's not needed and only causes issues (too far away from Camera to be shown!)

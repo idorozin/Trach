@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public FlyPowerUp flyPowerUp;
     public BulldozerPowerUp bulldozerPowerUp;
+    public float playerSpeed;
+
     public void ActivatePowerUp(string powerUpName)
     {
         switch (powerUpName)

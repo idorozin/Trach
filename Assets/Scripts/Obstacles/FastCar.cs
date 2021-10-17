@@ -14,7 +14,7 @@ public class FastCar : MonoBehaviour
     private float viewDistance;
     private Rigidbody rb;
     [SerializeField] private GameObject exclamationMark;
-    
+    [SerializeField] private GameObject plane;
     private bool done;
 
     private TargetIndicator targetIndicator;
@@ -30,6 +30,7 @@ public class FastCar : MonoBehaviour
         NotifyPlayer();
         /*if(transform.position.z > GameManager.Instance.playerpos.position.z)
             rb.constraints = RigidbodyConstraints.None;*/
+        obs.forwardSpeed = GameManager.Instance.playerSpeed + 11f;
     }
     private void OnCollisionEnter(Collision other)
     {
@@ -52,8 +53,16 @@ public class FastCar : MonoBehaviour
         if (GameManager.Instance.playerpos.position.z - transform.position.z < 100)
         {
             targetIndicator.UpdateTargetIndicator();
+            if (targetIndicator.isInSIght())
+                plane.SetActive(false);
+            else
+            {
+                plane.SetActive(true);
+
+            }
 
         }
+        
     }
 
     private void OnDisable()
