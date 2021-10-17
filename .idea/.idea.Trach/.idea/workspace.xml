@@ -39,19 +39,22 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Node.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollectCoin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinBehaveiour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUpActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/BulldozerBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Accident.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUpSpawner/PowerUpSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Rotate.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TargetIndicator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/RandomObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Spawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ProbabilityItemPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />

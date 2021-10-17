@@ -5,7 +5,7 @@ public class RandomObject : MonoBehaviour
 {
 
     [SerializeField]
-    private ProbabilityItemPool itemPool;
+    private ProbabilityItemPool<string> itemPool;
 
     [SerializeField] private Transform parent;
     void Start()

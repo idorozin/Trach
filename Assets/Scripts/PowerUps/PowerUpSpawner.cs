@@ -24,7 +24,7 @@ public class PowerUpSpawner : MonoBehaviour
     private Transform player;
 
     [SerializeField]
-    private ProbabilityItemPool probabilityItemPool;
+    private ProbabilityItemPool<string> probabilityItemPool;
     
     void Start()
     {

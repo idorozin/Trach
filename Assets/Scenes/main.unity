@@ -602,7 +602,6 @@ GameObject:
   m_Component:
   - component: {fileID: 340501838}
   - component: {fileID: 340501837}
-  - component: {fileID: 340501839}
   m_Layer: 0
   m_Name: PowerUpSpawner
   m_TagString: Untagged
@@ -627,7 +626,22 @@ MonoBehaviour:
   distance: 200
   height: 2
   player: {fileID: 1964458248}
-  probabilityItemPool: {fileID: 340501839}
+  probabilityItemPool:
+    outOf: 100
+    items:
+    - probability: 0
+      minRange: 0
+      maxRange: 33
+      item: missileCoin
+    - probability: 0
+      minRange: 33
+      maxRange: 66
+      item: bulldozercoin
+    - probability: 0
+      minRange: 66
+      maxRange: 100
+      item: flycoin
+    defaultOption: missileCoin
 --- !u!4 &340501838
 Transform:
   m_ObjectHideFlags: 0
@@ -642,36 +656,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &340501839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 340501836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 833d1b37edd2a2e45a71a1c7d05ef4c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outOf: 100
-  items:
-  - item: {fileID: 7325069681947967740, guid: 3165b576d566ca74b825db662679f18e, type: 3}
-    probability: 0
-    minRange: 0
-    maxRange: 33
-    name: bulldozercoin
-  - item: {fileID: 7096722941986148045, guid: 597d7dd713c22c04b96afdd1984222e4, type: 3}
-    probability: 0
-    minRange: 33
-    maxRange: 66
-    name: flycoin
-  - item: {fileID: 5919957865095516559, guid: e6bc1a2547ff1d84ba2b00694dbb3171, type: 3}
-    probability: 0
-    minRange: 66
-    maxRange: 100
-    name: missileCoin
-  defaultOption: missileCoin
 --- !u!850595691 &589764454
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1085,7 +1069,6 @@ GameObject:
   - component: {fileID: 716019091}
   - component: {fileID: 716019090}
   - component: {fileID: 716019092}
-  - component: {fileID: 716019093}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -1122,7 +1105,30 @@ MonoBehaviour:
   Xsize: 1.21
   Ysize: 1
   Zsize: 2.71
-  randomObject: {fileID: 716019093}
+  randomObject:
+    outOf: 100
+    items:
+    - probability: 0
+      minRange: 0
+      maxRange: 25
+      item: yellow
+    - probability: 0
+      minRange: 25
+      maxRange: 45
+      item: orange
+    - probability: 0
+      minRange: 65
+      maxRange: 75
+      item: police
+    - probability: 0
+      minRange: 75
+      maxRange: 85
+      item: black
+    - probability: 0
+      minRange: 85
+      maxRange: 95
+      item: white
+    defaultOption: yellow
   spacingX: 2.4
   spacingY: 0
   spacingZ: 3.5
@@ -1163,57 +1169,12 @@ MonoBehaviour:
   - 1.5
   player: {fileID: 1964458248}
   movement: {fileID: 0}
-  minTime: 10
-  maxTime: 25
-  spawnTime: 30
+  minTime: 5
+  maxTime: 10
+  spawnTime: 0
   fastCarTag: fastCar
-  maxDist: 40
-  minDist: 20
---- !u!114 &716019093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716019089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 833d1b37edd2a2e45a71a1c7d05ef4c8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outOf: 100
-  items:
-  - item: {fileID: 8848065222689028533, guid: 85bfb25fbb63eae4db2135da9e176c2a, type: 3}
-    probability: 0
-    minRange: 0
-    maxRange: 25
-    name: yellow
-  - item: {fileID: 7353412670246536639, guid: 2dd90adc42a7f02419688eab2d33b8d8, type: 3}
-    probability: 0
-    minRange: 25
-    maxRange: 45
-    name: orange
-  - item: {fileID: 5866444560604436703, guid: 407d6561f4a31944baa05b13b9b40e31, type: 3}
-    probability: 0
-    minRange: 45
-    maxRange: 65
-    name: green
-  - item: {fileID: 4472755364520423030, guid: 0ba0b3fbc8f88cd4e8384d87a1b0ca01, type: 3}
-    probability: 0
-    minRange: 65
-    maxRange: 75
-    name: police
-  - item: {fileID: 1946608319724221853, guid: 0957a331374636443944ac1a15e39543, type: 3}
-    probability: 0
-    minRange: 75
-    maxRange: 85
-    name: black
-  - item: {fileID: 559078853437015907, guid: 2d6761ad59065de41a17e3a105534c46, type: 3}
-    probability: 0
-    minRange: 85
-    maxRange: 95
-    name: white
-  defaultOption: yellow
+  maxDist: 60
+  minDist: 40
 --- !u!1001 &719027734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1763,6 +1724,7 @@ MonoBehaviour:
   camera: {fileID: 963194227}
   flyPowerUp: {fileID: 1864403313}
   bulldozerPowerUp: {fileID: 1864403315}
+  playerSpeed: 0
 --- !u!4 &1235865879
 Transform:
   m_ObjectHideFlags: 0
@@ -2455,10 +2417,12 @@ MonoBehaviour:
       type: 3}
     tag: coin
     startSize: 5
-  - prefab: {fileID: 919132149155446097, guid: c490389ea17268e48933f02c2b6d6f0b, type: 3}
+  - prefab: {fileID: 7096722941986148045, guid: 597d7dd713c22c04b96afdd1984222e4,
+      type: 3}
     tag: flycoin
     startSize: 5
-  - prefab: {fileID: 919132149155446097, guid: 23db14c64e7665f44975b5b4703092b0, type: 3}
+  - prefab: {fileID: 5919957865095516559, guid: e6bc1a2547ff1d84ba2b00694dbb3171,
+      type: 3}
     tag: bulldozercoin
     startSize: 5
   parent: {fileID: 1769783319}
@@ -3518,12 +3482,12 @@ PrefabInstance:
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000008312607
+      value: -0.000000008312606
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000002217083
+      value: 0.0000000022170827
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
@@ -3573,12 +3537,12 @@ PrefabInstance:
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -8.881784e-16
+      value: 8.881784e-16
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 4.440892e-16
+      value: -4.440892e-16
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831588, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}

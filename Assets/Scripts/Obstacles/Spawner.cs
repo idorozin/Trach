@@ -32,7 +32,7 @@ public class Spawner : MonoBehaviour
     private float zGridStartPos;
 
     [SerializeField]
-    private ProbabilityItemPool randomObject;
+    private ProbabilityItemPool<string> randomObject;
 
     private ObjectPool pool;
     
