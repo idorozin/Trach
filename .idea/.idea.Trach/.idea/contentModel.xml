@@ -102,6 +102,7 @@
           </e>
           <e p="test" t="Include">
             <e p="test.cs" t="Include" />
+            <e p="textins.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="FadeUp.cs" t="Include" />
@@ -124,9 +125,6 @@
             <e p="ProbabilityItemPool.cs" t="Include" />
             <e p="SwipeDetector.cs" t="Include" />
           </e>
-        </e>
-        <e p="Temp" t="Include">
-          <e p="textins.cs" t="Include" />
         </e>
         <e p="Utilities" t="Include">
           <e p="DOTween" t="Include">
