@@ -4,9 +4,62 @@
     <e p="C:\Users\IDO\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\IDO\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Trach.-1274194252.00" t="ExcludeRecursive" />
     <e p="C:\Users\IDO\Documents\GitHub\Trach" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Array2DEditor" t="Include">
+            <e p="Editor" t="Include">
+              <e p="EditorWindows" t="Include">
+                <e p="EditorWindowVector2IntField.cs" t="Include" />
+              </e>
+              <e p="PropertyDrawers" t="Include">
+                <e p="Array2DDrawer.cs" t="Include" />
+                <e p="Array2DObjectDrawer.cs" t="Include" />
+                <e p="BaseTypeDrawers" t="Include">
+                  <e p="Array2DBoolDrawer.cs" t="Include" />
+                  <e p="Array2DEnumDrawer.cs" t="Include" />
+                  <e p="Array2DFloatDrawer.cs" t="Include" />
+                  <e p="Array2DIntDrawer.cs" t="Include" />
+                  <e p="Array2DStringDrawer.cs" t="Include" />
+                </e>
+                <e p="ObjectDrawers" t="Include">
+                  <e p="Array2DAudioClipDrawer.cs" t="Include" />
+                  <e p="Array2DSpriteDrawer.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Example" t="Include">
+              <e p="Array2DExampleEnum.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="Array2DExampleEnumDrawer.cs" t="Include" />
+              </e>
+              <e p="ExampleEnum.cs" t="Include" />
+              <e p="ExampleScript.cs" t="Include" />
+              <e p="ExampleScript2.cs" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Array2D.cs" t="Include" />
+              <e p="Array2DTypes" t="Include">
+                <e p="BaseTypes" t="Include">
+                  <e p="Array2DBool.cs" t="Include" />
+                  <e p="Array2DFloat.cs" t="Include" />
+                  <e p="Array2DInt.cs" t="Include" />
+                  <e p="Array2DString.cs" t="Include" />
+                </e>
+                <e p="ObjectTypes" t="Include">
+                  <e p="Array2DAudioClip.cs" t="Include" />
+                  <e p="Array2DSprite.cs" t="Include" />
+                </e>
+              </e>
+              <e p="CellRow.cs" t="Include" />
+              <e p="CellRowTypes.cs" t="Include" />
+              <e p="Consts.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Coins" t="Include">
             <e p="CoinBehaveiour.cs" t="Include" />

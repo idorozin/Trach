@@ -1,12 +1,14 @@
 
 using System;
+using Array2DEditor;
 using UnityEngine;
 [Serializable]
 public class Grid
 {
 
     public Node[,] grid;
-
+    public bool useBools;
+    public Array2DBool boolArray;
     public Vector3 startPos;
 
     public float spacingX;
@@ -41,7 +43,14 @@ public class Grid
                 float y = startPos.y;
                 float z = startPos.z + row * spacingZ;
                 Vector3 currentPos = new Vector3(x,y,z);
-                grid[row,col] = new Node(currentPos);
+                if (useBools)
+                {
+                    grid[row, col] = new Node(currentPos, boolArray.GetCell(col, row));
+                }
+                else
+                {
+                    grid[row,col] = new Node(currentPos, true);
+                }
             }
         }
         

@@ -8,8 +8,6 @@ public class Persist : MonoBehaviour
     private void Start()
     {
         pooledObject = GetComponent<IPooledObject>();
-        if(pooledObject == null)
-            Debug.Log(gameObject.name);
         ObjectPool.Instance.Return += BackToPool;
     }
 

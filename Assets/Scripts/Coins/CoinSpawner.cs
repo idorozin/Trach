@@ -55,6 +55,7 @@ public class CoinSpawner : MonoBehaviour
     {
         foreach (var node in pattern)
         {
+            if (!node.used) continue;
             GameObject go = ObjectPool.Instance.GetObject(CoinTag);
             go.transform.position = new Vector3(node.position.x + position.x,position.y,node.position.z + position.z);
         }
