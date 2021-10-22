@@ -1,11 +1,25 @@
 
+using System;
 using System.Collections;
 using UnityEngine;
 
 public abstract class PowerUpBehaviour : MonoBehaviour
 {
+    protected abstract Evt GetPowerUpEvent();
+
+    private void OnEnable()
+    {
+        GetPowerUpEvent().Subscribe(PowerUp);
+    }
+    
     [SerializeField]
     private float powerUpDuration;
+
+
+    private void OnDisable()
+    {
+        GetPowerUpEvent().UnSubscribe(PowerUp);
+    }
 
     public void PowerUp()
     {
@@ -15,7 +29,7 @@ public abstract class PowerUpBehaviour : MonoBehaviour
     private IEnumerator _PowerUp()
     {
         BeginPowerUp();
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(powerUpDuration);
         EndPowerUp();
     }
 

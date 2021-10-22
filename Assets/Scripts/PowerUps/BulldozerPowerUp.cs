@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 
 public class BulldozerPowerUp : PowerUpBehaviour
 {
     public GameObject bulldozer;
+    protected override Evt GetPowerUpEvent() => EventManager.Instance.onBulldozerPowerUp;
 
     protected override void BeginPowerUp()
     {

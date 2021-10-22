@@ -13,22 +13,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
     }
-
-    public FlyPowerUp flyPowerUp;
-    public BulldozerPowerUp bulldozerPowerUp;
+    
     public float playerSpeed;
 
-    public void ActivatePowerUp(string powerUpName)
-    {
-        switch (powerUpName)
-        {
-            case "fly":
-                flyPowerUp.PowerUp();
-                break;
-            case "bulldozer":
-                bulldozerPowerUp.PowerUp();
-                break;
-                
-        }
-    }
 }

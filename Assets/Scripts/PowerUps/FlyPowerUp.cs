@@ -5,6 +5,12 @@ public class FlyPowerUp : PowerUpBehaviour
 {
     public Transform player;
     public CoinSpawner coinSpawner;
+
+    protected override Evt GetPowerUpEvent()
+    {
+        return EventManager.Instance.onFlyPowerUp;
+    }
+
     [SerializeField]
     private Grid grid;
 
@@ -12,7 +18,7 @@ public class FlyPowerUp : PowerUpBehaviour
     {
         grid.SetUpGrid();
     }
-    
+
 
     protected override void BeginPowerUp()
     {

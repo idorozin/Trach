@@ -1,10 +1,23 @@
 
 
+using System;
 using UnityEngine;
-
-public interface PowerUpActivator
+public abstract class PowerUpActivator : MonoBehaviour
 {
-    string powerUpName { get; set; }
-    void ActivatePowerUp();
-    void OnTriggerEnter(Collider other);
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("TrackSides"))
+        {
+            ActivatePowerUp();
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void ActivatePowerUp()
+    {
+        GetPowerUpEvent().Invoke();
+    }
+
+    protected abstract Evt GetPowerUpEvent();
 }
