@@ -1175,6 +1175,7 @@ MonoBehaviour:
   - -2
   - 1
   - 1.5
+  - 3.5
   player: {fileID: 1964458248}
   movement: {fileID: 0}
   minTime: 5
@@ -1183,6 +1184,7 @@ MonoBehaviour:
   fastCarTag: fastCar
   maxDist: 60
   minDist: 40
+  lastPick: 0
 --- !u!1001 &719027734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3522,12 +3524,12 @@ PrefabInstance:
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000008313294
+      value: -0.000000011165124
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000022172664
+      value: 0.0000000029778873
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
@@ -3577,12 +3579,12 @@ PrefabInstance:
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 4.7872817e-13
+      value: -0.0000000025503155
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.7489122e-13
+      value: 0.0000000014645911
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831588, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}

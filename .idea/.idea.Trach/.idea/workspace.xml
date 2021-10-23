@@ -62,8 +62,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Evt.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUp.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarIndicator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarIndicator.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -137,7 +137,7 @@
       <workItem from="1634478686570" duration="5101000" />
       <workItem from="1634579094704" duration="3429000" />
       <workItem from="1634896755070" duration="8376000" />
-      <workItem from="1634976485454" duration="1005000" />
+      <workItem from="1634976485454" duration="1666000" />
     </task>
     <servers />
   </component>
