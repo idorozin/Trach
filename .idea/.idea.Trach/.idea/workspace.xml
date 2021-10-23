@@ -20,6 +20,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUpActivator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarIndicator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Array2DEditor/Example/ExampleEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUp.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -61,6 +62,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Evt.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUp.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarIndicator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarSpawner.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -133,7 +136,8 @@
       <workItem from="1634227555966" duration="5917000" />
       <workItem from="1634478686570" duration="5101000" />
       <workItem from="1634579094704" duration="3429000" />
-      <workItem from="1634896755070" duration="6927000" />
+      <workItem from="1634896755070" duration="8376000" />
+      <workItem from="1634976485454" duration="1005000" />
     </task>
     <servers />
   </component>

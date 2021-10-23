@@ -16,7 +16,7 @@ public class FastCarSpawner : MonoBehaviour
     [SerializeField] private float maxDist;
     [SerializeField] private float minDist;
 
-
+    public int lastPick;
     void Update()
     {
         if (Time.time > spawnTime)
@@ -37,7 +37,8 @@ public class FastCarSpawner : MonoBehaviour
         GameObject go = ObjectPool.Instance.GetObject(fastCarTag);
         var distanceFromPlayer = Random.Range(minDist, maxDist);
         var zPos = player.transform.position.z - distanceFromPlayer;
-        var xPos = roadX[Random.Range(0,roadX.Length)];
+        lastPick = Random.Range(0, roadX.Length);
+        var xPos = roadX[lastPick];
         go.transform.position = new Vector3(xPos, 0f, zPos);
     }
 }

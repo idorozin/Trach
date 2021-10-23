@@ -76,6 +76,7 @@
             <e p="Accident.cs" t="Include" />
             <e p="Explosion.cs" t="Include" />
             <e p="FastCar.cs" t="Include" />
+            <e p="FastCarIndicator.cs" t="Include" />
             <e p="FastCarSpawner.cs" t="Include" />
             <e p="Grid.cs" t="Include" />
             <e p="Node.cs" t="Include" />

@@ -1747,8 +1747,6 @@ MonoBehaviour:
   score: {fileID: 1958743528}
   canvas: {fileID: 2027858168}
   camera: {fileID: 963194227}
-  flyPowerUp: {fileID: 1864403313}
-  bulldozerPowerUp: {fileID: 1864403315}
   playerSpeed: 0
 --- !u!4 &1235865879
 Transform:
@@ -1785,7 +1783,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1235865877}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b429c927a526f94ab4e9d7acd0cdf19, type: 3}
+  m_Script: {fileID: 11500000, guid: 3235d4ebfd944e93850854f3ae9112e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &1271547357 stripped
@@ -3524,12 +3522,12 @@ PrefabInstance:
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000008312607
+      value: 0.000000008313294
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000002217083
+      value: -0.0000000022172664
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
@@ -3579,12 +3577,12 @@ PrefabInstance:
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 8.881784e-16
+      value: 4.7872817e-13
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -4.440892e-16
+      value: -2.7489122e-13
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831588, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
