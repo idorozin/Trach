@@ -45,7 +45,7 @@ public class Obstacle : MonoBehaviour,IPooledObject
     {
         score = GameManager.Instance.score;
         _transform = gameObject.transform;
-        ObjectPool.Instance.Return += ReturnToPool;
+        //ObjectPool.Instance.Return += ReturnToPool;
     }
     
     public void Destroy()

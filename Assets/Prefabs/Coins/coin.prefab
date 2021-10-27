@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6617081233614813627}
-  - component: {fileID: -2106653649906925166}
   - component: {fileID: 8659849127395577060}
   - component: {fileID: 2517988941578983790}
   m_Layer: 0
@@ -34,19 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-2106653649906925166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5809442300647170817}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 087d9b12ad103ad44918dba3d2d30762, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotateSpeed: 10
 --- !u!114 &8659849127395577060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +70,7 @@ GameObject:
   - component: {fileID: 1596047490988418581}
   - component: {fileID: 4588528745934973071}
   - component: {fileID: 7543587898783160491}
+  - component: {fileID: 8060151000223437116}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -166,3 +153,16 @@ Halo:
     serializedVersion: 2
     rgba: 4287625215
   m_Size: 0.7
+--- !u!114 &8060151000223437116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7991367843666317392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 087d9b12ad103ad44918dba3d2d30762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 2
