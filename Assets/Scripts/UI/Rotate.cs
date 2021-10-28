@@ -1,9 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Rotate : MonoBehaviour
 {
+    private void OnEnable()
+    {
+        transform.rotation = Quaternion.identity;
+    }
 
     [SerializeField]
     private float rotateSpeed;
