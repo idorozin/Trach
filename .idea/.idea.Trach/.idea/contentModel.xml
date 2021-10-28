@@ -65,13 +65,11 @@
             <e p="CoinBehaveiour.cs" t="Include" />
             <e p="CoinSpawner.cs" t="Include" />
           </e>
-          <e p="Editor" t="Include">
-            <e p="ccc.cs" t="Include" />
-            <e p="helper.cs" t="Include" />
+          <e p="Managers" t="Include">
+            <e p="EventManager.cs" t="Include" />
+            <e p="Evt.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
           </e>
-          <e p="EventManager.cs" t="Include" />
-          <e p="Evt.cs" t="Include" />
-          <e p="GameManager.cs" t="Include" />
           <e p="Obstacles" t="Include">
             <e p="Accident.cs" t="Include" />
             <e p="Explosion.cs" t="Include" />
@@ -103,10 +101,6 @@
             <e p="RandomObject.cs" t="Include" />
             <e p="TileManger.cs" t="Include" />
           </e>
-          <e p="test" t="Include">
-            <e p="test.cs" t="Include" />
-            <e p="textins.cs" t="Include" />
-          </e>
           <e p="UI" t="Include">
             <e p="FadeUp.cs" t="Include" />
             <e p="MissileUI.cs" t="Include" />
@@ -116,13 +110,14 @@
           </e>
           <e p="Utilities" t="Include">
             <e p="Editor" t="Include">
-              <e p="CustomProbabilityGameTagPoolInspectorgo.cs" t="Include" />
               <e p="CustomProbabilityItemPoolInspector.cs" t="Include" />
               <e p="ez.cs" t="Include" />
             </e>
             <e p="IDestroyableObject.cs" t="Include" />
-            <e p="IPooledObject.cs" t="Include" />
-            <e p="ObjectPool.cs" t="Include" />
+            <e p="ObjectPool" t="Include">
+              <e p="IPooledObject.cs" t="Include" />
+              <e p="ObjectPool.cs" t="Include" />
+            </e>
             <e p="PObject.cs" t="Include" />
             <e p="Probability.cs" t="Include" />
             <e p="ProbabilityItemPool.cs" t="Include" />

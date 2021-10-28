@@ -2441,7 +2441,7 @@ MonoBehaviour:
   - prefab: {fileID: 5809442300647170817, guid: f9e1c2980c6fd594cb0a1c54a61f73a9,
       type: 3}
     tag: coin
-    startSize: 5
+    startSize: 100
   - prefab: {fileID: 7096722941986148045, guid: 597d7dd713c22c04b96afdd1984222e4,
       type: 3}
     tag: flycoin
@@ -3524,12 +3524,12 @@ PrefabInstance:
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000011165124
+      value: -0.000000008312606
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000029778873
+      value: 0.0000000022170827
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
@@ -3579,12 +3579,12 @@ PrefabInstance:
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000025503155
+      value: 8.881784e-16
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000014645911
+      value: -4.440892e-16
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831588, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
