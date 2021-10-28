@@ -11,7 +11,7 @@ public class Accident : MonoBehaviour
     {
         if (other.collider.gameObject.CompareTag("Player"))
         {
-            ObjectPool.Instance.Return.Invoke();
+            ObjectPool.Instance.ReturnAllObjectsToPool();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }    
         

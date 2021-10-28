@@ -55,6 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2542046583106463342
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +136,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -158,6 +161,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2894694016900678463
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,6 +217,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -237,6 +242,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5870445423717020830
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,6 +303,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -321,6 +328,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &8460375087211964275
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -389,6 +397,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -413,6 +422,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &9189816572629921989
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +435,6 @@ GameObject:
   - component: {fileID: 1470251565884695763}
   - component: {fileID: 7397958011972026750}
   - component: {fileID: 684847128671903562}
-  - component: {fileID: -5411519998046363729}
   m_Layer: 0
   m_Name: red car
   m_TagString: Untagged
@@ -462,6 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardSpeed: 5
   rb: {fileID: 7397958011972026750}
+  autoDestroy: 1
   contact: 0
 --- !u!54 &7397958011972026750
 Rigidbody:
@@ -492,15 +502,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obs: {fileID: 1470251565884695763}
---- !u!114 &-5411519998046363729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9189816572629921989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6e0565e0f7e4f4d98b06dcc5cdea07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

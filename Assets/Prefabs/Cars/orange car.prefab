@@ -55,6 +55,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -79,6 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2623336523547158195
 GameObject:
   m_ObjectHideFlags: 0
@@ -134,6 +136,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -158,6 +161,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2814957010596013279
 GameObject:
   m_ObjectHideFlags: 0
@@ -218,6 +222,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -242,6 +247,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &2858796080462321284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -310,6 +316,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -334,6 +341,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5612980858344431105
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +397,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -413,6 +422,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7353412670246536639
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +435,6 @@ GameObject:
   - component: {fileID: 6369741894531609920}
   - component: {fileID: 5705951572092243416}
   - component: {fileID: 3424800845562708495}
-  - component: {fileID: 5929429132379228030}
   m_Layer: 0
   m_Name: orange car
   m_TagString: Obstacle
@@ -478,6 +487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardSpeed: 5
   rb: {fileID: 6369741894531609920}
+  autoDestroy: 1
   contact: 0
 --- !u!114 &3424800845562708495
 MonoBehaviour:
@@ -492,15 +502,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obs: {fileID: 5705951572092243416}
---- !u!114 &5929429132379228030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7353412670246536639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6e0565e0f7e4f4d98b06dcc5cdea07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

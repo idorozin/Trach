@@ -33,14 +33,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerupActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUP.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollectCoin.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinBehaveiour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/BulldozerBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Accident.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUpSpawner/PowerUpSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Rotate.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TargetIndicator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/RandomObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Spawner.cs" />
@@ -49,7 +45,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Node.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Grid.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Persist.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/IDestroyableObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUp.cs" />
@@ -63,6 +58,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarIndicator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Rotate.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Accident.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinBehaveiour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Persist.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/IPooledObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool.cs" />
     </changedPaths>
   </component>
@@ -141,6 +142,7 @@
       <workItem from="1635002153916" duration="2605000" />
       <workItem from="1635179399142" duration="2372000" />
       <workItem from="1635348104240" duration="718000" />
+      <workItem from="1635432992285" duration="2646000" />
     </task>
     <servers />
   </component>

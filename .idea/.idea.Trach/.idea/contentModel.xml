@@ -121,10 +121,9 @@
               <e p="ez.cs" t="Include" />
             </e>
             <e p="IDestroyableObject.cs" t="Include" />
+            <e p="IPooledObject.cs" t="Include" />
             <e p="ObjectPool.cs" t="Include" />
-            <e p="Persist.cs" t="Include" />
             <e p="PObject.cs" t="Include" />
-            <e p="PooledObject.cs" t="Include" />
             <e p="Probability.cs" t="Include" />
             <e p="ProbabilityItemPool.cs" t="Include" />
             <e p="SwipeDetector.cs" t="Include" />

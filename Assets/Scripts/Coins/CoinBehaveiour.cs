@@ -5,12 +5,6 @@ using UnityEngine;
 
 public class CoinBehaveiour : MonoBehaviour, IPooledObject
 {
-    void Start()
-    {
-        ObjectPool.Instance.Return += ReturnToPool;
-    }
-
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("TrackSides"))

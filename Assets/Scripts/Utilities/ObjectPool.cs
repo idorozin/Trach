@@ -14,8 +14,8 @@ public class ObjectPool : MonoBehaviour
 
     private Dictionary<string, Queue<GameObject>> pools = new Dictionary<string, Queue<GameObject>>();
     private Dictionary<string, GameObject> prefabs = new Dictionary<string, GameObject>();
+    private List<IPooledObject> allObjects = new List<IPooledObject>();
     private GameObject go;
-    public Action Return;
 
     private void Awake()
     {
@@ -39,21 +39,6 @@ public class ObjectPool : MonoBehaviour
     }
 
 
-    void Start()
-    {
-        //TODO call after call on persist
-        Return += () =>
-        {
-            foreach (var key in pools.Keys)
-            {
-                foreach (GameObject go in pools[key])
-                {
-                    go.transform.parent = gameObject.transform;
-                }
-            }
-        };
-    }
-
     private void AddObject(string s, int i)
     {
         for (int j = 0; j < i; j++)
@@ -62,7 +47,11 @@ public class ObjectPool : MonoBehaviour
             go.SetActive(false);
             var component = go.GetComponent<IPooledObject>();
             if (component != null)
+            {
                 component.Tag = s;
+                allObjects.Add(component);
+            }
+
             pools[s].Enqueue(go);
             go.transform.parent = parent;
         }
@@ -99,6 +88,14 @@ public class ObjectPool : MonoBehaviour
             return;
         go.SetActive(false);
         pools[tag].Enqueue(go);
+    }
+
+    public void ReturnAllObjectsToPool()
+    {
+        foreach (IPooledObject pooledObject in allObjects)
+        {
+            pooledObject.ReturnToPool();
+        }
     }
 }
 
