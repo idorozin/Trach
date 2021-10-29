@@ -431,6 +431,7 @@ GameObject:
   - component: {fileID: -6991129339932520939}
   - component: {fileID: 3741441233216899418}
   - component: {fileID: 1584045510995539257}
+  - component: {fileID: -7858739373689918977}
   m_Layer: 0
   m_Name: yellow
   m_TagString: Obstacle
@@ -487,7 +488,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardSpeed: 5
   rb: {fileID: -6991129339932520939}
-  autoDestroy: 1
   contact: 0
 --- !u!114 &1584045510995539257
 MonoBehaviour:
@@ -502,3 +502,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obs: {fileID: 3741441233216899418}
+--- !u!114 &-7858739373689918977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848065222689028533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8c4d626c5f2dd44b1ecfc1fd28f032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDestroy: 1

@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 5201532610338334660}
   - component: {fileID: 2587004015292804908}
   - component: {fileID: 3521943218792302829}
+  - component: {fileID: -1352966792402696772}
   m_Layer: 0
   m_Name: Tender
   m_TagString: Obstacle
@@ -142,7 +143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardSpeed: 5
   rb: {fileID: 3521943218792302829}
-  autoDestroy: 1
   contact: 0
 --- !u!54 &3521943218792302829
 Rigidbody:
@@ -160,6 +160,19 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-1352966792402696772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5832356833045738042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8c4d626c5f2dd44b1ecfc1fd28f032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDestroy: 1
 --- !u!1 &6435185419592345466
 GameObject:
   m_ObjectHideFlags: 0

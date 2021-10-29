@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 5777629404315480150}
   - component: {fileID: 7365719830794712529}
   - component: {fileID: 292505246271693172}
+  - component: {fileID: 7400560777043826296}
   m_Layer: 0
   m_Name: police
   m_TagString: Obstacle
@@ -312,7 +313,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardSpeed: 5
   rb: {fileID: 3255597183245613454}
-  autoDestroy: 1
   contact: 0
 --- !u!65 &7365719830794712529
 BoxCollider:
@@ -340,6 +340,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obs: {fileID: 5777629404315480150}
+--- !u!114 &7400560777043826296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472755364520423030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8c4d626c5f2dd44b1ecfc1fd28f032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDestroy: 1
 --- !u!1 &5524236832193805849
 GameObject:
   m_ObjectHideFlags: 0

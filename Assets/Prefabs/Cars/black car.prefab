@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 3256470807952584810}
   - component: {fileID: 685702412112761825}
   - component: {fileID: 6031788175603369452}
+  - component: {fileID: -6488069568148259387}
   m_Layer: 0
   m_Name: black car
   m_TagString: Obstacle
@@ -291,7 +292,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forwardSpeed: 5
   rb: {fileID: 6031788175603369452}
-  autoDestroy: 1
   contact: 0
 --- !u!114 &685702412112761825
 MonoBehaviour:
@@ -322,6 +322,19 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-6488069568148259387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946608319724221853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8c4d626c5f2dd44b1ecfc1fd28f032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDestroy: 1
 --- !u!1 &5476943386441635382
 GameObject:
   m_ObjectHideFlags: 0
