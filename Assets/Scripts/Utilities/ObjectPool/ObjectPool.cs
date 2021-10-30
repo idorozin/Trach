@@ -12,6 +12,7 @@ public class ObjectPool : MonoBehaviour
     [SerializeField] private Transform parent;
 
 
+
     private Dictionary<string, Queue<GameObject>> pools = new Dictionary<string, Queue<GameObject>>();
     private Dictionary<string, GameObject> prefabs = new Dictionary<string, GameObject>();
     private List<IPooledObject> allObjects = new List<IPooledObject>();
@@ -46,12 +47,8 @@ public class ObjectPool : MonoBehaviour
             GameObject go = Instantiate(prefabs[s]);
             go.SetActive(false);
             var component = go.GetComponent<IPooledObject>();
-            if (component != null)
-            {
-                component.Tag = s;
-                allObjects.Add(component);
-            }
-
+            component.Tag = s;
+            allObjects.Add(component);
             pools[s].Enqueue(go);
             go.transform.parent = parent;
         }

@@ -4,7 +4,7 @@ using System;
 using UnityEngine;
 public abstract class PowerUpActivator : MonoBehaviour
 {
-    [SerializeField] private IDestroyable destroyable; 
+   [SerializeField] private Destroyable destroyable; 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("TrackSides"))

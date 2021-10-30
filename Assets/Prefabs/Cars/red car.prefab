@@ -436,6 +436,7 @@ GameObject:
   - component: {fileID: 7397958011972026750}
   - component: {fileID: 684847128671903562}
   - component: {fileID: -4978062289660971686}
+  - component: {fileID: -2989586703420375659}
   m_Layer: 0
   m_Name: red car
   m_TagString: Untagged
@@ -470,6 +471,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424c075b924e3f947829fbcc4cec1377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyable: {fileID: -9199196761440027585, guid: 0ba0b3fbc8f88cd4e8384d87a1b0ca01,
+    type: 3}
   forwardSpeed: 5
   rb: {fileID: 7397958011972026750}
   contact: 0
@@ -515,3 +518,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoDestroy: 1
+--- !u!114 &-2989586703420375659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9189816572629921989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b4451452341fb4eb93e88f845a0674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

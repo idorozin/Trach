@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c851796685f1a4c46b033fc9607ced93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyable: {fileID: -1490352402019324414}
 --- !u!114 &1735301693103233850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +150,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4132697326702643466}
+  - component: {fileID: -1490352402019324414}
+  - component: {fileID: -7193792032894950978}
   m_Layer: 0
   m_Name: BulldozerActivator
   m_TagString: Untagged
@@ -171,3 +174,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1490352402019324414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919957865095516559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b4451452341fb4eb93e88f845a0674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7193792032894950978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5919957865095516559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8c4d626c5f2dd44b1ecfc1fd28f032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDestroy: 1

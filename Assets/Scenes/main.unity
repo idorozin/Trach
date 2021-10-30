@@ -2406,7 +2406,7 @@ MonoBehaviour:
   - prefab: {fileID: 8848065222689028533, guid: 85bfb25fbb63eae4db2135da9e176c2a,
       type: 3}
     tag: yellow
-    startSize: 34
+    startSize: 51
   - prefab: {fileID: 5866444560604436703, guid: 407d6561f4a31944baa05b13b9b40e31,
       type: 3}
     tag: green
@@ -2429,7 +2429,7 @@ MonoBehaviour:
   - prefab: {fileID: 3207248911433716039, guid: 7346626e4d25e774eb346e1ed64c795a,
       type: 3}
     tag: explosion
-    startSize: 30
+    startSize: 15
   - prefab: {fileID: 7325069681947967740, guid: 3165b576d566ca74b825db662679f18e,
       type: 3}
     tag: missileCoin
@@ -3524,12 +3524,12 @@ PrefabInstance:
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0000000081408995
+      value: -0.000000007929963
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000021712863
+      value: 0.000000002115027
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
@@ -3579,12 +3579,12 @@ PrefabInstance:
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -1.8947599e-10
+      value: 2.6353053e-10
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.0881207e-10
+      value: -1.5134027e-10
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831588, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}

@@ -3,19 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CoinBehaveiour : MonoBehaviour, IPooledObject
+public class CoinBehaveiour : MonoBehaviour
 {
+    [SerializeField]
+    private Destroyable destroyable;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("TrackSides"))
         {
-            ReturnToPool();
+            destroyable.Destroy();
         }
-    }
-
-    public string Tag { get; set; }
-    public void ReturnToPool()
-    {
-        ObjectPool.Instance.ReturnObject(Tag,gameObject);
     }
 }

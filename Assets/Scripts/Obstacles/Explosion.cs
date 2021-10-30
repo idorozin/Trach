@@ -11,18 +11,20 @@ public class Explosion : MonoBehaviour,IPooledObject
     
     private void OnEnable()
     {
+        ps.time = 0;
         ps.Play(true);
+        StartCoroutine(ReturnToPoolAfterSeconds());
     }
 
-    void Update()
+    private IEnumerator ReturnToPoolAfterSeconds()
     {
-        if (!ps.isPlaying)
-            ReturnToPool();
+        yield return new WaitForSeconds(5);
+        ReturnToPool();
     }
+
 
     public void ReturnToPool()
     {
-        gameObject.SetActive(false);
         ps.Stop(true);
         ObjectPool.Instance.ReturnObject(Tag , gameObject);
     }

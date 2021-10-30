@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c6e8f04bc01423a8710abad920d9360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyable: {fileID: -969540342663418752}
 --- !u!114 &5523177993987940241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +150,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 471082402910860968}
+  - component: {fileID: -969540342663418752}
+  - component: {fileID: 269821787272258814}
   m_Layer: 0
   m_Name: FlyActivator
   m_TagString: Untagged
@@ -171,3 +174,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-969540342663418752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7096722941986148045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b4451452341fb4eb93e88f845a0674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &269821787272258814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7096722941986148045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8c4d626c5f2dd44b1ecfc1fd28f032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoDestroy: 1

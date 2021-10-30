@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8659849127395577060}
   - component: {fileID: 2517988941578983790}
   - component: {fileID: 3269736979240879675}
+  - component: {fileID: -2007103535947838224}
   m_Layer: 0
   m_Name: coin
   m_TagString: Untagged
@@ -46,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e3a1bbafa87900429f1535a6747fe0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyable: {fileID: -2007103535947838224}
 --- !u!65 &2517988941578983790
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72,6 +74,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   autoDestroy: 1
+--- !u!114 &-2007103535947838224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5809442300647170817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3b4451452341fb4eb93e88f845a0674, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7991367843666317392
 GameObject:
   m_ObjectHideFlags: 0
