@@ -12,7 +12,7 @@ public class MissileUI : MonoBehaviour
     void Start()
     {
         grid = transform;
-        MissileSpawner.missilesChange += UpdateUI;
+        EventManager.Instance.onMissilesChanged.Subscribe(UpdateUI);
     }
 
     private void UpdateUI(int amount)
@@ -31,9 +31,5 @@ public class MissileUI : MonoBehaviour
             missileIcon.gameObject.SetActive(true);
         }
     }
-
-    private void OnDisable()
-    {
-        MissileSpawner.missilesChange -= UpdateUI;
-    }
+    
 }

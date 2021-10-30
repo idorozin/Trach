@@ -19,7 +19,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUpActivator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerCollectableCoin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarIndicator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ReturnObjectToPoolWhenBehindPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,13 +33,9 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/MissileSpawner.cs" />
-      <option value="$PROJECT_DIR$/Assets/MissileUI.cs" />
-      <option value="$PROJECT_DIR$/Assets/CoinSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/CoinBehaveiour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerupActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUP.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollectCoin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/BulldozerBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUpSpawner/PowerUpSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TargetIndicator.cs" />
@@ -64,7 +60,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarIndicator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Rotate.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Persist.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/IPooledObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool.cs" />
@@ -75,13 +70,20 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Destroyable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ReturnStaticToPool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinBehaveiour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/GenericPooledObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/ReturnPhysicsObjectToPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Explosion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TileManger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinBehaveiour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/CollectableCoin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollectCoin.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/SwipeDetector.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Player/MissileSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/MissileUI.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />

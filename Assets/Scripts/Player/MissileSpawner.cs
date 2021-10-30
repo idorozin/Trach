@@ -12,14 +12,14 @@ public class MissileSpawner : MonoBehaviour
 
     private void Start()
     {
-        swipeDetector.SwipeDetected += Fire;
-        CollectCoin.missilesCollected += OnMissilesCollected;
+        EventManager.Instance.onSwipeDetected.Subscribe(Fire);
+        EventManager.Instance.onMissilesCollected.Subscribe(OnMissilesCollected);
     }
 
-    private void OnMissilesCollected(int amount)
+    private void OnMissilesCollected()
     {
-        missiles += amount;
-        missilesChange(missiles);
+        missiles += 3;
+        EventManager.Instance.onMissilesChanged.Invoke(missiles);
     }
 
     void Fire(string swipeDirection)
@@ -31,7 +31,7 @@ public class MissileSpawner : MonoBehaviour
         {
             SpawnMissile();
             missiles--;
-            missilesChange(missiles);
+            EventManager.Instance.onMissilesChanged.Invoke(missiles);
         }
     }
 
@@ -50,5 +50,4 @@ public class MissileSpawner : MonoBehaviour
         go.transform.position = spawnPos.position;
     }
 
-    public static event Action<int> missilesChange;
 }

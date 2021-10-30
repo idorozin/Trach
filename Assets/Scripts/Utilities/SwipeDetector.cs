@@ -6,9 +6,7 @@ public class SwipeDetector : MonoBehaviour
     private Vector2 fingerDown;
     private Vector2 fingerUp;
     private float minDistance = 20;
-
-    public delegate void OnSwipe(string direction);
-    public event OnSwipe SwipeDetected;
+    
 	    
     void Update ()
     {
@@ -71,8 +69,7 @@ public class SwipeDetector : MonoBehaviour
 
     private void SendSwipe(string direction)
     {
-        if(SwipeDetected != null)
-            SwipeDetected(direction);
+        EventManager.Instance.onSwipeDetected.Invoke(direction);
     }
 	
 	

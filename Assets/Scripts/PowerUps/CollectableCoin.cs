@@ -2,22 +2,22 @@
 
 using System;
 using UnityEngine;
-public abstract class PowerUpActivator : MonoBehaviour
+public abstract class CollectableCoin : MonoBehaviour
 {
    [SerializeField] private Destroyable destroyable; 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("TrackSides"))
         {
-            ActivatePowerUp();
+            FireOnCollectEvent();
             destroyable.Destroy();
         }
     }
 
-    private void ActivatePowerUp()
+    private void FireOnCollectEvent()
     {
-        GetPowerUpEvent().Invoke();
+        GetOnCollectEvent().Invoke();
     }
 
-    protected abstract Evt GetPowerUpEvent();
+    public abstract Evt GetOnCollectEvent();
 }

@@ -3,18 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectCoin : MonoBehaviour
+public class CollectCoin : CollectableCoin
 {
-    [SerializeField]
-    private int missileAmount = 3;
-    public static event Action<int> missilesCollected;
-    
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("TrackSides"))
-        {
-            missilesCollected(missileAmount);
-            Destroy(this.gameObject);
-        }
-    }
+    public override Evt GetOnCollectEvent() => EventManager.Instance.onMissilesCollected;
 }

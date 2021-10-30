@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FastCar : MonoBehaviour
@@ -10,19 +7,16 @@ public class FastCar : MonoBehaviour
 
     [SerializeField]
     private Obstacle obs;
-    [SerializeField]
-    private float viewDistance;
-    private Rigidbody rb;
+
     [SerializeField] private GameObject exclamationMark;
     [SerializeField] private GameObject plane;
-    private bool done;
 
     private TargetIndicator targetIndicator;
 
 
     void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody>();
+        gameObject.GetComponent<Rigidbody>();
     } 
 
     void Update(){
@@ -77,6 +71,5 @@ public class FastCar : MonoBehaviour
         lives = 3;
         targetIndicator = Instantiate(exclamationMark, GameManager.Instance.canvas.transform).GetComponent<TargetIndicator>();
         targetIndicator.InitialiseTargetIndicator(gameObject, GameManager.Instance.camera, GameManager.Instance.canvas);
-        targetIndicator.InitialiseTargetIndicator(gameObject,GameManager.Instance.camera,GameManager.Instance.canvas);
     }
 }

@@ -460,7 +460,6 @@ GameObject:
   - component: {fileID: 4917291069427890244}
   - component: {fileID: -5337285241891212135}
   - component: {fileID: 2126792428925476187}
-  - component: {fileID: 581618530935878892}
   m_Layer: 0
   m_Name: limozim
   m_TagString: Obstacle
@@ -516,7 +515,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424c075b924e3f947829fbcc4cec1377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyable: {fileID: 581618530935878892}
   forwardSpeed: 25
   rb: {fileID: 7216508615986162599}
   contact: 0
@@ -550,18 +548,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obs: {fileID: 4917291069427890244}
---- !u!114 &581618530935878892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6803007851906673853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3b4451452341fb4eb93e88f845a0674, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8125522861033841847
 GameObject:
   m_ObjectHideFlags: 0
