@@ -81,6 +81,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Explosion.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TileManger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -161,7 +162,7 @@
       <workItem from="1635432992285" duration="6192000" />
       <workItem from="1635492809683" duration="4711000" />
       <workItem from="1635502870053" duration="6364000" />
-      <workItem from="1635577622964" duration="2972000" />
+      <workItem from="1635577622964" duration="3767000" />
     </task>
     <servers />
   </component>

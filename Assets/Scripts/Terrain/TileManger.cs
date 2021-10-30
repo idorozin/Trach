@@ -12,7 +12,7 @@ public class TileManger : MonoBehaviour
     
 
     [SerializeField]
-    private GameObject[] prefabs;
+    private string[] prefabs;
 
     private float currentZ;
 
@@ -62,7 +62,7 @@ public class TileManger : MonoBehaviour
 
     void SpawnTile(bool moveBorder = true)
     {
-        GameObject go = Instantiate(prefabs[Random.Range(0, prefabs.Length)]);
+        GameObject go = ObjectPool.Instance.GetObject(prefabs[Random.Range(0, prefabs.Length)]);
         tiles.Add(Tuple.Create(go,go.transform));
         PlaceInFront(go , moveBorder);
     }

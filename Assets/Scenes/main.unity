@@ -1978,9 +1978,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabs:
-  - {fileID: 4483672117497937114, guid: 6c28252f7c0a98e41a3c8b588df1670a, type: 3}
-  - {fileID: 4483672117497937114, guid: f4e38ae49711532438afb24a81500268, type: 3}
-  - {fileID: 4483672117497937114, guid: 52fc76cb0969c724c9eb8dbdbf8b4302, type: 3}
+  - road1
+  - road2
+  - road3
   startPos: {x: 5.060577, y: 1, z: -1.86504}
   tileLength: 63
   player: {fileID: 226172710}
@@ -2441,7 +2441,7 @@ MonoBehaviour:
   - prefab: {fileID: 5809442300647170817, guid: f9e1c2980c6fd594cb0a1c54a61f73a9,
       type: 3}
     tag: coin
-    startSize: 100
+    startSize: 50
   - prefab: {fileID: 7096722941986148045, guid: 597d7dd713c22c04b96afdd1984222e4,
       type: 3}
     tag: flycoin
@@ -2450,6 +2450,18 @@ MonoBehaviour:
       type: 3}
     tag: bulldozercoin
     startSize: 5
+  - prefab: {fileID: 4483672117497937114, guid: 6c28252f7c0a98e41a3c8b588df1670a,
+      type: 3}
+    tag: road1
+    startSize: 7
+  - prefab: {fileID: 4483672117497937114, guid: f4e38ae49711532438afb24a81500268,
+      type: 3}
+    tag: road2
+    startSize: 7
+  - prefab: {fileID: 4483672117497937114, guid: 52fc76cb0969c724c9eb8dbdbf8b4302,
+      type: 3}
+    tag: road3
+    startSize: 7
   parent: {fileID: 1769783319}
 --- !u!4 &1769783319
 Transform:
@@ -3524,12 +3536,12 @@ PrefabInstance:
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000007929963
+      value: -0.000000008150212
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000002115027
+      value: 0.0000000021737698
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711387205427, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
@@ -3579,12 +3591,12 @@ PrefabInstance:
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 2.6353053e-10
+      value: -1.8463897e-10
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831587, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.5134027e-10
+      value: 1.06033626e-10
       objectReference: {fileID: 0}
     - target: {fileID: 1640498711832831588, guid: 8c45e42b18012ab40abbacbe7c6d256c,
         type: 3}
