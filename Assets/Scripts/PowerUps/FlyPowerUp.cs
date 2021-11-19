@@ -20,7 +20,7 @@ public class FlyPowerUp : PowerUpBehaviour
     }
 
 
-    protected override void BeginPowerUp()
+    public override void BeginPowerUp()
     {
         player.position += new Vector3(0f, 4f, 0f);
         float xPos = Random.Range(1f, 8f - grid.spacingX*(grid.cols-1));
@@ -30,7 +30,7 @@ public class FlyPowerUp : PowerUpBehaviour
         coinSpawner.SpawnCoinPattern(coinSpawnPosition, grid.grid);
     }
 
-    protected override void EndPowerUp()
+    public override void EndPowerUp()
     {
         player.position += new Vector3(0f, -4f, 0f);
     }

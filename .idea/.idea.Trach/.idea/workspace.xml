@@ -30,11 +30,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/CoinBehaveiour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerupActivator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUP.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Player/BulldozerBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUpSpawner/PowerUpSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/TargetIndicator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpSpawner.cs" />
@@ -81,6 +76,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Spawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerupsManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpsManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -164,6 +164,7 @@
       <workItem from="1635577622964" duration="3767000" />
       <workItem from="1635959926975" duration="3924000" />
       <workItem from="1636190471025" duration="1028000" />
+      <workItem from="1637329056267" duration="3030000" />
     </task>
     <servers />
   </component>
