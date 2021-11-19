@@ -23,13 +23,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarIndicator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ReturnObjectToPoolWhenBehindPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/IDO/Documents/GitHub/Trach/Assets/Scripts/Obstacles/Obstacle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Array2DEditor/Example/ExampleEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/IDO/Documents/GitHub/Trach/Assets/Scripts/Obstacles/Obstacle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUp.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/IDO/Documents/GitHub/Trach/Assets/Scripts/Obstacles/Obstacle.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -42,7 +39,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/Movement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/RandomObject.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Spawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ProbabilityItemPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/NodeH.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Node.cs" />
@@ -74,9 +70,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/ReturnPhysicsObjectToPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Explosion.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TileManger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinBehaveiour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/CollectableCoin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollectCoin.cs" />
@@ -84,6 +78,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/EventManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/MissileSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MissileUI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ObjectPool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Spawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -165,6 +162,8 @@
       <workItem from="1635492809683" duration="4711000" />
       <workItem from="1635502870053" duration="6364000" />
       <workItem from="1635577622964" duration="3767000" />
+      <workItem from="1635959926975" duration="3924000" />
+      <workItem from="1636190471025" duration="1028000" />
     </task>
     <servers />
   </component>

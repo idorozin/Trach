@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class FastCar : MonoBehaviour
@@ -9,9 +10,10 @@ public class FastCar : MonoBehaviour
     private Obstacle obs;
 
     [SerializeField] private GameObject exclamationMark;
-    [SerializeField] private GameObject plane;
+    [SerializeField] private MeshRenderer plane;
 
     private TargetIndicator targetIndicator;
+    private bool activated;
 
 
     void Start()
@@ -48,14 +50,39 @@ public class FastCar : MonoBehaviour
         {
             targetIndicator.UpdateTargetIndicator();
             if (targetIndicator.isInSIght())
-                plane.SetActive(false);
-            else
+                plane.enabled = false;
+            else if (!activated)
             {
-                plane.SetActive(true);
+                activated = true;
+                plane.enabled = true;
 
             }
 
+            Blink();
+
         }
+    }
+
+    private bool blinked = false;
+    private void Blink()
+    {
+        if (blinked)
+            return;
+        if (GameManager.Instance.playerpos.position.z - transform.position.z > 50)
+            return;
+        blinked = true;
+        StartCoroutine(BlinkAnimation());
+    }
+
+    private IEnumerator BlinkAnimation()
+    {
+        plane.enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        plane.enabled = true;
+        yield return new WaitForSeconds(0.2f);
+        plane.enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        plane.enabled = true;
         
     }
 
@@ -68,6 +95,8 @@ public class FastCar : MonoBehaviour
 
     private void OnEnable()
     {
+        activated = false;
+        blinked = false;
         lives = 3;
         targetIndicator = Instantiate(exclamationMark, GameManager.Instance.canvas.transform).GetComponent<TargetIndicator>();
         targetIndicator.InitialiseTargetIndicator(gameObject, GameManager.Instance.camera, GameManager.Instance.canvas);

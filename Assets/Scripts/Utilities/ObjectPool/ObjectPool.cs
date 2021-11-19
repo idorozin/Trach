@@ -42,7 +42,6 @@ public class ObjectPool : MonoBehaviour
 
     private void AddObject(string s, int i)
     {
-        Debug.Log(s);
         for (int j = 0; j < i; j++)
         {
             GameObject go = Instantiate(prefabs[s]);
