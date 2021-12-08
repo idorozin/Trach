@@ -5,6 +5,8 @@ public class FlyPowerUp : PowerUpBehaviour
 {
     public Transform player;
     public CoinSpawner coinSpawner;
+    [SerializeField]
+    private GameObject wings; 
 
     protected override Evt GetPowerUpEvent()
     {
@@ -28,10 +30,13 @@ public class FlyPowerUp : PowerUpBehaviour
         float zPos = player.position.z + 5f;
         Vector3 coinSpawnPosition = new Vector3(xPos, yPos, zPos);
         coinSpawner.SpawnCoinPattern(coinSpawnPosition, grid.grid);
+        wings.SetActive(true);
+
     }
 
     public override void EndPowerUp()
     {
+        wings.SetActive(false);
         player.position += new Vector3(0f, -4f, 0f);
     }
 }
