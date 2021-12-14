@@ -44,7 +44,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUpActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUpActivator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Evt.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUp.cs" />
@@ -76,11 +75,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ObjectPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Spawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerupsManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpsManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUp.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -165,7 +165,7 @@
       <workItem from="1635959926975" duration="3924000" />
       <workItem from="1636190471025" duration="1028000" />
       <workItem from="1637329056267" duration="3130000" />
-      <workItem from="1638984939701" duration="315000" />
+      <workItem from="1638984939701" duration="1090000" />
     </task>
     <servers />
   </component>
