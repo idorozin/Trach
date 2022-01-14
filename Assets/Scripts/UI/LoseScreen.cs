@@ -13,6 +13,7 @@ public class LoseScreen : MonoBehaviour
     
     public void PlayAgain()
     {
+        ObjectPool.Instance.ReturnAllObjectsToPool();
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

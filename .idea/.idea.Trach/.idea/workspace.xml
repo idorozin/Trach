@@ -76,10 +76,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUp.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Accident.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Score.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Accident.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoseScreen.cs" />
     </changedPaths>
   </component>
@@ -166,7 +166,7 @@
       <workItem from="1636190471025" duration="1028000" />
       <workItem from="1637329056267" duration="3130000" />
       <workItem from="1638984939701" duration="1090000" />
-      <workItem from="1642189576857" duration="1203000" />
+      <workItem from="1642189576857" duration="1699000" />
     </task>
     <servers />
   </component>

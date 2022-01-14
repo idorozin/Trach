@@ -11,7 +11,6 @@ public class Accident : MonoBehaviour
     {
         if (other.collider.gameObject.CompareTag("Player"))
         {
-            ObjectPool.Instance.ReturnAllObjectsToPool();
             GameManager.Instance.GameOver();
         }    
         

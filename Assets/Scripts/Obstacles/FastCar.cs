@@ -32,7 +32,6 @@ public class FastCar : MonoBehaviour
     {
         if (other.collider.gameObject.CompareTag("PlayerBack"))
         {
-            ObjectPool.Instance.ReturnAllObjectsToPool();
             GameManager.Instance.GameOver();
 
         }
