@@ -26,6 +26,11 @@ public class Score : MonoBehaviour
         text.text = (Math.Round(player.transform.position.z - start.z) + bonus) + "";
     }
 
+    public int GetScore()
+    {
+        return (int) (Math.Round(player.transform.position.z - start.z) + bonus);
+    }
+
     public void OnCarDestroyed()
     {
         bonus += 50;

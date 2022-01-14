@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public Canvas canvas;
     public Camera camera;
     
+    [SerializeField]
+    private LoseScreen loseScreen;
     private void Awake()
     {
         Instance = this;
@@ -16,4 +18,11 @@ public class GameManager : MonoBehaviour
     
     public float playerSpeed;
 
+
+    public void GameOver()
+    {
+        loseScreen.gameObject.SetActive(true);
+        Time.timeScale = 0;
+        loseScreen.InitializeLoseScreen(score.GetScore());
+    }
 }

@@ -11,8 +11,7 @@ public class Accident : MonoBehaviour
     {
         if (other.collider.gameObject.CompareTag("Player"))
         {
-            ObjectPool.Instance.ReturnAllObjectsToPool();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            GameManager.Instance.GameOver();
         }    
         
         else if (other.collider.gameObject.CompareTag("Border") || other.collider.gameObject.CompareTag("Bulldozer"))
