@@ -103,6 +103,7 @@
           </e>
           <e p="UI" t="Include">
             <e p="FadeUp.cs" t="Include" />
+            <e p="LoseScreen.cs" t="Include" />
             <e p="MissileUI.cs" t="Include" />
             <e p="Rotate.cs" t="Include" />
             <e p="Score.cs" t="Include" />
