@@ -30,7 +30,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/RandomObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/ProbabilityItemPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/NodeH.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Node.cs" />
@@ -80,6 +79,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Accident.cs" />
+      <option value="$PROJECT_DIR$/Assets/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoseScreen.cs" />
     </changedPaths>
   </component>
@@ -166,7 +166,8 @@
       <workItem from="1636190471025" duration="1028000" />
       <workItem from="1637329056267" duration="3130000" />
       <workItem from="1638984939701" duration="1090000" />
-      <workItem from="1642189576857" duration="1699000" />
+      <workItem from="1642189576857" duration="2295000" />
+      <workItem from="1642711907839" duration="341000" />
     </task>
     <servers />
   </component>

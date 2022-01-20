@@ -18,11 +18,6 @@ public class LoseScreen : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void MainMenu()
-    {
-        //TODO
-    }
-
     public void InitializeLoseScreen(int score)
     {
         scoreText.text = score.ToString();
@@ -30,6 +25,13 @@ public class LoseScreen : MonoBehaviour
         {
             o.SetActive(false);
         }
+    }
+
+    public void Menu()
+    {
+        ObjectPool.Instance.ReturnAllObjectsToPool();
+        Time.timeScale = 1;
+        SceneManager.LoadScene("menu");
     }
 
 }
