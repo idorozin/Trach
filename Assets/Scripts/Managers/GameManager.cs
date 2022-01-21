@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         loseScreen.gameObject.SetActive(true);
+        loseScreen.InitializeLoseScreen(score.GetScore(), score.GetCoinsEarned());
         Time.timeScale = 0;
-        loseScreen.InitializeLoseScreen(score.GetScore());
+
     }
 }

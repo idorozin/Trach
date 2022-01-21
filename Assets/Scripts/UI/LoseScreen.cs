@@ -9,6 +9,9 @@ public class LoseScreen : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI scoreText;
 
+    [SerializeField] 
+    private TextMeshProUGUI coinsText;
+
     public List<GameObject> toHide;
     
     public void PlayAgain()
@@ -18,9 +21,10 @@ public class LoseScreen : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void InitializeLoseScreen(int score)
+    public void InitializeLoseScreen(int score, int coins)
     {
         scoreText.text = score.ToString();
+        coinsText.text = coins.ToString();
         foreach (var o in toHide)
         {
             o.SetActive(false);

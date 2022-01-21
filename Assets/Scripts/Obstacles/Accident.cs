@@ -14,7 +14,7 @@ public class Accident : MonoBehaviour
             GameManager.Instance.GameOver();
         }    
         
-        else if (other.collider.gameObject.CompareTag("Border") || other.collider.gameObject.CompareTag("Bulldozer"))
+        else if (other.collider.gameObject.CompareTag("Border"))
         {
             obs.Destroy();
         }
