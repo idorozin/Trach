@@ -47,7 +47,7 @@ public class Score : MonoBehaviour
 
     public void OnCarDestroyed()
     {
-        coins += 10;
+        //coins += 10;
         coinsText.text = coins.ToString();
         /*GameObject go = ObjectPool.Instance.GetObject("bonus");
         if (go == null)
