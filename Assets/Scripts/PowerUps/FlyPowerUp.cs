@@ -7,7 +7,9 @@ public class FlyPowerUp : PowerUpBehaviour
     public Transform player;
     public CoinSpawner coinSpawner;
     [SerializeField]
-    private GameObject wings; 
+    private GameObject wings;
+
+    private float originalSpeed;
 
     protected override Evt GetPowerUpEvent()
     {
@@ -22,6 +24,7 @@ public class FlyPowerUp : PowerUpBehaviour
     void Start()
     {
         grid.SetUpGrid();
+        originalSpeed = playerMovement.forwardSpeed;
     }
 
 
@@ -42,6 +45,7 @@ public class FlyPowerUp : PowerUpBehaviour
     {
         wings.SetActive(false);
         player.position += new Vector3(0f, -4f, 0f);
+        playerMovement.forwardSpeed = originalSpeed;
     }
 }
 
