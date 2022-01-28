@@ -73,7 +73,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/PowerUpManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Accident.cs" />
@@ -81,6 +80,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoseScreen.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Score.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUp.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -169,7 +169,8 @@
       <workItem from="1642189576857" duration="2295000" />
       <workItem from="1642711907839" duration="341000" />
       <workItem from="1642782550432" duration="428000" />
-      <workItem from="1642783025554" duration="1700000" />
+      <workItem from="1642783025554" duration="2340000" />
+      <workItem from="1643384552860" duration="392000" />
     </task>
     <servers />
   </component>

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class FlyPowerUp : PowerUpBehaviour
 {
+    public Movement playerMovement;
     public Transform player;
     public CoinSpawner coinSpawner;
     [SerializeField]
@@ -15,6 +16,8 @@ public class FlyPowerUp : PowerUpBehaviour
 
     [SerializeField]
     private Grid grid;
+    [SerializeField]
+    private float multiplier = 2f;
 
     void Start()
     {
@@ -28,6 +31,7 @@ public class FlyPowerUp : PowerUpBehaviour
         float xPos = Random.Range(1f, 8f - grid.spacingX*(grid.cols-1));
         float yPos = 4.5f;
         float zPos = player.position.z + 5f;
+        playerMovement.forwardSpeed *= multiplier;
         Vector3 coinSpawnPosition = new Vector3(xPos, yPos, zPos);
         coinSpawner.SpawnCoinPattern(coinSpawnPosition, grid.grid);
         wings.SetActive(true);
