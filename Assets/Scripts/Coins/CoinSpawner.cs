@@ -58,7 +58,6 @@ public class CoinSpawner : MonoBehaviour
             }
         }
         var index = Random.Range(0, availableX.Count);
-        Debug.Log(index + " " +  0 + " " +  availableX.Count);
 
         float xPos = availableX[index];
 
@@ -75,7 +74,7 @@ public class CoinSpawner : MonoBehaviour
         {
             if (!node.used) continue;
             GameObject go = ObjectPool.Instance.GetObject(CoinTag);
-            go.transform.position = new Vector3(position.x,position.y,node.position.z + position.z);
+            go.transform.position = new Vector3(node.position.x + position.x,position.y,node.position.z + position.z);
         }
     }
     

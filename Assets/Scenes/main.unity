@@ -2166,7 +2166,7 @@ MonoBehaviour:
     startPos: {x: -3.6, y: 0, z: 0}
     spacingX: 2
     spacingY: 0
-    spacingZ: 2
+    spacingZ: 8
     rows: 20
     cols: 10
   multiplier: 2
