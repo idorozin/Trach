@@ -60,7 +60,7 @@ public class CoinSpawner : MonoBehaviour
         var index = Random.Range(0, availableX.Count);
 
         float xPos = availableX[index];
-
+        Debug.Log(xPos);
         Vector3 final_pos = new Vector3(xPos, 1f, zGridStartPos);
         
         SpawnCoinPattern(final_pos, grid.grid);

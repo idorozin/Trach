@@ -1446,35 +1446,35 @@ MonoBehaviour:
   grid:
     useBools: 1
     boolArray:
-      gridSize: {x: 2, y: 12}
+      gridSize: {x: 1, y: 12}
       cellSize: {x: 16, y: 16}
       cells:
-      - row: 0001
-      - row: 0001
-      - row: 0001
-      - row: 0001
-      - row: 0001
-      - row: 0001
-      - row: 0001
-      - row: 0001
-      - row: 0001
-      - row: 0001
-      - row: 0001
-      - row: 0001
+      - row: 01
+      - row: 01
+      - row: 01
+      - row: 01
+      - row: 01
+      - row: 01
+      - row: 01
+      - row: 01
+      - row: 01
+      - row: 01
+      - row: 01
+      - row: 01
     startPos: {x: 0, y: 0, z: 0}
     spacingX: 2
     spacingY: 0
     spacingZ: 2
     rows: 12
-    cols: 2
+    cols: 1
   minTime: 3
   maxTime: 6
   CoinTag: coin
   xSpawnPositions:
-  - -7.5
-  - -5.5
-  - -2.5
-  - 0
+  - 4
+  - 2
+  - -3.5
+  - -1
 --- !u!4 &957074218
 Transform:
   m_ObjectHideFlags: 0
