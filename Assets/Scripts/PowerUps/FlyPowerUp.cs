@@ -31,7 +31,7 @@ public class FlyPowerUp : PowerUpBehaviour
     public override void BeginPowerUp()
     {
         player.position += new Vector3(0f, 4f, 0f);
-        float xPos = 0f;
+        float xPos = -4f;
         float yPos = 4.5f;
         float zPos = player.position.z + 5f;
         playerMovement.forwardSpeed *= multiplier;

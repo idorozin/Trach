@@ -24,6 +24,11 @@ public class GameManager : MonoBehaviour
         loseScreen.gameObject.SetActive(true);
         loseScreen.InitializeLoseScreen(score.GetScore(), score.GetCoinsEarned());
         Time.timeScale = 0;
-
+        DataManager.instance.playerData.coins += score.GetCoinsEarned();
+        if (score.GetScore() > DataManager.instance.playerData.highScore)
+        {
+            DataManager.instance.playerData.highScore = score.GetScore();
+        }
+        DataManager.instance.SaveData();
     }
 }

@@ -8,7 +8,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Menu.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Array2DEditor" t="Include">
             <e p="Editor" t="Include">
@@ -98,6 +97,11 @@
             <e p="PowerUpManager.cs" t="Include" />
             <e p="PowerUpSpawner.cs" t="Include" />
           </e>
+          <e p="SaveLoad" t="Include">
+            <e p="DataManager.cs" t="Include" />
+            <e p="JsonHelper.cs" t="Include" />
+            <e p="PlayerData.cs" t="Include" />
+          </e>
           <e p="Terrain" t="Include">
             <e p="RandomObject.cs" t="Include" />
             <e p="TileManger.cs" t="Include" />
@@ -105,9 +109,11 @@
           <e p="UI" t="Include">
             <e p="FadeUp.cs" t="Include" />
             <e p="LoseScreen.cs" t="Include" />
+            <e p="Menu.cs" t="Include" />
             <e p="MissileUI.cs" t="Include" />
             <e p="Rotate.cs" t="Include" />
             <e p="Score.cs" t="Include" />
+            <e p="StartMenuUI.cs" t="Include" />
             <e p="TargetIndicator.cs" t="Include" />
             <e p="Timer.cs" t="Include" />
           </e>

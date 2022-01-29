@@ -18,7 +18,7 @@ public class CoinSpawner : MonoBehaviour
     [SerializeField]
     private string CoinTag;
 
-    private float minX = -4f;
+    private float minX = -8f;
     private float maxX = 8f;
 
     [SerializeField] private float[] xSpawnPositions;
