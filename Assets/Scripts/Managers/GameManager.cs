@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     }
     
     public float playerSpeed;
+    //TODO
+    public bool fly;
 
 
     public void GameOver()

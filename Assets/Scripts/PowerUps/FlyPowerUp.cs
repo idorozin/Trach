@@ -30,6 +30,7 @@ public class FlyPowerUp : PowerUpBehaviour
 
     public override void BeginPowerUp()
     {
+        GameManager.Instance.fly = true;
         player.position += new Vector3(0f, 4f, 0f);
         float xPos = -4f;
         float yPos = 4.5f;

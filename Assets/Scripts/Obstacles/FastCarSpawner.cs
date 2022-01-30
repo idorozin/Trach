@@ -19,6 +19,11 @@ public class FastCarSpawner : MonoBehaviour
     public int lastPick;
     void Update()
     {
+        if (GameManager.Instance.fly)
+        {
+            return;
+        }
+
         if (Time.time > spawnTime)
         {
             SpawnCar();
