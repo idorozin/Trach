@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c24035b238de4d4d8b5017f6d5316b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinsText: {fileID: 319925304}
-  highScoreText: {fileID: 774211599}
+  coinsText: {fileID: 774211599}
+  highScoreText: {fileID: 319925304}
 --- !u!1001 &579187470
 PrefabInstance:
   m_ObjectHideFlags: 0

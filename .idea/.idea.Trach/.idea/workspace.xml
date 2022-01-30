@@ -77,12 +77,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Score.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUp.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoad/PlayerData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoad/JsonHelper.cs" />
       <option value="$PROJECT_DIR$/Assets/StartMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoad/DataManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinSpawner.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -175,6 +175,7 @@
       <workItem from="1643384552860" duration="6657000" />
       <workItem from="1643452290385" duration="5432000" />
       <workItem from="1643464309994" duration="634000" />
+      <workItem from="1643475562517" duration="300000" />
     </task>
     <servers />
   </component>
