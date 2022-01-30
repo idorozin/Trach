@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     public Canvas canvas;
     public Camera camera;
-    
+    public bool menu = false;
     [SerializeField]
     private LoseScreen loseScreen;
     private void Awake()

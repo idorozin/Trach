@@ -7,6 +7,7 @@ public class Menu : MonoBehaviour
 {
     public void PlayGame()
     {
+        ObjectPool.Instance.ReturnAllObjectsToPool();
         SceneManager.LoadScene("main");
     }
 }

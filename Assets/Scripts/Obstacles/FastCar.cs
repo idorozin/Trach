@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -93,8 +94,15 @@ public class FastCar : MonoBehaviour
         targetIndicator.gameObject.SetActive(false);
     }
 
+    private bool first = true;
     private void OnEnable()
     {
+        if (first)
+        {
+            first = false;
+            return;
+        }
+
         activated = false;
         blinked = false;
         lives = 3;

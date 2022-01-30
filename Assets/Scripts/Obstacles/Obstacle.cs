@@ -15,7 +15,6 @@ public class Obstacle : MonoBehaviour,IPooledObject
     
 
     public bool contact = false ;
-    private Score score;
 
 
     void FixedUpdate()
@@ -30,15 +29,9 @@ public class Obstacle : MonoBehaviour,IPooledObject
         }
     }
     
-    void Start()
-    {
-        score = GameManager.Instance.score;
-    }
-    
     public void Destroy()
     {
         ReturnToPool();
-        score.OnCarDestroyed();
         GameObject explosion = ObjectPool.Instance.GetObject("explosion");
         explosion.transform.position = transform.position;
     }
