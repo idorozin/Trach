@@ -1471,10 +1471,10 @@ MonoBehaviour:
   maxTime: 6
   CoinTag: coin
   xSpawnPositions:
-  - 4
-  - 2
-  - -3.5
-  - -1
+  - 1.3
+  - -1.3
+  - 3.7
+  - -3.7
 --- !u!4 &957074218
 Transform:
   m_ObjectHideFlags: 0
