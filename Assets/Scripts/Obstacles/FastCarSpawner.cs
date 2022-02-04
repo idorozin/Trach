@@ -21,6 +21,7 @@ public class FastCarSpawner : MonoBehaviour
     {
         if (GameManager.Instance.fly)
         {
+            spawnTime = GetSpawnTime();
             return;
         }
 
