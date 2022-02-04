@@ -676,11 +676,11 @@ MonoBehaviour:
     - probability: 0
       minRange: 50
       maxRange: 75
-      item: police
+      item: white
     - probability: 0
       minRange: 75
       maxRange: 100
-      item: red
+      item: orange
     defaultOption: yellow
   spacingX: 2.4
   spacingY: 0
