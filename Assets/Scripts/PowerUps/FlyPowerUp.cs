@@ -47,6 +47,9 @@ public class FlyPowerUp : PowerUpBehaviour
         wings.SetActive(false);
         player.position += new Vector3(0f, -4f, 0f);
         playerMovement.forwardSpeed = originalSpeed;
+        GameManager.Instance.playerSpeed = originalSpeed;
+        GameManager.Instance.fly = false;
+
     }
 }
 
