@@ -16,12 +16,13 @@ public class CoinSpawner : MonoBehaviour
     
     private float spawnTime;
     [SerializeField]
-    private string CoinTag;
+    private string coinTag;
 
     private float minX = -8f;
     private float maxX = 8f;
 
-    [SerializeField] private float[] xSpawnPositions;
+    [SerializeField] 
+    private float[] xSpawnPositions;
 
     private void Start()
     {
@@ -47,24 +48,19 @@ public class CoinSpawner : MonoBehaviour
     private void SpawnCoins()
     {
         float zGridStartPos = GameManager.Instance.playerpos.transform.position.z + 100f;
-        float maxX_ = maxX;
         //float xPos = Random.Range(minX, maxX - grid.spacingX*(grid.cols-1));
         List<float> availableX = new List<float>();
         foreach (var posX in xSpawnPositions)
         {
-            if (posX > minX && posX < maxX_)
+            if (posX > minX && posX < maxX)
             {
                 availableX.Add(posX);
             }
         }
-        var index = Random.Range(0, availableX.Count);
-
-        float xPos = availableX[index];
-        Vector3 final_pos = new Vector3(xPos, 1f, zGridStartPos);
+        float xPos = availableX[Random.Range(0, availableX.Count)];
+        Vector3 finalPos = new Vector3(xPos, 1f, zGridStartPos);
         
-        SpawnCoinPattern(final_pos, grid.grid);
-        
-
+        SpawnCoinPattern(finalPos, grid.grid);
     }
 
     public void SpawnCoinPattern(Vector3 position, Node[,] pattern)
@@ -72,7 +68,7 @@ public class CoinSpawner : MonoBehaviour
         foreach (var node in pattern)
         {
             if (!node.used) continue;
-            GameObject go = ObjectPool.Instance.GetObject(CoinTag);
+            GameObject go = ObjectPool.Instance.GetObject(coinTag);
             go.transform.position = new Vector3(node.position.x + position.x,position.y,node.position.z + position.z);
         }
     }

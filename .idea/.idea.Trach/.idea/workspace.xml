@@ -76,14 +76,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoad/JsonHelper.cs" />
       <option value="$PROJECT_DIR$/Assets/StartMenuUI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoad/DataManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/SpawnerMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Menu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUp.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarSpawner.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -180,6 +180,7 @@
       <workItem from="1643564339032" duration="4720000" />
       <workItem from="1643569828845" duration="640000" />
       <workItem from="1644005269946" duration="1249000" />
+      <workItem from="1644916274656" duration="1566000" />
     </task>
     <servers />
   </component>

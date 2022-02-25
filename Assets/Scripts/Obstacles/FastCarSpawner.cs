@@ -7,8 +7,6 @@ public class FastCarSpawner : MonoBehaviour
 
     [SerializeField] private Transform player;
 
-    [SerializeField] private Movement movement;
-
     [SerializeField] private int minTime;
     [SerializeField] private int maxTime;
     [SerializeField] private float spawnTime;

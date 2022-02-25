@@ -84,7 +84,6 @@
           <e p="Player" t="Include">
             <e p="CameraFollow.cs" t="Include" />
             <e p="CollectCoin.cs" t="Include" />
-            <e p="Missile.cs" t="Include" />
             <e p="MissileSpawner.cs" t="Include" />
             <e p="Movement.cs" t="Include" />
           </e>
@@ -94,6 +93,7 @@
             <e p="CollectableCoin.cs" t="Include" />
             <e p="FlyCollectableCoin.cs" t="Include" />
             <e p="FlyPowerUp.cs" t="Include" />
+            <e p="Missile.cs" t="Include" />
             <e p="PowerUpBehaviour.cs" t="Include" />
             <e p="PowerUpManager.cs" t="Include" />
             <e p="PowerUpSpawner.cs" t="Include" />

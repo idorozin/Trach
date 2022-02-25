@@ -15,12 +15,7 @@ public class FastCar : MonoBehaviour
 
     private TargetIndicator targetIndicator;
     private bool activated;
-
-
-    void Start()
-    {
-        gameObject.GetComponent<Rigidbody>();
-    } 
+    
 
     void Update(){
         
