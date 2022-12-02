@@ -3,12 +3,32 @@
   <component name="ContentModelStore">
     <e p="C:\Users\IDO\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
     <e p="C:\Users\IDO\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Trach.-1274194252.00" t="ExcludeRecursive" />
+    <e p="C:\Users\IDO\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
     <e p="C:\Users\IDO\Documents\GitHub\Trach" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="GoogleMobileAds" t="Include">
+          <e p="Editor" t="Include">
+            <e p="BuildPreProcessor.cs" t="Include" />
+            <e p="GoogleMobileAds.Editor.asmdef" t="Include" />
+            <e p="GoogleMobileAdsDependencies.xml" t="Include" />
+            <e p="GoogleMobileAdsSettings.cs" t="Include" />
+            <e p="GoogleMobileAdsSettingsEditor.cs" t="Include" />
+            <e p="GoogleMobileAdsSKAdNetworkItems.xml" t="Include" />
+            <e p="ManifestProcessor.cs" t="Include" />
+            <e p="PListProcessor.cs" t="Include" />
+          </e>
+          <e p="GoogleMobileAds_version-7.3.1_manifest.txt" t="Include" />
+          <e p="link.xml" t="Include" />
+        </e>
         <e p="Plugins" t="Include">
+          <e p="Android" t="Include">
+            <e p="GoogleMobileAdsPlugin.androidlib" t="Include">
+              <e p="AndroidManifest.xml" t="Include" />
+            </e>
+          </e>
           <e p="Array2DEditor" t="Include">
             <e p="Editor" t="Include">
               <e p="EditorWindows" t="Include">
@@ -68,6 +88,10 @@
             <e p="EventManager.cs" t="Include" />
             <e p="Evt.cs" t="Include" />
             <e p="GameManager.cs" t="Include" />
+          </e>
+          <e p="Monitization" t="Include">
+            <e p="AdManager.cs" t="Include" />
+            <e p="AdmobIds.cs" t="Include" />
           </e>
           <e p="Obstacles" t="Include">
             <e p="Accident.cs" t="Include" />
@@ -181,6 +205,7 @@
           </e>
         </e>
       </e>
+      <e p="GoogleMobileAds.Editor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />

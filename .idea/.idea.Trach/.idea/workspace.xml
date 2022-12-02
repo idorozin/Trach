@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8c4b909-d5c8-41d0-8cfa-426ce87746c0" name="Default Changelist" comment="" />
+    <list default="true" id="d8c4b909-d5c8-41d0-8cfa-426ce87746c0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Trach/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Trach/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Trach/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Trach/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Trach/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Trach/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Terrain/TileManger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Terrain/TileManger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LoseScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LoseScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,21 +29,22 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ReturnObjectToPoolWhenBehindPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/JsonHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A0EF933B-1AA5-4B66-8801-EA864E4204FE/87/a5d9a831/Time.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Array2DEditor/Example/ExampleEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerCollectableCoin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarIndicator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utilities/ObjectPool/ReturnObjectToPoolWhenBehindPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveLoad/JsonHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/Explosion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/SpawnerMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Array2DEditor/Example/ExampleEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/StartMenuUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUpActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/BulldozerPowerUpActivator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EventManager.cs" />
@@ -53,7 +64,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/GenericPooledObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/ReturnPhysicsObjectToPool.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Explosion.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TileManger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinBehaveiour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/CollectableCoin.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Player/CollectCoin.cs" />
@@ -70,7 +80,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Timer.cs" />
       <option value="$PROJECT_DIR$/Assets/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Accident.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoseScreen.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Score.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoad/PlayerData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SaveLoad/JsonHelper.cs" />
@@ -79,11 +88,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/SpawnerMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/Obstacle.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Menu.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PowerUps/FlyPowerUp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Coins/CoinSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCarSpawner.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Obstacles/FastCar.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Monitization/AdManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/LoseScreen.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Terrain/TileManger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1jJq6ouLYNx8zcSrefHKKHWpV1q" />
@@ -92,7 +104,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3504" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35048753" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -181,6 +193,10 @@
       <workItem from="1643569828845" duration="640000" />
       <workItem from="1644005269946" duration="1249000" />
       <workItem from="1644916274656" duration="1566000" />
+      <workItem from="1669059778824" duration="3327000" />
+      <workItem from="1669063211254" duration="631000" />
+      <workItem from="1669210102292" duration="1003000" />
+      <workItem from="1669984344149" duration="325000" />
     </task>
     <servers />
   </component>
@@ -193,6 +209,49 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Monitization/AdManager.cs</url>
+          <line>154</line>
+          <properties documentPath="C:\Users\IDO\Documents\GitHub\Trach\Assets\Scripts\Monitization\AdManager.cs" initialLine="151" containingFunctionPresentation="method 'ReloadInterstitial'">
+            <startOffsets>
+              <option value="3704" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3724" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/LoseScreen.cs</url>
+          <line>18</line>
+          <properties documentPath="C:\Users\IDO\Documents\GitHub\Trach\Assets\Scripts\UI\LoseScreen.cs" initialLine="18" containingFunctionPresentation="method 'PlayAgain'">
+            <startOffsets>
+              <option value="376" />
+            </startOffsets>
+            <endOffsets>
+              <option value="421" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/LoseScreen.cs</url>
+          <line>36</line>
+          <properties documentPath="C:\Users\IDO\Documents\GitHub\Trach\Assets\Scripts\UI\LoseScreen.cs" initialLine="35" containingFunctionPresentation="method 'Menu'">
+            <startOffsets>
+              <option value="850" />
+            </startOffsets>
+            <endOffsets>
+              <option value="895" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
         <watch expression="this.gameObject" />

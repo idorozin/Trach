@@ -18,6 +18,7 @@ public class LoseScreen : MonoBehaviour
     {
         ObjectPool.Instance.ReturnAllObjectsToPool();
         Time.timeScale = 1;
+        GameManager.Instance.pause = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -35,6 +36,7 @@ public class LoseScreen : MonoBehaviour
     {
         ObjectPool.Instance.ReturnAllObjectsToPool();
         Time.timeScale = 1;
+        GameManager.Instance.pause = false;
         SceneManager.LoadScene("menu");
     }
 
