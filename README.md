@@ -1,5 +1,7 @@
 # Trach - A unity mobile game
 fast-paced, mobile infinite runner game where you drive a truck, navigating a busy highway. Your goal is simple: **dodge oncoming cars** and collect power-ups along the way to enhance your gameplay. As you speed down the road, the longer you survive, the more challenging the game becomes!
+Gameplay video:
+**[![Gameplay](https://img.youtube.com/vi/y3YOfKBwVqM/0.jpg)](https://www.youtube.com/watch?v=y3YOfKBwVqM)**
 # Intresting systems used in the game
 ## Object Pooling System
 
