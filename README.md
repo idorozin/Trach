@@ -18,3 +18,6 @@ Each object that will be pre-instantiated implements the `IPoolableObject` inter
 The `ObjectPool` class maintains a dictionary that maps each type of game object—like a Red Car, Green Car, Coin, or Fly PowerUp—to a queue that holds available instances of these objects.
 
 Whenever you need to create an object, the `ObjectPool` retrieves one from the pool. If an object is no longer in use, it can be returned to the pool for reuse. If no available object exists in the pool, the `ObjectPool` will instantiate a new one. However, typically, the pool is pre-filled with a sufficient number of objects before the game begins to minimize instantiation during gameplay.
+
+# Credits
+Special thanks to Yuval Karako for providing the artwork for this game.
